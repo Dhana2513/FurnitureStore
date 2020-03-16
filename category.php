@@ -43,7 +43,7 @@ $cat = mysqli_fetch_array($r,MYSQLI_ASSOC);
                 <nav class="pageintro-breadcumb">
                     <ul>
                         <li>
-                            <a href="Category.php?cid={$rows['cat_id']}"><?php echo $cat['cat_name']?></a>
+                            <a href="category.php?cid={$rows['cat_id']}"><?php echo $cat['cat_name']?></a>
                         </li>
                     </ul>
                 </nav>
@@ -124,7 +124,7 @@ $cat = mysqli_fetch_array($r,MYSQLI_ASSOC);
                                 $current_page = ($start/$limit) + 1;
                                 if ($page>1){?>
                                     <li class="panigation-item">
-                                        <a href="Category.php?cid=<?php echo $cid; ?>&&page=<?php echo $current_page -1; ?>" class="panigation-link">
+                                        <a href="category.php?cid=<?php echo $cid; ?>&&page=<?php echo $current_page -1; ?>" class="panigation-link">
                                             <i class="fa fa-angle-left"></i>
                                         </a>
                                     </li>
@@ -134,13 +134,13 @@ $cat = mysqli_fetch_array($r,MYSQLI_ASSOC);
                                 </li>
                                 <?php for($i=1;$i<=$total_page;$i++){ ?>
                                     <li class="panigation-item <?php if($page == $i) echo "active"; ?>">
-                                        <a href="Category.php?cid=<?php echo $cid; ?>&&page=<?php echo $i; ?>" class="panigation-link"><?php echo $i; ?></a>
+                                        <a href="category.php?cid=<?php echo $cid; ?>&&page=<?php echo $i; ?>" class="panigation-link"><?php echo $i; ?></a>
                                     </li>
                                 <?php } ?>
                                 <?php
                                 if ($current_page<$total_page){?>
                                     <li class="panigation-item" >
-                                        <a href="Category.php?cid=<?php echo $cid; ?>&&page=<?php echo $current_page +1; ?>" class="panigation-link">
+                                        <a href="category.php?cid=<?php echo $cid; ?>&&page=<?php echo $current_page +1; ?>" class="panigation-link">
                                             <i class="fa fa-angle-right"></i>
                                         </a>
                                     </li>
@@ -167,7 +167,7 @@ $cat = mysqli_fetch_array($r,MYSQLI_ASSOC);
                                     while ($cats = mysqli_fetch_array($r,MYSQLI_ASSOC)){
                                     ?>
                                     <li>
-                                        <a href="Category.php?cid=<?php echo $cats['cat_id']?>"><?php echo $cats['cat_name']?></a>
+                                        <a href="category.php?cid=<?php echo $cats['cat_id']?>"><?php echo $cats['cat_name']?></a>
                                         <span class="number">
                                             <?php
                                             $q1 ="SELECT * FROM products WHERE cat_id = {$cats['cat_id']}";

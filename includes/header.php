@@ -26,7 +26,7 @@
                                     $q = "SELECT * FROM categories ORDER BY position ASC ";
                                     $r = mysqli_query($dbc,$q);
                                     while ($rows = mysqli_fetch_array($r,MYSQLI_ASSOC)){
-                                        echo "<li><a href='Category.php?cid={$rows['cat_id']}'>{$rows['cat_name']}</a></li>";
+                                        echo "<li><a href='category.php?cid={$rows['cat_id']}'>{$rows['cat_name']}</a></li>";
                                     }
                                     ?>
                                 </ul>

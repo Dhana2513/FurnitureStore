@@ -84,7 +84,7 @@ $product =  mysqli_fetch_array($r,MYSQLI_ASSOC);
 
                                     $cat = mysqli_fetch_array($r,MYSQLI_ASSOC);
                                     ?>
-                                    <a href="Category.php?cid=<?php echo $cat['cat_id']?>" style="color: orangered"><?php echo $cat['cat_name']; ?></a>
+                                    <a href="category.php?cid=<?php echo $cat['cat_id']?>" style="color: orangered"><?php echo $cat['cat_name']; ?></a>
                                 </div>
                             </div>
                         </div>

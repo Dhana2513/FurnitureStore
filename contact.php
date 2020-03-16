@@ -54,7 +54,7 @@ include "includes/header.php";
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group au-form">
-                                    <button type="submit" id="contactBtn" class="mx-auto">To send</button>
+                                    <button type="submit" id="contactBtn" class="mx-auto">Send</button>
                                 </div>
                             </div>
                         </div>

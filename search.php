@@ -149,7 +149,7 @@ include "includes/header.php";
                                     while ($cats = mysqli_fetch_array($r,MYSQLI_ASSOC)){
                                         ?>
                                         <li>
-                                            <a href="Category.php?cid=<?php echo $cats['cat_id']?>"><?php echo $cats['cat_name']?></a>
+                                            <a href="category.php?cid=<?php echo $cats['cat_id']?>"><?php echo $cats['cat_name']?></a>
                                             <span class="number">
                                             <?php
                                             $q1 ="SELECT * FROM products WHERE cat_id = {$cats['cat_id']}";
