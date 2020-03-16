@@ -4,7 +4,7 @@
  *
  * PHP version 5
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Greg Sherwood <gsherwood@squiz.net>
  * @author    Marc McIntyre <mmcintyre@squiz.net>
@@ -18,7 +18,7 @@
  *
  * Tests for functions outside of classes.
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Greg Sherwood <gsherwood@squiz.net>
  * @author    Marc McIntyre <mmcintyre@squiz.net>

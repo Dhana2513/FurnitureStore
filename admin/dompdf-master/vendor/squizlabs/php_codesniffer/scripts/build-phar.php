@@ -5,7 +5,7 @@
  *
  * PHP version 5
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Benjamin Pearson <bpearson@squiz.com.au>
  * @author    Greg Sherwood <gsherwood@squiz.net>

@@ -4,7 +4,7 @@
  *
  * PHP version 5
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Greg Sherwood <gsherwood@squiz.net>
  * @author    Marc McIntyre <mmcintyre@squiz.net>
@@ -19,7 +19,7 @@
  * Tests that the ++ operators are used when possible and not
  * used when it makes the code confusing.
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Greg Sherwood <gsherwood@squiz.net>
  * @author    Marc McIntyre <mmcintyre@squiz.net>

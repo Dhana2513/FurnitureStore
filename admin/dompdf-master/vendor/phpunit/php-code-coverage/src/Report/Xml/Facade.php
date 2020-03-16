@@ -188,7 +188,7 @@ class Facade
             $unit['package']['fullPackage'],
             $unit['package']['package'],
             $unit['package']['subpackage'],
-            $unit['package']['category']
+            $unit['package']['Category']
         );
 
         $unitObject->setNamespace($unit['package']['namespace']);

@@ -4,7 +4,7 @@
  *
  * PHP version 5
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Alexander Obuhovich <aik.bold@gmail.com>
  * @copyright 2010-2014 Alexander Obuhovich
@@ -15,7 +15,7 @@
 /**
  * Checks that only one trait is declared per file.
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Alexander Obuhovich <aik.bold@gmail.com>
  * @copyright 2010-2014 Alexander Obuhovich

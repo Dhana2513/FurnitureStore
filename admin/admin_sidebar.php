@@ -17,13 +17,13 @@
         <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
                 <i class="mdi mdi-puzzle-outline menu-icon"></i>
-                <span class="menu-title">CATEGORY Manager</span>
+                <span class="menu-title">Category Manager</span>
                 <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="ui-basic">
                 <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"> <a class="nav-link" href="add_category.php">Add CATEGORY</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="view_categories.php">List of CATEGORY</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="add_category.php">Add Category</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="view_categories.php">List of Category</a></li>
                 </ul>
             </div>
         </li>
@@ -35,7 +35,7 @@
             </a>
             <div class="collapse" id="ui-advanced">
                 <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"> <a class="nav-link" href="add_product.php">More products</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="add_product.php">Add Products</a></li>
                     <li class="nav-item"> <a class="nav-link" href="view_products.php">List of products</a></li>
                 </ul>
             </div>

@@ -4,7 +4,7 @@
  *
  * PHP version 5
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Greg Sherwood <gsherwood@squiz.net>
  * @author    Marc McIntyre <mmcintyre@squiz.net>
@@ -16,7 +16,7 @@
 /**
  * A test to ensure that arrays conform to the array coding standard.
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Greg Sherwood <gsherwood@squiz.net>
  * @author    Marc McIntyre <mmcintyre@squiz.net>

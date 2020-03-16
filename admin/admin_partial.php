@@ -74,7 +74,7 @@
                 <div class="events py-4 border-bottom px-3">
                     <div class="wrapper d-flex mb-2">
                         <i class="mdi mdi-circle-outline text-primary mr-2"></i>
-                        <span>Feb 11 2018</span>
+                        <span>Feb 11 2020</span>
                     </div>
                     <p class="mb-0 font-weight-thin text-gray">Creating component page</p>
                     <p class="text-gray mb-0">build a js based app</p>
@@ -82,7 +82,7 @@
                 <div class="events pt-4 px-3">
                     <div class="wrapper d-flex mb-2">
                         <i class="mdi mdi-circle-outline text-primary mr-2"></i>
-                        <span>Feb 7 2018</span>
+                        <span>Feb 7 2020</span>
                     </div>
                     <p class="mb-0 font-weight-thin text-gray">Meeting with Alisa</p>
                     <p class="text-gray mb-0 ">Call Sarah Graves</p>

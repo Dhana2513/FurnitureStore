@@ -4,7 +4,7 @@
  *
  * PHP version 5
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Greg Sherwood <gsherwood@squiz.net>
  * @author    Alexander Wei§ <aweisswa@gmx.de>
@@ -18,7 +18,7 @@
  *
  * Runs jshint.js on the file.
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Greg Sherwood <gsherwood@squiz.net>
  * @author    Alexander Wei§ <aweisswa@gmx.de>

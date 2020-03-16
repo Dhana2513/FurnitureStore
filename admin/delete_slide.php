@@ -48,10 +48,10 @@ if (mysqli_num_rows($r) == 1) {
                                             </button>
                                         </div>
                                         <div class="modal-body">
-                                            <p>Do you want to delete this CATEGORY?</p>
+                                            <p>Do you want to delete this Category?</p>
                                         </div>
                                         <div class="modal-footer">
-                                            <input type="submit" class="btn btn-danger" name="delete" value="Erase">
+                                            <input type="submit" class="btn btn-danger" name="delete" value="Delete">
                                             <input type="submit" class="btn btn-light" name="delete" value="Cancel">
                                         </div>
                                     </div>

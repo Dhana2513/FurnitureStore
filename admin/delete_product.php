@@ -28,7 +28,7 @@ if (mysqli_num_rows($r) == 1) {
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title" style="text-align: center;font-size: 30px;">Erase products : <?php if (isset($product_name)) echo $product_name;?></h4>
+                        <h4 class="card-title" style="text-align: center;font-size: 30px;">Delete products : <?php if (isset($product_name)) echo $product_name;?></h4>
                         <!-- Dummy Modal Starts -->
                         <form action="action/action_delete_product.php?pid=<?php echo $pid;?>" method="post">
                             <div class="modal demo-modal">
@@ -44,7 +44,7 @@ if (mysqli_num_rows($r) == 1) {
                                             <p>Do you want to delete the product <b><?php if (isset($product_name)) echo $product_name;?></b> ?</p>
                                         </div>
                                         <div class="modal-footer">
-                                            <input type="submit" class="btn btn-danger" name="delete" value="Erase">
+                                            <input type="submit" class="btn btn-danger" name="delete" value="Delete">
                                             <input type="submit" class="btn btn-light" name="delete" value="Cancel">
                                         </div>
                                     </div>

@@ -4,7 +4,7 @@ REM defined set of coding standards.
 REM 
 REM PHP version 5
 REM 
-REM @category  PHP
+REM @Category  PHP
 REM @package   PHP_CodeSniffer
 REM @author    Greg Sherwood <gsherwood@squiz.net>
 REM @author    Marc McIntyre <mmcintyre@squiz.net>

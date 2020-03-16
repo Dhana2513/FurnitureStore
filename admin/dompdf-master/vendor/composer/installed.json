@@ -315,7 +315,7 @@
         "require-dev": {
             "phpunit/phpunit": "~6"
         },
-        "time": "2018-08-07T13:53:10+00:00",
+        "time": "2020-08-07T13:53:10+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -548,7 +548,7 @@
         "suggest": {
             "ext-xdebug": "^2.5.5"
         },
-        "time": "2018-04-06T15:36:58+00:00",
+        "time": "2020-04-06T15:36:58+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -890,7 +890,7 @@
         "suggest": {
             "ext-soap": "*"
         },
-        "time": "2018-08-09T05:50:03+00:00",
+        "time": "2020-08-09T05:50:03+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1039,7 +1039,7 @@
         "require-dev": {
             "phpunit/phpunit": "^6.4"
         },
-        "time": "2018-02-01T13:46:46+00:00",
+        "time": "2020-02-01T13:46:46+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1574,7 +1574,7 @@
         "require-dev": {
             "phpunit/phpunit": "~4.0"
         },
-        "time": "2018-11-07T22:31:41+00:00",
+        "time": "2020-11-07T22:31:41+00:00",
         "bin": [
             "scripts/phpcs",
             "scripts/phpcbf"

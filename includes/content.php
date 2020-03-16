@@ -44,7 +44,7 @@
                             echo "
                             <div class=\"col-lg-3 col-md-4 col-sm-6 grid-item {$data[$i]['cat_id']}\" style=\"position: absolute; left: 0px; top: 0px;\">
                             <div class=\"grid-product\">
-                                <p style='width: 300px;'>This CATEGORY product currently has no products!</p>
+                                <p style='width: 300px;'>This Category product currently has no products!</p>
                             </div>
                         </div>
                         ";

@@ -150,7 +150,7 @@
                                 display: true,
                                 color: '#b8b8b8',
                             },
-                            categoryPercentage: 0.5,
+                            CategoryPercentage: 0.5,
                             ticks: {
                                 display: true,
                                 beginAtZero: true,

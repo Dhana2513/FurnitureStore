@@ -4,7 +4,7 @@
  *
  * PHP version 5
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Greg Sherwood <gsherwood@squiz.net>
  * @copyright 2006-2014 Squiz Pty Ltd (ABN 77 084 670 600)
@@ -17,7 +17,7 @@
  *
  * Ensure there are no blank lines between the names of classes/IDs.
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Greg Sherwood <gsherwood@squiz.net>
  * @copyright 2006-2014 Squiz Pty Ltd (ABN 77 084 670 600)

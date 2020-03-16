@@ -2163,7 +2163,7 @@
     content: "\F11F"
 }
 
-.mdi-cellphone-erase:before {
+.mdi-cellphone-Delete:before {
     content: "\F94C"
 }
 
@@ -3919,11 +3919,11 @@
     content: "\F1FD"
 }
 
-.mdi-eraser:before {
+.mdi-Deleter:before {
     content: "\F1FE"
 }
 
-.mdi-eraser-variant:before {
+.mdi-Deleter-variant:before {
     content: "\F642"
 }
 

@@ -983,8 +983,8 @@ class HTML5_TreeBuilder {
                                     break;
                                 }
 
-                                /* 4. If node is not in the formatting category, and is
-                                not    in the phrasing category, and is not an address,
+                                /* 4. If node is not in the formatting Category, and is
+                                not    in the phrasing Category, and is not an address,
                                 div or p element, then stop this algorithm. */
                                 if ($cat !== self::FORMATTING && $cat !== self::PHRASING &&
                                 $node->tagName !== 'address' && $node->tagName !== 'div' &&
@@ -1759,9 +1759,9 @@ class HTML5_TreeBuilder {
                                 $length = count($this->stack);
 
                                 for ($s = $fe_s_pos + 1; $s < $length; $s++) {
-                                    $category = $this->getElementCategory($this->stack[$s]);
+                                    $Category = $this->getElementCategory($this->stack[$s]);
 
-                                    if ($category !== self::PHRASING && $category !== self::FORMATTING) {
+                                    if ($Category !== self::PHRASING && $Category !== self::FORMATTING) {
                                         $furthest_block = $this->stack[$s];
                                         break;
                                     }
@@ -1995,11 +1995,11 @@ class HTML5_TreeBuilder {
                                     } while ($pop !== $node);
                                     break;
                                 } else {
-                                    $category = $this->getElementCategory($node);
+                                    $Category = $this->getElementCategory($node);
 
-                                    if ($category !== self::FORMATTING && $category !== self::PHRASING) {
+                                    if ($Category !== self::FORMATTING && $Category !== self::PHRASING) {
                                         /* Otherwise, if node is in neither the formatting
-                                        category nor the phrasing category, then this is a
+                                        Category nor the phrasing Category, then this is a
                                         parse error. Stop this algorithm. The end tag token
                                         is ignored. */
                                         $this->ignored = true;

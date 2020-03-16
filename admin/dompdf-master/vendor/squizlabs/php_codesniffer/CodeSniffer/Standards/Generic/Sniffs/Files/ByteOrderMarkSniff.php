@@ -4,7 +4,7 @@
  *
  * PHP version 5
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Greg Sherwood <gsherwood@squiz.net>
  * @copyright 2006-2014 Squiz Pty Ltd (ABN 77 084 670 600)
@@ -17,7 +17,7 @@
  *
  * A simple sniff for detecting BOMs that may corrupt application work.
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Piotr Karas <office@mediaself.pl>
  * @author    Greg Sherwood <gsherwood@squiz.net>

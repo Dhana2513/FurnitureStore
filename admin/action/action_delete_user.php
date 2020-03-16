@@ -7,13 +7,13 @@ $suc= '';
 $uid = validate_id($_GET['uid']);
 
 if ($_SERVER['REQUEST_METHOD'] = 'POST') {
-    if (isset($_POST['delete']) && ($_POST['delete'] == 'Erase')) {
+    if (isset($_POST['delete']) && ($_POST['delete'] == 'Delete')) {
         $q = "DELETE FROM users WHERE user_id = $uid ";
         $r = mysqli_query($dbc, $q);
         confirm_query($r, $q);
 
         if (mysqli_affected_rows($dbc) == 1) {
-            $msg = "Account Erase Success";
+            $msg = "Account Delete Success";
             $suc = 1;
         } else {
             $msg = "This account does not exist!";

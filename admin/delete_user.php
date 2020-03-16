@@ -18,7 +18,7 @@ confirm_query($r, $q);
 if (mysqli_num_rows($r) == 1) {
     $user = mysqli_fetch_array($r, MYSQLI_ASSOC);
 } else {
-    $msg = "Error! CATEGORY does not exist";
+    $msg = "Error! Category does not exist";
     $suc = 0;
 }
 ?>
@@ -45,7 +45,7 @@ if (mysqli_num_rows($r) == 1) {
                                             <p>Do you want to delete the account of <b><?php if (isset($user['user_name'])) echo $user['user_name'];?></b> ?</p>
                                         </div>
                                         <div class="modal-footer">
-                                            <input type="submit" class="btn btn-danger" name="delete" value="Erase">
+                                            <input type="submit" class="btn btn-danger" name="delete" value="Delete">
                                             <input type="submit" class="btn btn-light" name="delete" value="Cancel">
                                         </div>
                                     </div>

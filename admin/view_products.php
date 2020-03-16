@@ -20,24 +20,22 @@ if (isset($_GET['suc'])) {
 
 ?>
 <?php
-//Phan trang
 
-$page = 1;//khởi tạo trang ban đầu
-$limit = 10;//số bản ghi trên 1 trang (2 bản ghi trên 1 trang)
+$page = 1;
+$limit = 10;
 $arrs_list = mysqli_query($dbc, "
                     select product_id from products 
                 ");
-$total_record = mysqli_num_rows($arrs_list);//tính tổng số bản ghi có
+$total_record = mysqli_num_rows($arrs_list);
 
-$total_page = ceil($total_record / $limit);//tính tổng số trang sẽ chia
+$total_page = ceil($total_record / $limit);
 
-//xem trang có vượt giới hạn không:
 if (isset($_GET["page"]))
-    $page = $_GET["page"];//nếu biến $_GET["page"] tồn tại thì trang hiện tại là trang $_GET["page"]
-if ($page < 1) $page = 1; //nếu trang hiện tại nhỏ hơn 1 thì gán bằng 1
-if ($page > $total_page) $page = $total_page;//nếu trang hiện tại vượt quá số trang được chia thì sẽ bằng trang cuối cùng
+    $page = $_GET["page"];
+if ($page < 1) $page = 1; 
+if ($page > $total_page) $page = $total_page;
 
-//tính start (vị trí bản ghi sẽ bắt đầu lấy):
+
 $start = ($page - 1) * $limit;
 ?>
 
@@ -59,15 +57,15 @@ $start = ($page - 1) * $limit;
                           <p class=\"card-text\" style='text-align: center;'>{$msg}</p>
                         </div>
                     </div>";
-        }//neu có lỗi hoac thanh cong thì thông báo ra màn hình
+        }
         ?>
 
         <div class="row grid-margin">
             <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title" style="text-align: center;font-size: 30px;">Danh sách các sản phẩm</h4>
-                        <p>Có tất cả <b><?php echo $total_record;?></b> sản phẩm</p><br>
+                        <h4 class="card-title" style="text-align: center;font-size: 30px;">List of products</h4>
+                        <p>Have everything <b><?php echo $total_record;?></b>product</p><br>
                         <div id="js-grid" class="jsgrid" style="position: relative; height: 500px; width: 100%;">
                             <div class="jsgrid-grid-header jsgrid-header-scrollbar">
                                 <table class="jsgrid-table">
@@ -82,15 +80,15 @@ $start = ($page - 1) * $limit;
                                         </th>
                                         <th class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable"
                                             style="width: 150px;">
-                                            Sản phẩm thuộc CATEGORY
+                                            Products of Category
                                         </th>
                                         <th class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable"
                                             style="width: 100px;">
-                                            Ảnh
+                                            Image
                                         </th>
                                         <th class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable"
                                             style="width: 100px;">
-                                            Giá sản phẩm
+                                            Product price
                                         </th>
                                         <th class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable"
                                             style="width: 100px;">
@@ -98,20 +96,20 @@ $start = ($page - 1) * $limit;
                                         </th>
                                         <th class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable"
                                             style="width: 100px;">
-                                            Nơi sản xuất
+                                            Where production
                                         </th>
                                         <th class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable"
                                             style="width: 100px;">
-                                            Thông tin sản phẩm
+                                            Product information
                                         </th>
                                         <th class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable"
                                             style="width: 100px;">
-                                            Ngày đăng
+                                           Date Submitted
                                         </th>
                                         <th class="jsgrid-header-cell jsgrid-control-field jsgrid-align-center"
                                             style="width: 50px;"><a href="add_product.php"><input
                                                         class="jsgrid-button jsgrid-mode-button jsgrid-insert-mode-button"
-                                                        type="button" title="Thêm sản phẩm"></a></th>
+                                                        type="button" title="Add Products"></a></th>
                                     </tr>
                                 </table>
                             </div>
@@ -148,8 +146,8 @@ $start = ($page - 1) * $limit;
                                             <td class=\"jsgrid-cell jsgrid-align-center\" style=\"width: 100px;\">" . $products['post_on'] . "</td>
                                             <td class=\"jsgrid-cell jsgrid-control-field jsgrid-align-center\"
                                                 style=\"width: 50px;\">
-                                                <a href='edit_product.php?pid={$products['product_id']}'><input class=\"jsgrid-button jsgrid-edit-button\" type=\"button\" title=\"Sửa\"></a>
-                                                <a href='delete_product.php?pid={$products['product_id']}'><input class=\"jsgrid-button jsgrid-delete-button\" type=\"button\" title=\"Erase\"></a>
+                                                <a href='edit_product.php?pid={$products['product_id']}'><input class=\"jsgrid-button jsgrid-edit-button\" type=\"button\" title=\"Repair\"></a>
+                                                <a href='delete_product.php?pid={$products['product_id']}'><input class=\"jsgrid-button jsgrid-delete-button\" type=\"button\" title=\"Delete\"></a>
                                             </td>
                                         </tr>
                                         ";

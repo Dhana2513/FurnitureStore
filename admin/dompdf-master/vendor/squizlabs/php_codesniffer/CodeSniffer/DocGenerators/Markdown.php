@@ -4,7 +4,7 @@
  *
  * PHP version 5
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Stefano Kowalke <blueduck@gmx.net>
  * @copyright 2014 Arroba IT
@@ -19,7 +19,7 @@ if (class_exists('PHP_CodeSniffer_DocGenerators_Generator', true) === false) {
 /**
  * A doc generator that outputs documentation in Markdown format.
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Stefano Kowalke <blueduck@gmx.net>
  * @copyright 2014 Arroba IT

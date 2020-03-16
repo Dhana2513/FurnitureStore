@@ -8676,8 +8676,8 @@
 
 /*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
@@ -19507,7 +19507,7 @@ a.text-dark:focus {
 }
 
 .text-muted,
-.preview-list .preview-item .preview-item-content p .content-category,
+.preview-list .preview-item .preview-item-content p .content-Category,
 .email-wrapper .mail-sidebar .menu-bar .profile-list-item a .user .u-designation,
 .email-wrapper .mail-list-container .mail-list .content .message_text,
 .email-wrapper .mail-list-container .mail-list .details .date {
@@ -25745,7 +25745,7 @@ dl li {
     margin-bottom: 10px;
 }
 
-.preview-list .preview-item .preview-item-content p .content-category {
+.preview-list .preview-item .preview-item-content p .content-Category {
     font-family: 'source-sans-pro-semibold', sans-serif;
     padding-right: 15px;
     border-right: 1px solid #f3f3f3;

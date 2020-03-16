@@ -50,12 +50,12 @@ include "admin_sidebar.php";
             <div class="col-12 grid-margin stretch-card">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title" style="text-align: center;font-size: 30px;">Add CATEGORY</h4>
+                        <h4 class="card-title" style="text-align: center;font-size: 30px;">Add Category</h4>
                         <form class="forms-sample" method="post" action="action/action_add_category.php">
                             <div class="form-group">
-                                <label for="exampleInputName1">CATEGORY Name<span style="color: red">*</span></label>
-                                <input type="text" value="<?php if(isset($_POST['category'])) echo strip_tags($_POST['category']);?>"
-                                       name="category" class="form-control" id="exampleInputName1" placeholder="Tên CATEGORY" />
+                                <label for="exampleInputName1">Category Name<span style="color: red">*</span></label>
+                                <input type="text" value="<?php if(isset($_POST['Category'])) echo strip_tags($_POST['Category']);?>"
+                                       name="Category" class="form-control" id="exampleInputName1" placeholder="Category Name" />
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword4">Choose a location <span style="color: red">*</span></label>
@@ -77,7 +77,7 @@ include "admin_sidebar.php";
                                     ?>
                                 </select>
                             </div>
-                            <button type="submit" name="submit" class="btn btn-primary mr-2">Add CATEGORY</button>
+                            <button type="submit" name="submit" class="btn btn-primary mr-2">Add Category</button>
                         </form>
                     </div>
                 </div>

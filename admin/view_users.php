@@ -21,24 +21,22 @@ if (isset($_GET['msg'])){
 
 ?>
 <?php
-//Phan trang
 
-$page = 1;//khởi tạo trang ban đầu
-$limit = 10;//số bản ghi trên 1 trang (2 bản ghi trên 1 trang)
+$page = 1;
+$limit = 10;
 $arrs_list = mysqli_query($dbc, "
                     select user_id from users 
                 ");
-$total_record = mysqli_num_rows($arrs_list);//tính tổng số bản ghi có
+$total_record = mysqli_num_rows($arrs_list);
 
-$total_page = ceil($total_record / $limit);//tính tổng số trang sẽ chia
+$total_page = ceil($total_record / $limit);
 
-//xem trang có vượt giới hạn không:
 if (isset($_GET["page"]))
-    $page = $_GET["page"];//nếu biến $_GET["page"] tồn tại thì trang hiện tại là trang $_GET["page"]
-if ($page < 1) $page = 1; //nếu trang hiện tại nhỏ hơn 1 thì gán bằng 1
-if ($page > $total_page) $page = $total_page;//nếu trang hiện tại vượt quá số trang được chia thì sẽ bằng trang cuối cùng
+    $page = $_GET["page"];
+if ($page < 1) $page = 1; 
+if ($page > $total_page) $page = $total_page;
 
-//tính start (vị trí bản ghi sẽ bắt đầu lấy):
+
 $start = ($page - 1) * $limit;
 ?>
 <div class="main-panel">
@@ -59,15 +57,15 @@ $start = ($page - 1) * $limit;
                           <p class=\"card-text\" style='text-align: center;'>{$msg}</p>
                         </div>
                     </div>";
-        }//neu có lỗi hoac thanh cong thì thông báo ra màn hình
+        }
         ?>
 
         <div class="row grid-margin">
             <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title" style="text-align: center;font-size: 30px;">Danh sách tài khoản admin</h4>
-                        <p>Có tất cả <b><?php echo $total_record;?></b> tài khoản người dùng</p><br>
+                        <h4 class="card-title" style="text-align: center;font-size: 30px;">List of admin accounts</h4>
+                        <p>Have everything <b><?php echo $total_record;?></b> user account</p><br>
                         <div id="js-grid" class="jsgrid" style="position: relative; height: 500px; width: 100%;">
                             <div class="jsgrid-grid-header jsgrid-header-scrollbar">
                                 <table class="jsgrid-table">
@@ -77,16 +75,16 @@ $start = ($page - 1) * $limit;
                                         </th>
                                         <th class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable"
                                             style="width: 120px;">
-                                            Họ & Tên
+                                            Full Name
                                         </th>
                                         <th class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable" style="width: 150px;">
-                                            Tài khoản
+                                        Account
                                         </th>
                                         <th class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable" style="width: 100px;">
-                                            Chức vụ
+                                        Position
                                         </th>
                                         <th class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable" style="width: 50px;">
-                                            Sửa,Erase
+                                        Edit, Delete
                                         </th>
                                     </tr>
                                 </table>
@@ -123,10 +121,10 @@ $start = ($page - 1) * $limit;
                                             </td>
                                             <td class=\"jsgrid-cell jsgrid-control-field jsgrid-align-center\"
                                                 style=\"width: 50px;\">
-                                                <a href='edit_user.php?uid={$user['user_id']}'><input class=\"jsgrid-button jsgrid-edit-button\" type=\"button\" title=\"Sửa\"></a>";
+                                                <a href='edit_user.php?uid={$user['user_id']}'><input class=\"jsgrid-button jsgrid-edit-button\" type=\"button\" title=\"Repair\"></a>";
 
                                             if (has_permission($account,$permission)){
-                                                echo "<a href='delete_user.php?uid={$user['user_id']}''><input class=\"jsgrid-button jsgrid-delete-button\" type=\"button\" title=\"Erase\"></a>";
+                                                echo "<a href='delete_user.php?uid={$user['user_id']}''><input class=\"jsgrid-button jsgrid-delete-button\" type=\"button\" title=\"Delete\"></a>";
                                             }
 
                                         echo "

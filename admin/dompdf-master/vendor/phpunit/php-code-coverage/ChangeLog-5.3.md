@@ -2,13 +2,13 @@
 
 All notable changes of the PHP_CodeCoverage 5.3 release series are documented in this file using the [Keep a CHANGELOG](http://keepachangelog.com/) principles.
 
-## [5.3.2] - 2018-04-06
+## [5.3.2] - 2020-04-06
 
 ### Fixed
 
 * Fixed [#602](https://github.com/sebastianbergmann/php-code-coverage/pull/602): Regression introduced in version 5.3.1
 
-## [5.3.1] - 2018-04-06
+## [5.3.1] - 2020-04-06
 
 ### Changed
 

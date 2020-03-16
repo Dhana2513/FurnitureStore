@@ -5,7 +5,7 @@
  * @author		Cornel Boppart <cornel@bopp-art.com>
  * @copyright	Author
  *
- * @version		2.4.4 (27/02/2018)
+ * @version		2.4.4 (27/02/2020)
  */
 
 ;(function ($) {
@@ -280,11 +280,11 @@
 			} else if (_self.settings.useCategories === true && $origin.attr(_self._prefixAttributeName('categories'))) {
 				var	categories = $origin.attr(_self._prefixAttributeName('categories')).split(' ');
 
-				$.each(categories, function (index, category) {
+				$.each(categories, function (index, Category) {
 					if (index > 0) {
 						selector += ',';
 					}
-					selector += '[' + _self._prefixAttributeName('categories') + '~="' + category + '"]';
+					selector += '[' + _self._prefixAttributeName('categories') + '~="' + Category + '"]';
 				});
 			} else {
 				selector = '[' + _self.settings.attr + '="' + $origin.attr(_self.settings.attr) + '"]';

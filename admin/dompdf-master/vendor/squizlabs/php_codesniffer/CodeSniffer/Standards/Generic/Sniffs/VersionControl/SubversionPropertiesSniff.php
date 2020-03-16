@@ -4,7 +4,7 @@
  *
  * PHP version 5
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Jack Bates <ms419@freezone.co.uk>
  * @copyright 2006-2014 Squiz Pty Ltd (ABN 77 084 670 600)
@@ -17,7 +17,7 @@
  *
  * Tests that the correct Subversion properties are set.
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Jack Bates <ms419@freezone.co.uk>
  * @copyright 2006-2014 Squiz Pty Ltd (ABN 77 084 670 600)

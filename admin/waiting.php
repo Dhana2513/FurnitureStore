@@ -4,7 +4,7 @@
 
 <head>
     <!-- Original URL: http://www.urbanui.com/serein/template/demo/vertical-default-light/pages/samples/lock-screen.html
-    Date Downloaded: 11/30/2018 1:56:42 PM !-->
+    Date Downloaded: 11/30/2020 1:56:42 PM !-->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -29,13 +29,13 @@
         <div class="content-wrapper d-flex align-items-center auth lock-full-bg">
             <div class="row w-100">
                 <div style="margin: auto;width: 1000px;height: 48px;border: 1px solid white;color: white">
-                    <h4 style="text-align: center;margin-top: 15px">Bạn đã đăng ký tài khoản thành công!!! Vui lòng chờ admin kiểm duyệt để bạn có thể sử dụng tài khoản này</h4>
+                    <h4 style="text-align: center;margin-top: 15px">You have successfully registered an account !!! Please wait for the admin to moderate it so you can use this account</h4>
                 </div>
                 <div class="col-lg-4 mx-auto">
                     <div class="auth-form-transparent text-left p-5 text-center">
                         <form class="pt-5">
                             <div class="mt-5">
-                                <a class="btn btn-block btn-success btn-lg font-weight-medium" href="login.php">Quay lại trang đăng nhập</a>
+                                <a class="btn btn-block btn-success btn-lg font-weight-medium" href="login.php">You have successfully registered an account !!! Please wait for the admin to moderate it so you can use this account</a>
                             </div>
                         </form>
                     </div>

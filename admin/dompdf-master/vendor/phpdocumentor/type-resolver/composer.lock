@@ -56,7 +56,7 @@
                 "reflection",
                 "static analysis"
             ],
-            "time": "2018-08-07T13:53:10+00:00"
+            "time": "2020-08-07T13:53:10+00:00"
         }
     ],
     "packages-dev": [
@@ -330,7 +330,7 @@
                 }
             ],
             "description": "Component for reading phar.io manifest information from a PHP Archive (PHAR)",
-            "time": "2018-07-08T19:23:20+00:00"
+            "time": "2020-07-08T19:23:20+00:00"
         },
         {
             "name": "phar-io/version",
@@ -377,7 +377,7 @@
                 }
             ],
             "description": "Library for handling version information and constraints",
-            "time": "2018-07-08T19:19:57+00:00"
+            "time": "2020-07-08T19:19:57+00:00"
         },
         {
             "name": "phpdocumentor/reflection-docblock",
@@ -489,7 +489,7 @@
                 "spy",
                 "stub"
             ],
-            "time": "2018-08-05T17:53:17+00:00"
+            "time": "2020-08-05T17:53:17+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -552,7 +552,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2018-10-31T16:06:48+00:00"
+            "time": "2020-10-31T16:06:48+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -602,7 +602,7 @@
                 "filesystem",
                 "iterator"
             ],
-            "time": "2018-09-13T20:33:42+00:00"
+            "time": "2020-09-13T20:33:42+00:00"
         },
         {
             "name": "phpunit/php-text-template",
@@ -741,7 +741,7 @@
             "keywords": [
                 "tokenizer"
             ],
-            "time": "2018-10-30T05:52:18+00:00"
+            "time": "2020-10-30T05:52:18+00:00"
         },
         {
             "name": "phpunit/phpunit",
@@ -934,7 +934,7 @@
                 "compare",
                 "equality"
             ],
-            "time": "2018-07-12T15:12:46+00:00"
+            "time": "2020-07-12T15:12:46+00:00"
         },
         {
             "name": "sebastian/diff",
@@ -1348,7 +1348,7 @@
             ],
             "description": "Provides a list of PHP built-in functions that operate on resources",
             "homepage": "https://www.github.com/sebastianbergmann/resource-operations",
-            "time": "2018-10-04T04:07:39+00:00"
+            "time": "2020-10-04T04:07:39+00:00"
         },
         {
             "name": "sebastian/version",

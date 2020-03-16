@@ -1,7 +1,7 @@
 <documentation title="File Comments">
     <standard>
     <![CDATA[
-    Files must have a non-empty doc comment.  The short description must be on the second line of the comment.  Each description must have one blank comment line before and after.  There must be one blank line before the tags in the comments.  There must be a category, package, author, license, and link tag.  There may only be one category, package, subpackage, license, version, since and deprecated tag.  The tags must be in the order category, package, subpackage, author, copyright, license, version, link, see, since, and deprecated.  The php version must be specified.
+    Files must have a non-empty doc comment.  The short description must be on the second line of the comment.  Each description must have one blank comment line before and after.  There must be one blank line before the tags in the comments.  There must be a Category, package, author, license, and link tag.  There may only be one Category, package, subpackage, license, version, since and deprecated tag.  The tags must be in the order Category, package, subpackage, author, copyright, license, version, link, see, since, and deprecated.  The php version must be specified.
     ]]>
     </standard>
     <code_comparison>
@@ -13,7 +13,7 @@
  *
  * PHP version 5
  *
- * @category Foo
+ * @Category Foo
  * @package Foo_Helpers
  * @author Marty McFly <mmcfly@example.com>
  * @copyright 2013-2014 Foo Inc.
@@ -38,7 +38,7 @@
  *
  * PHP version 5
  *
- * @category Foo
+ * @Category Foo
  * @package Foo_Helpers
  * @author Marty McFly <mmcfly@example.com>
  * @copyright 2013-2014 Foo Inc.
@@ -56,7 +56,7 @@
  *
  * PHP version 5
  *
- * @category Foo
+ * @Category Foo
  * @package Foo_Helpers
  * @author Marty McFly <mmcfly@example.com>
  * @copyright 2013-2014 Foo Inc.
@@ -75,7 +75,7 @@
  * <em></em>
  * PHP version 5
  * <em></em>
- * @category Foo
+ * @Category Foo
  * @package Foo_Helpers
  * @author Marty McFly <mmcfly@example.com>
  * @copyright 2013-2014 Foo Inc.
@@ -94,7 +94,7 @@
  * PHP version 5
  * <em></em>
  * <em></em>
- * @category Foo
+ * @Category Foo
  * @package Foo_Helpers
  * @author Marty McFly <mmcfly@example.com>
  * @copyright 2013-2014 Foo Inc.
@@ -113,7 +113,7 @@
  *
  * PHP version 5
  * <em></em>
- * @category Foo
+ * @Category Foo
  * @package Foo_Helpers
  * @author Marty McFly <mmcfly@example.com>
  * @copyright 2013-2014 Foo Inc.
@@ -131,7 +131,7 @@
  * PHP version 5
  * <em></em>
  * <em></em>
- * @category Foo
+ * @Category Foo
  * @package Foo_Helpers
  * @author Marty McFly <mmcfly@example.com>
  * @copyright 2013-2014 Foo Inc.
@@ -150,7 +150,7 @@
  *
  * PHP version 5
  *
- * <em>@category</em> Foo
+ * <em>@Category</em> Foo
  * <em>@package</em> Foo_Helpers
  * <em>@author</em> Marty McFly <mmcfly@example.com>
  * <em>@copyright</em> 2013-2014 Foo Inc.
@@ -167,7 +167,7 @@
  *
  * PHP version 5
  *
- * @category Foo
+ * @Category Foo
  * @package Foo_Helpers
  * @copyright 2013-2014 Foo Inc.
  * @license MIT License
@@ -185,7 +185,7 @@
  *
  * PHP version 5
  *
- * <em>@category</em> Foo
+ * <em>@Category</em> Foo
  * <em>@package</em> Foo_Helpers
  * @author Marty McFly <mmcfly@example.com>
  * @copyright 2013-2014 Foo Inc.
@@ -194,7 +194,7 @@
  */
         ]]>
         </code>
-        <code title="Invalid: Multiple category tags.">
+        <code title="Invalid: Multiple Category tags.">
         <![CDATA[
 <?php
 /**
@@ -202,8 +202,8 @@
  *
  * PHP version 5
  *
- * <em>@category</em> Foo
- * <em>@category</em> Bar
+ * <em>@Category</em> Foo
+ * <em>@Category</em> Bar
  * @package Foo_Helpers
  * @author Marty McFly <mmcfly@example.com>
  * @copyright 2013-2014 Foo Inc.
@@ -222,7 +222,7 @@
  *
  * <em>PHP version 5</em>
  *
- * @category Foo
+ * @Category Foo
  * @package Foo_Helpers
  * @author Marty McFly <mmcfly@example.com>
  * @copyright 2013-2014 Foo Inc.
@@ -240,7 +240,7 @@
  * PHP version 5
  *
  * <em>@package</em> Foo_Helpers
- * <em>@category</em> Foo
+ * <em>@Category</em> Foo
  * @author Marty McFly <mmcfly@example.com>
  * @copyright 2013-2014 Foo Inc.
  * @license MIT License
@@ -258,7 +258,7 @@
  *
  * PHP version 5
  *
- * @category Foo
+ * @Category Foo
  * @package Foo_Helpers
  * @author Marty McFly <mmcfly@example.com>
  * @copyright 2013-2014 Foo Inc.
@@ -273,7 +273,7 @@
 /**
  * Short description here.
  *
- * @category Foo
+ * @Category Foo
  * @package Foo_Helpers
  * @author Marty McFly <mmcfly@example.com>
  * @copyright 2013-2014 Foo Inc.

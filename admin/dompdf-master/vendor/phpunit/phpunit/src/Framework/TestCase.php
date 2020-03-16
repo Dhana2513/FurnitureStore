@@ -1422,7 +1422,7 @@ abstract class TestCase extends Assert implements Test, SelfDescribing
      * This method is a wrapper for the setlocale() function that automatically
      * resets the locale to its original value after the test is run.
      *
-     * @param int    $category
+     * @param int    $Category
      * @param string $locale
      *
      * @throws Exception
@@ -1435,7 +1435,7 @@ abstract class TestCase extends Assert implements Test, SelfDescribing
             throw new Exception;
         }
 
-        list($category, $locale) = $args;
+        list($Category, $locale) = $args;
 
         $categories = [
             LC_ALL, LC_COLLATE, LC_CTYPE, LC_MONETARY, LC_NUMERIC, LC_TIME
@@ -1445,7 +1445,7 @@ abstract class TestCase extends Assert implements Test, SelfDescribing
             $categories[] = LC_MESSAGES;
         }
 
-        if (!\in_array($category, $categories)) {
+        if (!\in_array($Category, $categories)) {
             throw new Exception;
         }
 
@@ -1453,14 +1453,14 @@ abstract class TestCase extends Assert implements Test, SelfDescribing
             throw new Exception;
         }
 
-        $this->locale[$category] = \setlocale($category, 0);
+        $this->locale[$Category] = \setlocale($Category, 0);
 
         $result = \call_user_func_array('setlocale', $args);
 
         if ($result === false) {
             throw new Exception(
                 'The locale functionality is not implemented on your platform, ' .
-                'the specified locale does not exist or the category name is ' .
+                'the specified locale does not exist or the Category name is ' .
                 'invalid.'
             );
         }
@@ -2501,8 +2501,8 @@ abstract class TestCase extends Assert implements Test, SelfDescribing
 
     private function cleanupLocaleSettings()
     {
-        foreach ($this->locale as $category => $locale) {
-            \setlocale($category, $locale);
+        foreach ($this->locale as $Category => $locale) {
+            \setlocale($Category, $locale);
         }
 
         $this->locale = [];

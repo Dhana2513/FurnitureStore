@@ -9,12 +9,12 @@
       <traits count="0" tested="0" percent="0"/>
     </totals>
     <class name="Foo" start="11" executable="0" executed="0" crap="1">
-      <package full="" name="" sub="" category=""/>
+      <package full="" name="" sub="" Category=""/>
       <namespace name=""/>
       <method name="bar" signature="bar()" start="13" end="15" crap="1" executable="0" executed="0" coverage="100"/>
     </class>
     <class name="Bar" start="18" executable="0" executed="0" crap="1">
-      <package full="" name="" sub="" category=""/>
+      <package full="" name="" sub="" Category=""/>
       <namespace name=""/>
       <method name="foo" signature="foo()" start="23" end="25" crap="1" executable="0" executed="0" coverage="100"/>
     </class>

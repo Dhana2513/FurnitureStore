@@ -284,15 +284,15 @@ class PHP_Token_Stream implements ArrayAccess, Countable, SeekableIterator
      * multi-dimensional array with categories in the keys of the first dimension
      * and constants and their values in the second dimension.
      *
-     * Parameter $category allow to filter following specific inclusion type
+     * Parameter $Category allow to filter following specific inclusion type
      *
      * @param bool   $categorize OPTIONAL
-     * @param string $category   OPTIONAL Either 'require_once', 'require',
+     * @param string $Category   OPTIONAL Either 'require_once', 'require',
      *                           'include_once', 'include'.
      *
      * @return array
      */
-    public function getIncludes($categorize = false, $category = null)
+    public function getIncludes($categorize = false, $Category = null)
     {
         if ($this->includes === null) {
             $this->includes = [
@@ -314,8 +314,8 @@ class PHP_Token_Stream implements ArrayAccess, Countable, SeekableIterator
             }
         }
 
-        if (isset($this->includes[$category])) {
-            $includes = $this->includes[$category];
+        if (isset($this->includes[$Category])) {
+            $includes = $this->includes[$Category];
         } elseif ($categorize === false) {
             $includes = array_merge(
                 $this->includes['require_once'],

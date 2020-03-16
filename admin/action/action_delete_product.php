@@ -7,13 +7,13 @@ $suc= '';
 $pid = validate_id($_GET['pid']);
 
 if ($_SERVER['REQUEST_METHOD'] = 'POST') {
-    if (isset($_POST['delete']) && ($_POST['delete'] == 'Erase')) {
+    if (isset($_POST['delete']) && ($_POST['delete'] == 'Delete')) {
         $q = "DELETE FROM products WHERE product_id = $pid ";
         $r = mysqli_query($dbc, $q);
         confirm_query($r, $q);
 
         if (mysqli_affected_rows($dbc) == 1) {
-            $msg = "Erase product success";
+            $msg = "Delete product success";
             $suc = 1;
         } else {
             $msg = "This product does not exist!";

@@ -20,7 +20,7 @@
 * *No backwards-incompatible changes*
 * *No deprecations*
 
-### 8.2.0 (2018-07-13)
+### 8.2.0 (2020-07-13)
 
 * Support parsing `calc()`, thanks to @raxbg.
 * Support parsing grid-lines, again thanks to @raxbg.

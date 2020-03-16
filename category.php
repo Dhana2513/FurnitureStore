@@ -39,11 +39,11 @@ $cat = mysqli_fetch_array($r,MYSQLI_ASSOC);
                 <img src="style\images\bg-page_03.jpeg" alt="About Us">
             </div>
             <div class="pageintro-body">
-                <h1 class="pageintro-title">CATEGORY</h1>
+                <h1 class="pageintro-title">Category</h1>
                 <nav class="pageintro-breadcumb">
                     <ul>
                         <li>
-                            <a href="category.php?cid={$rows['cat_id']}"><?php echo $cat['cat_name']?></a>
+                            <a href="Category.php?cid={$rows['cat_id']}"><?php echo $cat['cat_name']?></a>
                         </li>
                     </ul>
                 </nav>
@@ -74,7 +74,7 @@ $cat = mysqli_fetch_array($r,MYSQLI_ASSOC);
                                     <?php
                                         echo "<b>".$dem."</b>";
                                     ?>
-                                </span> Products of CATEGORY <?php echo "<b>".$cat['cat_name']."</b>" ?>
+                                </span> Products of Category <?php echo "<b>".$cat['cat_name']."</b>" ?>
                             </div>
                         </div>
                         <div class="shop-list-body">
@@ -124,7 +124,7 @@ $cat = mysqli_fetch_array($r,MYSQLI_ASSOC);
                                 $current_page = ($start/$limit) + 1;
                                 if ($page>1){?>
                                     <li class="panigation-item">
-                                        <a href="category.php?cid=<?php echo $cid; ?>&&page=<?php echo $current_page -1; ?>" class="panigation-link">
+                                        <a href="Category.php?cid=<?php echo $cid; ?>&&page=<?php echo $current_page -1; ?>" class="panigation-link">
                                             <i class="fa fa-angle-left"></i>
                                         </a>
                                     </li>
@@ -134,13 +134,13 @@ $cat = mysqli_fetch_array($r,MYSQLI_ASSOC);
                                 </li>
                                 <?php for($i=1;$i<=$total_page;$i++){ ?>
                                     <li class="panigation-item <?php if($page == $i) echo "active"; ?>">
-                                        <a href="category.php?cid=<?php echo $cid; ?>&&page=<?php echo $i; ?>" class="panigation-link"><?php echo $i; ?></a>
+                                        <a href="Category.php?cid=<?php echo $cid; ?>&&page=<?php echo $i; ?>" class="panigation-link"><?php echo $i; ?></a>
                                     </li>
                                 <?php } ?>
                                 <?php
                                 if ($current_page<$total_page){?>
                                     <li class="panigation-item" >
-                                        <a href="category.php?cid=<?php echo $cid; ?>&&page=<?php echo $current_page +1; ?>" class="panigation-link">
+                                        <a href="Category.php?cid=<?php echo $cid; ?>&&page=<?php echo $current_page +1; ?>" class="panigation-link">
                                             <i class="fa fa-angle-right"></i>
                                         </a>
                                     </li>
@@ -156,7 +156,7 @@ $cat = mysqli_fetch_array($r,MYSQLI_ASSOC);
 
                         <div class="page-sidebar-item">
                             <div class="sidebar-item__heading">
-                                <h3 class="title">CATEGORY</h3>
+                                <h3 class="title">Category</h3>
                                 <div class="title-border m-b-24"></div>
                             </div>
                             <div class="sidebar-item__body">
@@ -167,7 +167,7 @@ $cat = mysqli_fetch_array($r,MYSQLI_ASSOC);
                                     while ($cats = mysqli_fetch_array($r,MYSQLI_ASSOC)){
                                     ?>
                                     <li>
-                                        <a href="category.php?cid=<?php echo $cats['cat_id']?>"><?php echo $cats['cat_name']?></a>
+                                        <a href="Category.php?cid=<?php echo $cats['cat_id']?>"><?php echo $cats['cat_name']?></a>
                                         <span class="number">
                                             <?php
                                             $q1 ="SELECT * FROM products WHERE cat_id = {$cats['cat_id']}";
@@ -189,7 +189,7 @@ $cat = mysqli_fetch_array($r,MYSQLI_ASSOC);
                 <!-- End Sidebar -->
             </div>
             <?php }else{
-                echo "There are no products to list in this CATEGORY!<br>";
+                echo "There are no products to list in this Category!<br>";
                 echo "<a href='index.php'>Return to HOME PAGE</a>";
             }?>
         </div>

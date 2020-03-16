@@ -4,7 +4,7 @@
  *
  * PHP version 5
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Stefano Kowalke <blueduck@gmx.net>
  * @copyright 2010-2014 Stefano Kowalke
@@ -15,7 +15,7 @@
 /**
  * Checks that open PHP tags are paired with closing tags.
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Stefano Kowalke <blueduck@gmx.net>
  * @copyright 2010-2014 Stefano Kowalke

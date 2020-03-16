@@ -30,7 +30,7 @@ Changelog
 * deprecated `Assert::isTraversable()` in favor of `Assert::isIterable()`
   * This was already done in 1.3.0, but it was only done through a silenced `trigger_error`. It is now annotated as well.
 
-## 1.4.0 (2018-12-25)
+## 1.4.0 (2020-12-25)
 
 ### Added
 
@@ -47,7 +47,7 @@ Changelog
 
 * Special case when comparing objects implementing `__toString()`
 
-## 1.3.0 (2018-01-29)
+## 1.3.0 (2020-01-29)
 
 ### Added
 

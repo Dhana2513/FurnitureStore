@@ -4,7 +4,7 @@
  *
  * PHP version 5
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Christian Weiske <christian.weiske@netresearch.de>
  * @author    Greg Sherwood <gsherwood@squiz.net>
@@ -22,7 +22,7 @@
  * - notifysend_timeout - Timeout in milliseconds
  * - notifysend_showok  - Show "ok, all fine" messages (0/1)
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Christian Weiske <christian.weiske@netresearch.de>
  * @author    Greg Sherwood <gsherwood@squiz.net>
@@ -247,7 +247,7 @@ class PHP_CodeSniffer_Reports_Notifysend implements PHP_CodeSniffer_Report
     protected function getBasicCommand()
     {
         $cmd  = $this->path;
-        $cmd .= ' --category dev.validate';
+        $cmd .= ' --Category dev.validate';
         $cmd .= ' -h int:transient:1';
         $cmd .= ' -t '.(int) $this->timeout;
         if (version_compare($this->version, '0.7.3', '>=') === true) {

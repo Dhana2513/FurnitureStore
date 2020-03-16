@@ -138,7 +138,7 @@ include "includes/header.php";
 
                         <div class="page-sidebar-item">
                             <div class="sidebar-item__heading">
-                                <h3 class="title">CATEGORY</h3>
+                                <h3 class="title">Category</h3>
                                 <div class="title-border m-b-24"></div>
                             </div>
                             <div class="sidebar-item__body">
@@ -149,7 +149,7 @@ include "includes/header.php";
                                     while ($cats = mysqli_fetch_array($r,MYSQLI_ASSOC)){
                                         ?>
                                         <li>
-                                            <a href="category.php?cid=<?php echo $cats['cat_id']?>"><?php echo $cats['cat_name']?></a>
+                                            <a href="Category.php?cid=<?php echo $cats['cat_id']?>"><?php echo $cats['cat_name']?></a>
                                             <span class="number">
                                             <?php
                                             $q1 ="SELECT * FROM products WHERE cat_id = {$cats['cat_id']}";

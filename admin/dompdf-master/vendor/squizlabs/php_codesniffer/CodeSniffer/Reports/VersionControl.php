@@ -4,7 +4,7 @@
  *
  * PHP version 5
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Ben Selby <benmatselby@gmail.com>
  * @copyright 2009-2014 SQLI <www.sqli.com>
@@ -18,7 +18,7 @@
  *
  * PHP version 5
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Ben Selby <benmatselby@gmail.com>
  * @copyright 2009-2014 SQLI <www.sqli.com>

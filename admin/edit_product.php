@@ -55,12 +55,12 @@ if (mysqli_num_rows($r) == 1){
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title" style="text-align: center;font-size: 30px;">Fix the product : <?php if(isset($prod['product_name'])) echo strip_tags($prod['product_name']);?></h4>
+                        <h4 class="card-title" style="text-align: center;font-size: 30px;">Edit Product : <?php if(isset($prod['product_name'])) echo strip_tags($prod['product_name']);?></h4>
                         <form class="forms-sample" method="post" action="action/action_edit_product.php?pid=<?php echo $pid;?>" enctype="multipart/form-data">
                             <div class="form-group">
-                                <label for="exampleInputPassword4">Products of CATEGORY<span style="color: red">*</span></label>
+                                <label for="exampleInputPassword4">Products of Category<span style="color: red">*</span></label>
                                 <select  name="cat_id" aria-controls="order-listing" class="form-control">
-                                    <option>The CATEGORY</option>
+                                    <option>The Category</option>
                                     <?php
                                     $q = "SELECT * FROM categories ";
                                     $r = mysqli_query($dbc,$q);
@@ -77,7 +77,7 @@ if (mysqli_num_rows($r) == 1){
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputName1">PRODUCT'S NAME<span style="color: red">*</span></label>
+                                <label for="exampleInputName1">Product Name<span style="color: red">*</span></label>
                                 <input type="text" class="form-control"
                                        value="<?php if(isset($prod['product_name'])) echo strip_tags($prod['product_name']);?>"
                                        name="product" id="exampleInputName1" placeholder="...">
@@ -95,7 +95,7 @@ if (mysqli_num_rows($r) == 1){
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label>Product price<span style="color: red">*</span></label>
+                                <label>Product actual price<span style="color: red">*</span></label>
                                 <div class="input-group">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text bg-primary text-white">Price</span>
@@ -123,7 +123,7 @@ if (mysqli_num_rows($r) == 1){
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputCity1">Where production<span style="color: red">*</span></label>
+                                <label for="exampleInputCity1">Manufacture In<span style="color: red">*</span></label>
                                 <input type="text"
                                        value="<?php if(isset($prod['made_in'])) echo strip_tags($prod['made_in']);?>"
                                        name="made_in" class="form-control" id="exampleInputCity1" placeholder="...">

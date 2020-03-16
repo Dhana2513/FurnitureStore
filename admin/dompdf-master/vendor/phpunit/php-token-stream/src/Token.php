@@ -498,7 +498,7 @@ class PHP_Token_INTERFACE extends PHP_TokenWithScopeAndVisibility
         $result = [
             'namespace'   => '',
             'fullPackage' => '',
-            'category'    => '',
+            'Category'    => '',
             'package'     => '',
             'subpackage'  => ''
         ];
@@ -510,8 +510,8 @@ class PHP_Token_INTERFACE extends PHP_TokenWithScopeAndVisibility
             }
         }
 
-        if (preg_match('/@category[\s]+([\.\w]+)/', $docComment, $matches)) {
-            $result['category'] = $matches[1];
+        if (preg_match('/@Category[\s]+([\.\w]+)/', $docComment, $matches)) {
+            $result['Category'] = $matches[1];
         }
 
         if (preg_match('/@package[\s]+([\.\w]+)/', $docComment, $matches)) {
@@ -1427,11 +1427,11 @@ class PHP_Token_XHP_ATTRIBUTE extends PHP_Token
 {
 }
 
-class PHP_Token_XHP_CATEGORY extends PHP_Token
+class PHP_Token_XHP_category extends PHP_Token
 {
 }
 
-class PHP_Token_XHP_CATEGORY_LABEL extends PHP_Token
+class PHP_Token_XHP_category_LABEL extends PHP_Token
 {
 }
 

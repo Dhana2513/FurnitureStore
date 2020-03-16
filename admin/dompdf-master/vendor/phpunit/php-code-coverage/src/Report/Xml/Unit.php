@@ -41,7 +41,7 @@ class Unit
         $this->contextNode->setAttribute('crap', $crap);
     }
 
-    public function setPackage($full, $package, $sub, $category)
+    public function setPackage($full, $package, $sub, $Category)
     {
         $node = $this->contextNode->getElementsByTagNameNS(
             'http://schema.phpunit.de/coverage/1.0',
@@ -60,7 +60,7 @@ class Unit
         $node->setAttribute('full', $full);
         $node->setAttribute('name', $package);
         $node->setAttribute('sub', $sub);
-        $node->setAttribute('category', $category);
+        $node->setAttribute('Category', $Category);
     }
 
     public function setNamespace($namespace)

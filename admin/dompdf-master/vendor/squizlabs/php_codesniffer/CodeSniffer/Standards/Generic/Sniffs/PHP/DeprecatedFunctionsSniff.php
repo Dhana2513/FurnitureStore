@@ -4,7 +4,7 @@
  *
  * PHP version 5
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Greg Sherwood <gsherwood@squiz.net>
  * @author    Marc McIntyre <mmcintyre@squiz.net>
@@ -19,7 +19,7 @@
  * Discourages the use of deprecated functions that are kept in PHP for
  * compatibility with older versions.
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Sebastian Bergmann <sb@sebastian-bergmann.de>
  * @author    Greg Sherwood <gsherwood@squiz.net>

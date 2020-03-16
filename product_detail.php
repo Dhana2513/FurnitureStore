@@ -77,14 +77,14 @@ $product =  mysqli_fetch_array($r,MYSQLI_ASSOC);
                                     <span style="color: orangered">In Stock</span>
                                 </div>
                                 <div class="product-categories">
-                                    <span class="text-black">CATEGORY:</span>
+                                    <span class="text-black">Category:</span>
                                     <?php
                                     $q = "SELECT * FROM categories WHERE cat_id = {$product['cat_id']}";
                                     $r = mysqli_query($dbc,$q);
 
                                     $cat = mysqli_fetch_array($r,MYSQLI_ASSOC);
                                     ?>
-                                    <a href="category.php?cid=<?php echo $cat['cat_id']?>" style="color: orangered"><?php echo $cat['cat_name']; ?></a>
+                                    <a href="Category.php?cid=<?php echo $cat['cat_id']?>" style="color: orangered"><?php echo $cat['cat_name']; ?></a>
                                 </div>
                             </div>
                         </div>

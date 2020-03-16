@@ -10,7 +10,7 @@ if (isset($_GET['msg'])){
 
 <head>
     <!-- Original URL: http://www.urbanui.com/serein/template/demo/vertical-default-light/pages/samples/register-2.html
-    Date Downloaded: 11/30/2018 1:56:42 PM !-->
+    Date Downloaded: 11/30/2020 1:56:42 PM !-->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -47,12 +47,12 @@ if (isset($_GET['msg'])){
                         }
                         ?>
                         <div class="brand-logo">
-                            <img src="images/logo.svg" alt="logo" />
+                            <img src="../style/images/icon/logo_01.png" alt="logo" />
                         </div>
-                        <h4>Đăng ký tài khoản admin</h4>
+                        <h4>Register an admin account</h4>
                         <form class="pt-3" action="action/action_register.php" method="post">
                             <div class="form-group">
-                                <label>Họ & tên của bạn</label>
+                                <label>Your full name</label>
                                 <div class="input-group">
                                     <div class="input-group-prepend bg-transparent">
                       <span class="input-group-text bg-transparent border-right-0">
@@ -63,7 +63,7 @@ if (isset($_GET['msg'])){
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label>Tài khoản Email</label>
+                                <label>Email Account</label>
                                 <div class="input-group">
                                     <div class="input-group-prepend bg-transparent">
                       <span class="input-group-text bg-transparent border-right-0">
@@ -74,7 +74,7 @@ if (isset($_GET['msg'])){
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label>Mật khẩu</label>
+                                <label>Password</label>
                                 <div class="input-group">
                                     <div class="input-group-prepend bg-transparent">
                       <span class="input-group-text bg-transparent border-right-0">
@@ -85,16 +85,16 @@ if (isset($_GET['msg'])){
                                 </div>
                             </div>
                             <div class="mt-3">
-                                <input type="submit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" value="Đăng ký">
+                                <input type="submit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" value="Registration">
                             </div>
                             <div class="text-center mt-4 font-weight-light">
-                                Bạn đã có tài khoản? <a href="login.php" class="text-primary">Đăng nhập</a>
+                            Do you already have an account? <a href="login.php" class="text-primary">Log in</a>
                             </div>
                         </form>
                     </div>
                 </div>
                 <div class="col-lg-6 register-half-bg d-flex flex-row">
-                    <p class="text-white font-weight-medium text-center flex-grow align-self-end">Copyright &copy; 2018  All rights reserved.</p>
+                    <p class="text-white font-weight-medium text-center flex-grow align-self-end">Copyright &copy; 2020  All rights reserved.</p>
                 </div>
             </div>
         </div>

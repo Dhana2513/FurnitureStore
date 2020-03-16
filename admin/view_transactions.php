@@ -20,24 +20,23 @@ if (isset($_GET['msg'])){
 ?>
 
 <?php
-//Phan trang
 
-$page = 1;//khởi tạo trang ban đầu
-$limit = 10;//số bản ghi trên 1 trang (2 bản ghi trên 1 trang)
+
+$page = 1;
+$limit = 10;
 $arrs_list = mysqli_query($dbc, "
                     select transaction_code from transactions group by transaction_code
                 ");
-$total_record = mysqli_num_rows($arrs_list);//tính tổng số bản ghi có
+$total_record = mysqli_num_rows($arrs_list);
 
-$total_page = ceil($total_record / $limit);//tính tổng số trang sẽ chia
+$total_page = ceil($total_record / $limit);
 
-//xem trang có vượt giới hạn không:
 if (isset($_GET["page"]))
-    $page = $_GET["page"];//nếu biến $_GET["page"] tồn tại thì trang hiện tại là trang $_GET["page"]
-if ($page < 1) $page = 1; //nếu trang hiện tại nhỏ hơn 1 thì gán bằng 1
-if ($page > $total_page) $page = $total_page;//nếu trang hiện tại vượt quá số trang được chia thì sẽ bằng trang cuối cùng
+    $page = $_GET["page"];
+if ($page < 1) $page = 1; 
+if ($page > $total_page) $page = $total_page;
 
-//tính start (vị trí bản ghi sẽ bắt đầu lấy):
+
 $start = ($page - 1) * $limit;
 ?>
 
@@ -59,15 +58,15 @@ $start = ($page - 1) * $limit;
                           <p class=\"card-text\" style='text-align: center;'>{$msg}</p>
                         </div>
                     </div>";
-        }//neu có lỗi hoac thanh cong thì thông báo ra màn hình
+        }
         ?>
 
         <div class="row grid-margin">
             <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title" style="text-align: center;font-size: 30px;">Danh sách các giao dịch</h4>
-                        <p>Có tất cả <b><?php echo $total_record;?></b> khách hàng đã đặt hàng</p><br>
+                        <h4 class="card-title" style="text-align: center;font-size: 30px;">List of transactions</h4>
+                        <p>Have everything <b><?php echo $total_record;?></b> customer has ordered</p><br>
                         <div id="js-grid" class="jsgrid" style="position: relative; height: 500px; width: 100%;">
                             <div class="jsgrid-grid-header jsgrid-header-scrollbar">
                                 <table class="jsgrid-table">
@@ -77,16 +76,16 @@ $start = ($page - 1) * $limit;
                                         </th>
                                         <th class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable"
                                             style="width: 120px;">
-                                            Họ & Tên Khách Hàng
+                                            Customer's full name
                                         </th>
                                         <th class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable" style="width: 100px;">
-                                            Số Điện Thoại
+                                        Phone number
                                         </th>
                                         <th class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable" style="width: 120px;">
                                             Email
                                         </th>
                                         <th class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable" style="width: 150px;">
-                                            Địa Chỉ Giao Hàng
+                                        Delivery address
                                         </th>
                                         <th class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable" style="width: 50px;">
 
@@ -112,8 +111,8 @@ $start = ($page - 1) * $limit;
                                             <td class=\"jsgrid-cell jsgrid-align-center\" style=\"width: 120px;\">".$rows['customer_email']."</td>
                                             <td class=\"jsgrid-cell jsgrid-align-center\" style=\"width: 150px;\">".$rows['customer_address']."</td>
                                             <td class=\"jsgrid-cell jsgrid-control-field jsgrid-align-center\" style=\"width: 50px;\">
-                                                <a href='order_detail.php?code={$rows['transaction_code']}'><input class=\"jsgrid-button jsgrid-clear-filter-button\" type=\"button\" title=\"Xem chi tiết hóa đơn\"></a>
-                                                <a href='delete_transaction.php?code={$rows['transaction_code']}'><input class=\"jsgrid-button jsgrid-delete-button\" type=\"button\" title=\"Erase\"></a>
+                                                <a href='order_detail.php?code={$rows['transaction_code']}'><input class=\"jsgrid-button jsgrid-clear-filter-button\" type=\"button\" title=\"See invoice details\"></a>
+                                                <a href='delete_transaction.php?code={$rows['transaction_code']}'><input class=\"jsgrid-button jsgrid-delete-button\" type=\"button\" title=\"Delete\"></a>
                                             </td>
                                         ";
                                     }

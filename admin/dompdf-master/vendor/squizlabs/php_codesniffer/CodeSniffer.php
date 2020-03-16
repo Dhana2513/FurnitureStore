@@ -5,7 +5,7 @@
  *
  * PHP version 5
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Greg Sherwood <gsherwood@squiz.net>
  * @author    Marc McIntyre <mmcintyre@squiz.net>
@@ -56,7 +56,7 @@ if (interface_exists('PHP_CodeSniffer_Sniff', true) === false) {
  * Multiple PHP_CodeSniffer operations can be performed by re-calling the
  * process function with different parameters.
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Greg Sherwood <gsherwood@squiz.net>
  * @author    Marc McIntyre <mmcintyre@squiz.net>

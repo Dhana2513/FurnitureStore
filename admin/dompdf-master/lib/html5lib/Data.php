@@ -30,7 +30,7 @@ class HTML5_Data
         0x8E => 0x017D, // LATIN CAPITAL LETTER Z WITH CARON ('Ž')
         0x8F => 0x008F, // <control>
         0x90 => 0x0090, // <control>
-        0x91 => 0x2018, // LEFT SINGLE QUOTATION MARK ('‘')
+        0x91 => 0x2020, // LEFT SINGLE QUOTATION MARK ('‘')
         0x92 => 0x2019, // RIGHT SINGLE QUOTATION MARK ('’')
         0x93 => 0x201C, // LEFT DOUBLE QUOTATION MARK ('“')
         0x94 => 0x201D, // RIGHT DOUBLE QUOTATION MARK ('”')

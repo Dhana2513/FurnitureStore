@@ -17,7 +17,7 @@ include "admin_sidebar.php"
     if (mysqli_num_rows($r) == 1) {
         list($cat_name) = mysqli_fetch_array($r, MYSQLI_NUM);
     } else {
-        $msg = "Error! CATEGORY does not exist";
+        $msg = "Error! Category does not exist";
         $suc = 0;
     }
 ?>
@@ -28,7 +28,7 @@ include "admin_sidebar.php"
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title" style="text-align: center;font-size: 30px;">Erase CATEGORY : <?php if (isset($cat_name)) echo $cat_name;?></h4>
+                        <h4 class="card-title" style="text-align: center;font-size: 30px;">Delete Category : <?php if (isset($cat_name)) echo $cat_name;?></h4>
                         <!-- Dummy Modal Starts -->
                         <form action="action/action_delete_category.php?cid=<?php echo $cid;?>" method="post">
                         <div class="modal demo-modal">
@@ -41,10 +41,10 @@ include "admin_sidebar.php"
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <p>Do you want to delete CATEGORY <b><?php if (isset($cat_name)) echo $cat_name;?></b> ?</p>
+                                        <p>Do you want to delete Category <b><?php if (isset($cat_name)) echo $cat_name;?></b> ?</p>
                                     </div>
                                     <div class="modal-footer">
-                                        <input type="submit" class="btn btn-danger" name="delete" value="Erase">
+                                        <input type="submit" class="btn btn-danger" name="delete" value="Delete">
                                         <input type="submit" class="btn btn-light" name="delete" value="Cancel">
                                     </div>
                                 </div>

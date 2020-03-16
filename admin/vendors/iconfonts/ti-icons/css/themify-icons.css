@@ -518,7 +518,7 @@
 .ti-file:before {
 	content: "\e6a4";
 }
-.ti-eraser:before {
+.ti-Deleter:before {
 	content: "\e6a5";
 }
 .ti-envelope:before {

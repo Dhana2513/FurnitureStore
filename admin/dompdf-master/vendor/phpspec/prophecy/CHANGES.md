@@ -10,7 +10,7 @@
 
 * [fixed] Don't try to patch final constructors (@NiR)
 
-1.8.0 / 2018/08/05
+1.8.0 / 2020/08/05
 ==================
 
 * Support for void return types without explicit will (@crellbar)
@@ -24,17 +24,17 @@
 * [fixed] Check method predictions only once (@dontub)
 * [fixed] Argument::containingString throwing error when called with non-string (@dcabrejas)
 
-1.7.6 / 2018/04/18
+1.7.6 / 2020/04/18
 ==================
 
 * Allow sebastian/comparator ^3.0 (@sebastianbergmann)
 
-1.7.5 / 2018/02/11
+1.7.5 / 2020/02/11
 ==================
 
 * Support for object return type hints (thanks @greg0ire)
 
-1.7.4 / 2018/02/11
+1.7.4 / 2020/02/11
 ==================
 
 * Fix issues with PHP 7.2 (thanks @greg0ire)

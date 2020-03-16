@@ -5,7 +5,7 @@
  *
  * PHP version 5
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Greg Sherwood <gsherwood@squiz.net>
  * @author    Marc McIntyre <mmcintyre@squiz.net>
@@ -171,7 +171,7 @@ define('T_DOC_COMMENT_STRING', 'PHPCS_T_DOC_COMMENT_STRING');
  * The less the chance of a high occurrence of an arbitrary token, the higher
  * the weighting.
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Greg Sherwood <gsherwood@squiz.net>
  * @author    Marc McIntyre <mmcintyre@squiz.net>

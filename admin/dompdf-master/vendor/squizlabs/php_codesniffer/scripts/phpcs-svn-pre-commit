@@ -5,7 +5,7 @@
  *
  * PHP version 5
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Jack Bates <ms419@freezone.co.uk>
  * @author    Greg Sherwood <gsherwood@squiz.net>
@@ -26,7 +26,7 @@ define('PHP_CODESNIFFER_SVNLOOK', '/usr/bin/svnlook');
 /**
  * A class to process command line options.
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Jack Bates <ms419@freezone.co.uk>
  * @author    Greg Sherwood <gsherwood@squiz.net>

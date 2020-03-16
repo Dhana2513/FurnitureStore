@@ -4,7 +4,7 @@
  *
  * PHP version 5
  *
- * @category PHP
+ * @Category PHP
  * @package  PHP_CodeSniffer
  * @author   Andy Brockhurst <abrock@yahoo-inc.com>
  * @license  https://github.com/squizlabs/PHP_CodeSniffer/blob/master/licence.txt BSD Licence
@@ -23,7 +23,7 @@
  *  }
  * </code>
  *
- * @category PHP
+ * @Category PHP
  * @package  PHP_CodeSniffer
  * @author   Andy Brockhurst <abrock@yahoo-inc.com>
  * @license  https://github.com/squizlabs/PHP_CodeSniffer/blob/master/licence.txt BSD Licence

@@ -4,7 +4,7 @@
  *
  * PHP version 5
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Ryan McCue <ryan+gh@hmn.md>
  * @copyright 2006-2017 Squiz Pty Ltd (ABN 77 084 670 600)
@@ -17,7 +17,7 @@
  *
  * Runs eslint on the file.
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Ryan McCue <ryan+gh@hmn.md>
  * @copyright 2006-2017 Squiz Pty Ltd (ABN 77 084 670 600)

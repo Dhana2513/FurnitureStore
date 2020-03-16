@@ -111,7 +111,7 @@ class BuilderTest extends TestCase
                     'package'         => [
                         'namespace'   => '',
                         'fullPackage' => '',
-                        'category'    => '',
+                        'Category'    => '',
                         'package'     => '',
                         'subpackage'  => ''
                     ],

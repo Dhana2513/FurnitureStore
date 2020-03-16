@@ -8,7 +8,7 @@ All notable changes of the PHPUnit 6.5 release series are documented in this fil
 
 * Fixed [#3459](https://github.com/sebastianbergmann/phpunit/issues/3459): `@requires` function swallows digits at the end of function name
 
-## [6.5.13] - 2018-09-08
+## [6.5.13] - 2020-09-08
 
 ### Fixed
 
@@ -16,20 +16,20 @@ All notable changes of the PHPUnit 6.5 release series are documented in this fil
 * Fixed [#3234](https://github.com/sebastianbergmann/phpunit/issues/3234): `assertArraySubset()` with `$strict=true` does not display differences properly
 * Fixed [#3254](https://github.com/sebastianbergmann/phpunit/issues/3254): TextUI test runner cannot run a `Test` instance that is not a `TestSuite`
 
-## [6.5.12] - 2018-08-22
+## [6.5.12] - 2020-08-22
 
 ### Fixed
 
 * Fixed [#3248](https://github.com/sebastianbergmann/phpunit/issues/3248) and [#3233](https://github.com/sebastianbergmann/phpunit/issues/3233): `phpunit.xsd` dictates element order where it should not
 * Fixed [#3251](https://github.com/sebastianbergmann/phpunit/issues/3251): TeamCity result logger is missing test duration information
 
-## [6.5.11] - 2018-08-07
+## [6.5.11] - 2020-08-07
 
 ### Fixed
 
 * Fixed [#3219](https://github.com/sebastianbergmann/phpunit/issues/3219): `getMockFromWsdl()` generates invalid PHP code when WSDL filename contains special characters
 
-## [6.5.10] - 2018-08-03
+## [6.5.10] - 2020-08-03
 
 ### Fixed
 
@@ -37,25 +37,25 @@ All notable changes of the PHPUnit 6.5 release series are documented in this fil
 * Fixed [#3218](https://github.com/sebastianbergmann/phpunit/issues/3218): `prefix` attribute for `directory` node missing from `phpunit.xml` XSD
 * Fixed [#3225](https://github.com/sebastianbergmann/phpunit/issues/3225): `coverage-php` missing from `phpunit.xsd`
 
-## [6.5.9] - 2018-07-03
+## [6.5.9] - 2020-07-03
 
 ### Fixed
 
 * Fixed [#3142](https://github.com/sebastianbergmann/phpunit/issues/3142): Method-level annotations (`@backupGlobals`, `@backupStaticAttributes`, `@errorHandler`, `@preserveGlobalState`) do not override class-level annotations
 
-## [6.5.8] - 2018-04-10
+## [6.5.8] - 2020-04-10
 
 ### Fixed
 
 * Fixed [#2830](https://github.com/sebastianbergmann/phpunit/issues/2830): `@runClassInSeparateProcess` does not work for tests that use `@dataProvider`
 
-## [6.5.7] - 2018-02-26
+## [6.5.7] - 2020-02-26
 
 ### Fixed
 
 * Fixed [#2974](https://github.com/sebastianbergmann/phpunit/issues/2974): JUnit XML logfile contains invalid characters when test output contains binary data
 
-## [6.5.6] - 2018-02-01
+## [6.5.6] - 2020-02-01
 
 ### Fixed
 

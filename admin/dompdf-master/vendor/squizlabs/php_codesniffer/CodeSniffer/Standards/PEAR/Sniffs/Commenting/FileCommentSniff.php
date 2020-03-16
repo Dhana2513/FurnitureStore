@@ -4,7 +4,7 @@
  *
  * PHP version 5
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Greg Sherwood <gsherwood@squiz.net>
  * @author    Marc McIntyre <mmcintyre@squiz.net>
@@ -16,7 +16,7 @@
 /**
  * Parses and verifies the doc comments for files.
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Greg Sherwood <gsherwood@squiz.net>
  * @author    Marc McIntyre <mmcintyre@squiz.net>
@@ -35,7 +35,7 @@ class PEAR_Sniffs_Commenting_FileCommentSniff implements PHP_CodeSniffer_Sniff
      * @var array
      */
     protected $tags = array(
-                       '@category'   => array(
+                       '@Category'   => array(
                                          'required'       => true,
                                          'allow_multiple' => false,
                                         ),
@@ -309,7 +309,7 @@ class PEAR_Sniffs_Commenting_FileCommentSniff implements PHP_CodeSniffer_Sniff
 
 
     /**
-     * Process the category tag.
+     * Process the Category tag.
      *
      * @param PHP_CodeSniffer_File $phpcsFile The file being scanned.
      * @param array                $tags      The tokens for these tags.

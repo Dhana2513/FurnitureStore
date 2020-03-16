@@ -4,7 +4,7 @@
  *
  * PHP version 5
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Jeffrey Fisher <jeffslofish@gmail.com>
  * @author    Greg Sherwood <gsherwood@squiz.net>
@@ -18,7 +18,7 @@
  *
  * PHP version 5
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Jeffrey Fisher <jeffslofish@gmail.com>
  * @author    Greg Sherwood <gsherwood@squiz.net>

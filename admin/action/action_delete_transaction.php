@@ -7,13 +7,13 @@ $suc= '';
 $code = validate_id($_GET['code']);
 
 if ($_SERVER['REQUEST_METHOD'] = 'POST') {
-    if (isset($_POST['delete']) && ($_POST['delete'] == 'Erase')) {
+    if (isset($_POST['delete']) && ($_POST['delete'] == 'Delete')) {
         $q = "DELETE FROM transactions WHERE transaction_code = $code ";
         $r = mysqli_query($dbc, $q);
         confirm_query($r, $q);
 
         if (mysqli_affected_rows($dbc) == 1) {
-            $msg = "Erase transaction was successful";
+            $msg = "Delete transaction was successful";
             $suc = 1;
         } else {
             $msg = "This transaction does not exist!";

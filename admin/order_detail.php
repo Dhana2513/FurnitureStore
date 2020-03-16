@@ -21,25 +21,25 @@ $detail = mysqli_fetch_array($r,MYSQLI_ASSOC);
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title">Chi Tiết Hóa Đơn</h4>
+                        <h4 class="card-title">Invoice Details</h4>
                         <p class="card-description">
-                            Họ & Tên khách hàng : <b><?php echo $detail['customer_name']?></b>
+                        Customer's full name : <b><?php echo $detail['customer_name']?></b>
                         </p>
                         <p class="card-description">
-                            Số điện thoại : <b><?php echo $detail['customer_phone']?></b>
+                        Phone number : <b><?php echo $detail['customer_phone']?></b>
                         </p>
                         <p class="card-description">
-                            Địa chỉ Email : <b><?php echo $detail['customer_email']?></b>
+                        Email address : <b><?php echo $detail['customer_email']?></b>
                         </p>
                         <p class="card-description">
-                            Địa chỉ giao hàng : <b><?php echo $detail['customer_address']?></b>
+                        Delivery address : <b><?php echo $detail['customer_address']?></b>
                         </p>
 
                         <div class="table-responsive">
                             <table class="table">
                                 <thead>
                                 <tr>
-                                    <th>Sản phẩm</th>
+                                    <th>Product</th>
                                     <th>AMOUNT</th>
                                     <th>INTO MONEY</th>
                                 </tr>
@@ -62,7 +62,7 @@ $detail = mysqli_fetch_array($r,MYSQLI_ASSOC);
                                 $total +=30000;
                                 ?>
                                 <tr>
-                                    <td>Phí giao hàng </td>
+                                    <td>Delivery charges </td>
                                     <td>1</td>
                                     <td>30.000 INR</td>
                                 </tr>
@@ -77,7 +77,7 @@ $detail = mysqli_fetch_array($r,MYSQLI_ASSOC);
                     </div>
                     <div class="card-body">
                     <button type="button" class="btn btn-info btn-icon-text">
-                        <a href="action/print.php?code=<?php echo $code;?>" style="color:white;">In Hóa Đơn</a>
+                        <a href="action/print.php?code=<?php echo $code;?>" style="color:white;">Print Invoice</a>
                         <i class="mdi mdi-printer btn-icon-append"></i>
                     </button>
                     </div>

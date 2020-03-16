@@ -4,7 +4,7 @@
  *
  * PHP version 5
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Roman Levishchenko <index.0h@gmail.com>
  * @copyright 2013-2014 Roman Levishchenko
@@ -17,7 +17,7 @@
  *
  * Runs csslint on the file.
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Roman Levishchenko <index.0h@gmail.com>
  * @copyright 2013-2014 Roman Levishchenko

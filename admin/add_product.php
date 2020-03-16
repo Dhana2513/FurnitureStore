@@ -44,12 +44,12 @@ if (isset($_GET['suc'])) {
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title" style="text-align: center;font-size: 30px;">More products</h4>
+                        <h4 class="card-title" style="text-align: center;font-size: 30px;">Add Products</h4>
                         <form class="forms-sample" method="post" action="action/action_add_product.php" enctype="multipart/form-data">
                             <div class="form-group">
-                                <label for="exampleInputPassword4">Products of CATEGORY<span style="color: red">*</span></label>
+                                <label for="exampleInputPassword4">Products of Category<span style="color: red">*</span></label>
                                 <select name="cat_id" aria-controls="order-listing" class="form-control">
-                                    <option>The CATEGORY</option>
+                                    <option>The Category</option>
                                     <?php
                                     $q = "SELECT * FROM categories ";
                                     $r = mysqli_query($dbc, $q);
@@ -64,7 +64,7 @@ if (isset($_GET['suc'])) {
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputName1">PRODUCT'S NAME<span style="color: red">*</span></label>
+                                <label for="exampleInputName1">Product Name<span style="color: red">*</span></label>
                                 <input type="text" class="form-control" value="<?php if (isset($_POST['product'])) echo strip_tags($_POST['product']); ?>" name="product" id="exampleInputName1" placeholder="...">
                             </div>
 
@@ -79,31 +79,31 @@ if (isset($_GET['suc'])) {
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label>Product price<span style="color: red">*</span></label>
+                                <label>Product actual price<span style="color: red">*</span></label>
                                 <div class="input-group">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text bg-primary text-white">Price</span>
                                     </div>
-                                    <input type="number" class="form-control" name="product_price" placeholder="..." aria-label="Amount (to the nearest dollar)">
+                                    <input type="number" class="form-control" name="product_price" placeholder="..." aria-label="Amount (to the nearest INR)">
                                     <div class="input-group-append">
                                         <span class="input-group-text">INR</span>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label>Products Price<span style="color: red">*</span></label>
+                                <label>Products Price (selling price)<span style="color: red">*</span></label>
                                 <div class="input-group">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text bg-primary text-white">Price</span>
                                     </div>
-                                    <input type="number" class="form-control" name="selling_price" placeholder="..." aria-label="Amount (to the nearest dollar)">
+                                    <input type="number" class="form-control" name="selling_price" placeholder="..." aria-label="Amount (to the nearest INR)">
                                     <div class="input-group-append">
                                         <span class="input-group-text">INR</span>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputCity1">Where production<span style="color: red">*</span></label>
+                                <label for="exampleInputCity1">Manufacture In<span style="color: red">*</span></label>
                                 <input type="text" value="<?php if (isset($_POST['made_in'])) echo strip_tags($_POST['made_in']); ?>" name="made_in" class="form-control" id="exampleInputCity1" placeholder="...">
                             </div>
                             <div class="form-group">
@@ -118,7 +118,7 @@ if (isset($_GET['suc'])) {
                                     CKEDITOR.replace('editor1');
                                 </script>
                             </div>
-                            <input type="submit" class="btn btn-primary mr-2" name="submit" value="More products">
+                            <input type="submit" class="btn btn-primary mr-2" name="submit" value="Add Products">
                         </form>
                     </div>
                 </div>

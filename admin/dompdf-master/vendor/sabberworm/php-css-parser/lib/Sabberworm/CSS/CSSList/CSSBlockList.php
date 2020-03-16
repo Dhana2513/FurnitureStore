@@ -11,7 +11,7 @@ use Sabberworm\CSS\Value\CSSFunction;
 
 /**
  * A CSSBlockList is a CSSList whose DeclarationBlocks are guaranteed to contain valid declaration blocks or at-rules.
- * Most CSSLists conform to this category but some at-rules (such as @keyframes) do not.
+ * Most CSSLists conform to this Category but some at-rules (such as @keyframes) do not.
  */
 abstract class CSSBlockList extends CSSList {
 	public function __construct($iLineNo = 0) {

@@ -904,7 +904,7 @@ New Features:
 
 * [#10925](https://dev.ckeditor.com/ticket/10925): The [Media Embed](https://ckeditor.com/cke4/addon/embed) and [Semantic Media Embed](https://ckeditor.com/cke4/addon/embedsemantic) plugins were introduced. Read more about the new features in the [Embedding Content](https://ckeditor.com/docs/ckeditor4/latest/guide/dev_media_embed.html) article.
 * [#10931](https://dev.ckeditor.com/ticket/10931): Added support for nesting widgets. It is now possible to insert one widget into another widget's nested editable. Note that unless nested editable's [allowed content](https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR_plugins_widget_nestedEditable_definition.html#property-allowedContent) is defined precisely, starting from CKEditor 4.5 some widget buttons may become enabled. This feature is not supported in IE8. Included issues:
-  * [#12018](https://dev.ckeditor.com/ticket/12018): Fixed and reviewed: Nested widgets garbage collection.
+  * [#12020](https://dev.ckeditor.com/ticket/12020): Fixed and reviewed: Nested widgets garbage collection.
   * [#12024](https://dev.ckeditor.com/ticket/12024): [Firefox] Fixed: Outline is extended to the left by unpositioned drag handlers.
   * [#12006](https://dev.ckeditor.com/ticket/12006): Fixed: Drag and drop of nested block widgets.
   * [#12008](https://dev.ckeditor.com/ticket/12008): Fixed various cases of inserting a single non-editable element using the [`editor.insertHtml()`](https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR_editor.html#method-insertHtml) method. Fixes pasting a widget with a nested editable inside another widget's nested editable.

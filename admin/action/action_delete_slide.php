@@ -7,13 +7,13 @@ $suc= '';
 $sid = validate_id($_GET['sid']);
 
 if ($_SERVER['REQUEST_METHOD'] = 'POST') {
-    if (isset($_POST['delete']) && ($_POST['delete'] == 'Erase')) {
+    if (isset($_POST['delete']) && ($_POST['delete'] == 'Delete')) {
         $q = "DELETE FROM slides WHERE slide_id = $sid ";
         $r = mysqli_query($dbc, $q);
         confirm_query($r, $q);
 
         if (mysqli_affected_rows($dbc) == 1) {
-            $msg = "Erase slide succeeded";
+            $msg = "Delete slide succeeded";
             $suc = 1;
         } else {
             $msg = "This slide does not exist!";

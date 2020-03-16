@@ -43,7 +43,7 @@
 .note-icon-col-after:before,
 .note-icon-col-before:before,
 .note-icon-col-remove:before,
-.note-icon-eraser:before,
+.note-icon-Deleter:before,
 .note-icon-font:before,
 .note-icon-frame:before,
 .note-icon-italic:before,
@@ -171,7 +171,7 @@
     content: "\f117"
 }
 
-.note-icon-eraser:before {
+.note-icon-Deleter:before {
     content: "\f118"
 }
 

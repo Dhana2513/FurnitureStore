@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (isset($_POST['cat_id']) && filter_var($_POST['cat_id'], FILTER_VALIDATE_INT, array('min_array' => 1))) {
         $cat_id = mysqli_real_escape_string($dbc, strip_tags($_POST['cat_id']));
     } else {
-        $errors[] = 'You must choose CATEGORY for the product';
+        $errors[] = 'You must choose Category for the product';
     }
 
 
@@ -97,7 +97,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $r = mysqli_query($dbc, $q);
         confirm_query($r, $q);
         if (mysqli_affected_rows($dbc) == 1) {
-            $msg = " Fix the product successfully.";
+            $msg = " Edit Product successfully.";
             $suc = 1;
             header('Location: ../view_products.php?pid='.$pid.'&&'.'msg=' . $msg.'&&'.'suc='.$suc);
         } else {

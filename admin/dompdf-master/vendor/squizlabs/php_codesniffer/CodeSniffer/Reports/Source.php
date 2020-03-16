@@ -4,7 +4,7 @@
  *
  * PHP version 5
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Gabriele Santini <gsantini@sqli.com>
  * @author    Greg Sherwood <gsherwood@squiz.net>
@@ -19,7 +19,7 @@
  *
  * PHP version 5
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Gabriele Santini <gsantini@sqli.com>
  * @author    Greg Sherwood <gsherwood@squiz.net>
@@ -168,9 +168,9 @@ class PHP_CodeSniffer_Reports_Source implements PHP_CodeSniffer_Report
             }
         } else {
             if ($totalFixable > 0) {
-                echo '    STANDARD  CATEGORY            SNIFF'.str_repeat(' ', ($width - 44)).'COUNT'.PHP_EOL;
+                echo '    STANDARD  Category            SNIFF'.str_repeat(' ', ($width - 44)).'COUNT'.PHP_EOL;
             } else {
-                echo 'STANDARD  CATEGORY            SNIFF'.str_repeat(' ', ($width - 40)).'COUNT'.PHP_EOL;
+                echo 'STANDARD  Category            SNIFF'.str_repeat(' ', ($width - 40)).'COUNT'.PHP_EOL;
             }
         }
 
@@ -221,12 +221,12 @@ class PHP_CodeSniffer_Reports_Source implements PHP_CodeSniffer_Report
 
                 echo $parts[0].str_repeat(' ', (10 - strlen($parts[0])));
 
-                $category = $parts[1];
-                if (strlen($category) > 18) {
-                    $category = substr($category, 0, ((strlen($category) - 18) * -1));
+                $Category = $parts[1];
+                if (strlen($Category) > 18) {
+                    $Category = substr($Category, 0, ((strlen($Category) - 18) * -1));
                 }
 
-                echo $category.str_repeat(' ', (20 - strlen($category)));
+                echo $Category.str_repeat(' ', (20 - strlen($Category)));
 
                 $sniff = $parts[2];
                 if (strlen($sniff) > $maxSniffWidth) {

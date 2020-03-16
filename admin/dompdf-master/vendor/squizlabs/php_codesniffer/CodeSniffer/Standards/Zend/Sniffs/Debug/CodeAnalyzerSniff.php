@@ -4,7 +4,7 @@
  *
  * PHP version 5
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Holger Kral <holger.kral@zend.com>
  * @author    Greg Sherwood <gsherwood@squiz.net>
@@ -18,7 +18,7 @@
  *
  * Runs the Zend Code Analyzer (from Zend Studio) on the file.
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Holger Kral <holger.kral@zend.com>
  * @author    Greg Sherwood <gsherwood@squiz.net>

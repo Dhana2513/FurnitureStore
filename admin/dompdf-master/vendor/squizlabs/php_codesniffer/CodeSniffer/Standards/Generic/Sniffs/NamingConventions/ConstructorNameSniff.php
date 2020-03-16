@@ -4,7 +4,7 @@
  *
  * PHP version 5
  *
- * @category  PHP
+ * @Category  PHP
  * @package   PHP_CodeSniffer
  * @author    Greg Sherwood <gsherwood@squiz.net>
  * @author    Leif Wickland <lwickland@rightnow.com>
@@ -24,7 +24,7 @@ if (class_exists('PHP_CodeSniffer_Standards_AbstractScopeSniff', true) === false
  * Favor PHP 5 constructor syntax, which uses "function __construct()".
  * Avoid PHP 4 constructor syntax, which uses "function ClassName()".
  *
- * @category PHP
+ * @Category PHP
  * @package  PHP_CodeSniffer
  * @author   Leif Wickland <lwickland@rightnow.com>
  * @license  https://github.com/squizlabs/PHP_CodeSniffer/blob/master/licence.txt BSD Licence

@@ -11,7 +11,7 @@ if (isset($_GET['msg'])){
 
 <head>
     <!-- Original URL: http://www.urbanui.com/serein/template/demo/vertical-default-light/pages/samples/login-2.html
-    Date Downloaded: 11/30/2018 1:56:42 PM !-->
+    Date Downloaded: 11/30/2020 1:56:42 PM !-->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -49,7 +49,7 @@ if (isset($_GET['msg'])){
                         }
                         ?>
                         <div class="brand-logo">
-                            <a href="login.php"><img src="images/logo.svg" alt="logo" /></a>
+                            <a href="login.php"><img src="../style/images/icon/logo_01.png" alt="logo" /></a>
                         </div>
                         <h4>Login admin rights</h4>
                         <form class="pt-3" method="post" action="action/action_login.php">
@@ -82,7 +82,7 @@ if (isset($_GET['msg'])){
                                         Save the login
                                     </label>
                                 </div>
-                                <a href="register.php" class="auth-link text-black" style="color: #0d4dff">Sign up for an account</a>
+                                <!-- <a href="register.php" class="auth-link text-black" style="color: #0d4dff">Sign up for an account</a> -->
                             </div>
                             <div class="my-3">
                                 <input type="submit" name="submit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" value="Log in">
@@ -91,7 +91,7 @@ if (isset($_GET['msg'])){
                     </div>
                 </div>
                 <div class="col-lg-6 login-half-bg d-flex flex-row">
-                    <p class="text-white font-weight-medium text-center flex-grow align-self-end">Copyright &copy; 2018  All rights reserved.</p>
+                    <p class="text-white font-weight-medium text-center flex-grow align-self-end">Copyright &copy; 2020  All rights reserved.</p>
                 </div>
             </div>
         </div>
