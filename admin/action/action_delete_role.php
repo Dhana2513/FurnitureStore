@@ -7,20 +7,20 @@ $suc= '';
 $rid = validate_id($_GET['rid']);
 
 if ($_SERVER['REQUEST_METHOD'] = 'POST') {
-    if (isset($_POST['delete']) && ($_POST['delete'] == 'Xóa')) {
+    if (isset($_POST['delete']) && ($_POST['delete'] == 'Erase')) {
         $q = "DELETE FROM roles WHERE role_id = $rid ";
         $r = mysqli_query($dbc, $q);
         confirm_query($r, $q);
 
         if (mysqli_affected_rows($dbc) == 1) {
-            $msg = "Xóa chức vụ thành công";
+            $msg = "Erase was successful";
             $suc = 1;
         } else {
-            $msg = "Không tồn tại chức vụ này!";
+            $msg = "Does not exist this position!";
             $suc = 0;
         }
-    } elseif (isset($_POST['delete']) && ($_POST['delete'] == 'Hủy')){
-        $msg = "Bạn đã hủy xóa chức vụ.";
+    } elseif (isset($_POST['delete']) && ($_POST['delete'] == 'Cancel')){
+        $msg = "You have canceled the position removal.";
         $suc = 0;
     }
     header('Location: ../view_roles.php?msg=' . $msg.'&&'.'suc='.$suc);

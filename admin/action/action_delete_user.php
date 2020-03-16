@@ -7,20 +7,20 @@ $suc= '';
 $uid = validate_id($_GET['uid']);
 
 if ($_SERVER['REQUEST_METHOD'] = 'POST') {
-    if (isset($_POST['delete']) && ($_POST['delete'] == 'Xóa')) {
+    if (isset($_POST['delete']) && ($_POST['delete'] == 'Erase')) {
         $q = "DELETE FROM users WHERE user_id = $uid ";
         $r = mysqli_query($dbc, $q);
         confirm_query($r, $q);
 
         if (mysqli_affected_rows($dbc) == 1) {
-            $msg = "Xóa tài khoản thành công";
+            $msg = "Account Erase Success";
             $suc = 1;
         } else {
-            $msg = "Không tồn tại tài khoản này!";
+            $msg = "This account does not exist!";
             $suc = 0;
         }
-    } elseif (isset($_POST['delete']) && ($_POST['delete'] == 'Hủy')){
-        $msg = "Bạn đã hủy xóa tài khoản.";
+    } elseif (isset($_POST['delete']) && ($_POST['delete'] == 'Cancel')){
+        $msg = "You have canceled the account deletion.";
         $suc = 0;
     }
     header('Location: ../view_users.php?msg=' . $msg.'&&'.'suc='.$suc);

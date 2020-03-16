@@ -86,7 +86,7 @@ $start = ($page - 1) * $limit;
                                             Chức vụ
                                         </th>
                                         <th class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable" style="width: 50px;">
-                                            Sửa,Xóa
+                                            Sửa,Erase
                                         </th>
                                     </tr>
                                 </table>
@@ -126,7 +126,7 @@ $start = ($page - 1) * $limit;
                                                 <a href='edit_user.php?uid={$user['user_id']}'><input class=\"jsgrid-button jsgrid-edit-button\" type=\"button\" title=\"Sửa\"></a>";
 
                                             if (has_permission($account,$permission)){
-                                                echo "<a href='delete_user.php?uid={$user['user_id']}''><input class=\"jsgrid-button jsgrid-delete-button\" type=\"button\" title=\"Xóa\"></a>";
+                                                echo "<a href='delete_user.php?uid={$user['user_id']}''><input class=\"jsgrid-button jsgrid-delete-button\" type=\"button\" title=\"Erase\"></a>";
                                             }
 
                                         echo "

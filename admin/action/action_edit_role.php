@@ -5,12 +5,12 @@ $rid = validate_id($_GET['rid']);
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $errors = array();
     if (empty($_POST['role'])) {
-        $errors[] = 'Bạn hãy điền tên chức vụ';
+        $errors[] = 'Please enter the title of the job';
     } else {
         $role = mysqli_real_escape_string($dbc, strip_tags($_POST['role']));
     }
     if (empty($_POST['permission'])) {
-        $errors[] = 'Bạn hãy điền phần quyền cho chức vụ';
+        $errors[] = 'Please fill in the rights section for the position';
     } else {
         $permission = mysqli_real_escape_string($dbc, strip_tags($_POST['permission']));
     }
@@ -20,10 +20,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $r = mysqli_query($dbc,$q);
         confirm_query($r,$q);
         if (mysqli_affected_rows($dbc) == 1){
-            $msg = "Sửa chức vụ thành công";
+            $msg = "Correction of position successfully";
             $suc = 1;
         }else{
-            $msg = "Lỗi!chức vụ không thay đổi";
+            $msg = "Error, position did not change";
             $suc = 0;
         }
     } else {

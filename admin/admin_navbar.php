@@ -16,7 +16,7 @@
                         <div class="dropdown-divider"></div>
                         <a href="logout.php" class="dropdown-item">
                             <i class="mdi mdi-logout text-primary"></i>
-                            Đăng xuất
+                            Log out
                         </a>
                     </div>
                 </li>

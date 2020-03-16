@@ -51,10 +51,10 @@ if (isset($_GET['msg'])){
                         <div class="brand-logo">
                             <a href="login.php"><img src="images/logo.svg" alt="logo" /></a>
                         </div>
-                        <h4>Đăng nhập quyền admin</h4>
+                        <h4>Login admin rights</h4>
                         <form class="pt-3" method="post" action="action/action_login.php">
                             <div class="form-group">
-                                <label>Tài khoản</label>
+                                <label>Account</label>
                                 <div class="input-group">
                                     <div class="input-group-prepend bg-transparent">
                       <span class="input-group-text bg-transparent border-right-0">
@@ -65,7 +65,7 @@ if (isset($_GET['msg'])){
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputPassword">Mật khẩu</label>
+                                <label for="exampleInputPassword">Password</label>
                                 <div class="input-group">
                                     <div class="input-group-prepend bg-transparent">
                       <span class="input-group-text bg-transparent border-right-0">
@@ -79,13 +79,13 @@ if (isset($_GET['msg'])){
                                 <div class="form-check">
                                     <label class="form-check-label text-muted">
                                         <input type="checkbox" class="form-check-input" />
-                                        Lưu đăng nhập
+                                        Save the login
                                     </label>
                                 </div>
-                                <a href="register.php" class="auth-link text-black" style="color: #0d4dff">Đăng ký tài khoản</a>
+                                <a href="register.php" class="auth-link text-black" style="color: #0d4dff">Sign up for an account</a>
                             </div>
                             <div class="my-3">
-                                <input type="submit" name="submit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" value="Đăng nhập">
+                                <input type="submit" name="submit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" value="Log in">
                             </div>
                         </form>
                     </div>

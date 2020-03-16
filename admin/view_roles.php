@@ -118,11 +118,11 @@ $start = ($page - 1) * $limit;
                                             <td class=\"jsgrid-cell jsgrid-control-field jsgrid-align-center\"
                                                 style=\"width: 50px;\">";
                                         if (has_permission($account,$permission1)){
-                                            echo "<a href='edit_role.php?rid={$role['role_id']}'><input class='jsgrid-button jsgrid-edit-button' type='button' title='Hủy'></a>";
+                                            echo "<a href='edit_role.php?rid={$role['role_id']}'><input class='jsgrid-button jsgrid-edit-button' type='button' title='Cancel'></a>";
                                         }
                                         if (has_permission($account,$permission)){
                                             if ($role['role'] != 'User'){
-                                                echo "<a href='delete_role.php?rid={$role['role_id']}'><input class='jsgrid-button jsgrid-delete-button' type='button' title='Xóa'></a>";
+                                                echo "<a href='delete_role.php?rid={$role['role_id']}'><input class='jsgrid-button jsgrid-delete-button' type='button' title='Erase'></a>";
                                             }
                                         }
 

@@ -74,7 +74,7 @@ $product =  mysqli_fetch_array($r,MYSQLI_ASSOC);
                                 </div>
                                 <div class="product-available">
                                     <span>Status :</span>
-                                    <span style="color: orangered">Stocking</span>
+                                    <span style="color: orangered">In Stock</span>
                                 </div>
                                 <div class="product-categories">
                                     <span class="text-black">CATEGORY:</span>

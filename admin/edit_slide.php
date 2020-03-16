@@ -7,7 +7,6 @@ include "admin_navbar.php";
 include "admin_partial.php";
 include "admin_sidebar.php";
 
-//kiem tra bien $_GET['msg']
 if (isset($_GET['msg'])){
     $msg = $_GET['msg'];
 }else{
@@ -50,13 +49,13 @@ if (mysqli_num_rows($r) == 1){
                           <p class=\"card-text\" style='text-align: center;'>{$msg}</p>
                         </div>
                     </div>";
-        }//neu có lỗi hoac thanh cong thì thông báo ra màn hình
+        }
         ?>
         <div class="row grid-margin">
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title" style="text-align: center;font-size: 30px;">Sửa slide</h4>
+                        <h4 class="card-title" style="text-align: center;font-size: 30px;">Edit slides</h4>
                         <?php
                         if (isset($slides['slide_image'])){
                             echo "
@@ -67,18 +66,18 @@ if (mysqli_num_rows($r) == 1){
                         <form class="forms-sample" method="post" action="action/action_edit_slide.php?sid=<?php echo $sid;?>" enctype="multipart/form-data">
 
                             <div class="form-group">
-                                <label>Chọn ảnh cho slide<span style="color: red">*</span></label>
+                                <label>Choose a photo for the slide<span style="color: red">*</span></label>
                                 <input type="file" name="image" class="file-upload-default">
                                 <div class="input-group col-xs-12">
                                     <input type="text" value="<?php echo $slides['slide_image']?>" class="form-control file-upload-info"
                                            disabled="" placeholder="...">
                                     <span class="input-group-append">
-                          <button class="file-upload-browse btn btn-primary" type="button">Chọn ảnh</button>
+                          <button class="file-upload-browse btn btn-primary" type="button">Choose photo</button>
                         </span>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="exampleTextarea1">Mô tả<span style="color: red">*</span></label>
+                                <label for="exampleTextarea1">Describe<span style="color: red">*</span></label>
 
                                 <textarea class="form-control" name="description" id="editor1" rows="4">
                                 <?php
@@ -91,7 +90,7 @@ if (mysqli_num_rows($r) == 1){
 
                                 </script>
                             </div>
-                            <input type="submit" class="btn btn-primary mr-2" name="submit" value="Sửa slide">
+                            <input type="submit" class="btn btn-primary mr-2" name="submit" value="Edit slides">
                         </form>
                     </div>
                 </div>

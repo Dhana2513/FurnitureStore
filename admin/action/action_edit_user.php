@@ -5,7 +5,7 @@ $uid = validate_id($_GET['uid']);
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $errors = array();
     if (empty($_POST['name'])) {
-        $errors[] = 'Bạn hãy điền họ và tên của bạn';
+        $errors[] = 'Please enter your full name';
     } else {
         $name = mysqli_real_escape_string($dbc, strip_tags($_POST['name']));
     }
@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $role_id = $_POST['role_id'];
     }
     if (empty($_POST['account'])) {
-        $errors[] = 'Bạn hãy điền tài khoản đăng nhập của bạn';
+        $errors[] = 'Please enter your login account';
     } else {
         $account = mysqli_real_escape_string($dbc, strip_tags($_POST['account']));
     }
@@ -23,10 +23,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $r = mysqli_query($dbc,$q);
         confirm_query($r,$q);
         if (mysqli_affected_rows($dbc) == 1){
-            $msg = "Sửa tài khoản thành công";
+            $msg = "Edit account successfully";
             $suc = 1;
         }else{
-            $msg = "Lỗi!Tài khoản không thay đổi";
+            $msg = "Error, the account has not changed";
             $suc = 0;
         }
     } else {

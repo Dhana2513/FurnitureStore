@@ -37,26 +37,25 @@ if (isset($_GET['suc'])){
                           <p class=\"card-text\" style='text-align: center;'>{$msg}</p>
                         </div>
                     </div>";
-        }//neu có lỗi hoac thanh cong thì thông báo ra màn hình
+        }
         ?>
         <div class="row grid-margin">
             <div class="col-12 grid-margin stretch-card">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title" style="text-align: center;font-size: 30px;">Thêm chức vụ</h4>
+                        <h4 class="card-title" style="text-align: center;font-size: 30px;">Add position</h4>
                         <form class="forms-sample" method="post" action="action/action_add_role.php">
                             <div class="form-group">
-                                <label for="exampleInputName1">Tên chức vụ <span style="color: red">*</span></label>
+                                <label for="exampleInputName1">Title of position <span style="color: red">*</span></label>
                                 <input type="text" value="<?php if(isset($_POST['role'])) echo strip_tags($_POST['role']);?>"
-                                       name="role" class="form-control" id="exampleInputName1" placeholder="Điền tên chức vụ ..." />
-                                <!-- Hàm strip_tags() sẽ loại bỏ các thẻ HTML và PHP ra khỏi chuỗi. Hàm sẽ trả về chuỗi đã loại bỏ hết các thẻ HTML và PHP.-->
+                                       name="role" class="form-control" id="exampleInputName1" placeholder="Enter the title of the job ..." />
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputEmail3">Phân quyền</label>
+                                <label for="exampleInputEmail3">Decentralization</label>
                                 <input type="text" value="<?php if(isset($_POST['permission'])) echo strip_tags($_POST['permission']);?>"
-                                       name="permission" class="form-control" id="exampleInputEmail3" placeholder="Điền phân quyền cho chức vụ : ví dụ : add_categories" />
+                                       name="permission" class="form-control" id="exampleInputEmail3" placeholder="Enter authority for the position: for example: add_categories" />
                             </div>
-                            <button type="submit" name="submit" class="btn btn-primary mr-2">Thêm chức vụ</button>
+                            <button type="submit" name="submit" class="btn btn-primary mr-2">Add position</button>
                         </form>
                     </div>
                 </div>

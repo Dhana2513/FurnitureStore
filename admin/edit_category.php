@@ -5,7 +5,7 @@ $permission = 'edit_category';
 include ('../includes/mysqli_connect.php');
 include ('../includes/functions.php');
 if (!has_permission($account,$permission)){
-    $msg = "Bạn không có quyền để thực hiện tác vụ này";
+    $msg = "You do not have permission to perform this action";
     header('Location: view_categories.php?msg='.$msg);
     exit;
 }
@@ -26,12 +26,10 @@ if (isset($_GET['suc'])){
     $suc= '';
 }
 
-//xu li code
 
 $cid = validate_id($_GET['cid']);//function
 
 
-//lay du lieu cua danh muc da chon
 
 $q = "SELECT * FROM categories WHERE cat_id ={$cid}";
 $r = mysqli_query($dbc, $q);
@@ -40,7 +38,7 @@ confirm_query($r, $q);
 if (mysqli_num_rows($r) == 1) {
     $cats = mysqli_fetch_array($r,MYSQLI_ASSOC);
 } else {
-    $msg = "Lỗi!CATEGORY không tồn tại";
+    $msg = "Error! CATEGORY does not exist";
     $suc = 0;
 }
 ?>
@@ -62,24 +60,23 @@ if (mysqli_num_rows($r) == 1) {
                           <p class=\"card-text\" style='text-align: center;'>{$msg}</p>
                         </div>
                     </div>";
-        }//neu có lỗi hoac thanh cong thì thông báo ra màn hình
+        }
         ?>
         <div class="row grid-margin">
             <div class="col-12 grid-margin stretch-card">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title" style="text-align: center;font-size: 30px;">Sửa CATEGORY : <?php if(isset($cats['cat_name'])) echo $cats['cat_name'];?></h4>
+                        <h4 class="card-title" style="text-align: center;font-size: 30px;">Correct CATEGORY : <?php if(isset($cats['cat_name'])) echo $cats['cat_name'];?></h4>
                         <form class="forms-sample" action="action/action_edit_category.php?cid=<?php echo $cid;?>" method="post" >
                             <div class="form-group">
-                                <label for="exampleInputName1">Tên CATEGORY <span style="color: red">*</span></label>
+                                <label for="exampleInputName1">CATEGORY Name <span style="color: red">*</span></label>
                                 <input type="text" value="<?php if(isset($cats['cat_name'])) echo $cats['cat_name'];?>"
-                                       name="category" class="form-control" id="exampleInputName1" placeholder="Tên CATEGORY" />
-                                <!-- Hàm strip_tags() sẽ loại bỏ các thẻ HTML và PHP ra khỏi chuỗi. Hàm sẽ trả về chuỗi đã loại bỏ hết các thẻ HTML và PHP.-->
+                                       name="category" class="form-control" id="exampleInputName1" placeholder="CATEGORY Name" />
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputPassword4">Chọn vị trí <span style="color: red">*</span></label>
+                                <label for="exampleInputPassword4">Choose a location <span style="color: red">*</span></label>
                                 <select name="position" aria-controls="order-listing" class="form-control">
-                                    <option>Vị trí</option>
+                                    <option>Location</option>
                                     <?php
                                     $q = "SELECT count(cat_id) as count FROM categories";
                                     $r = mysqli_query($dbc,$q);
@@ -96,7 +93,7 @@ if (mysqli_num_rows($r) == 1) {
                                     ?>
                                 </select>
                             </div>
-                            <button type="submit" name="submit" class="btn btn-primary mr-2">Sửa CATEGORY</button>
+                            <button type="submit" name="submit" class="btn btn-primary mr-2">Correct CATEGORY</button>
                         </form>
                     </div>
                 </div>

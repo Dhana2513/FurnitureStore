@@ -113,7 +113,7 @@ $start = ($page - 1) * $limit;
                                             <td class=\"jsgrid-cell jsgrid-align-center\" style=\"width: 150px;\">".$rows['customer_address']."</td>
                                             <td class=\"jsgrid-cell jsgrid-control-field jsgrid-align-center\" style=\"width: 50px;\">
                                                 <a href='order_detail.php?code={$rows['transaction_code']}'><input class=\"jsgrid-button jsgrid-clear-filter-button\" type=\"button\" title=\"Xem chi tiết hóa đơn\"></a>
-                                                <a href='delete_transaction.php?code={$rows['transaction_code']}'><input class=\"jsgrid-button jsgrid-delete-button\" type=\"button\" title=\"Xóa\"></a>
+                                                <a href='delete_transaction.php?code={$rows['transaction_code']}'><input class=\"jsgrid-button jsgrid-delete-button\" type=\"button\" title=\"Erase\"></a>
                                             </td>
                                         ";
                                     }

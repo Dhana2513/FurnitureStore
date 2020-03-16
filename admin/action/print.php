@@ -11,7 +11,6 @@ $q = "SELECT * FROM transactions WHERE transaction_code = {$code}";
 $r = mysqli_query($dbc,$q);
 
 $detail = mysqli_fetch_array($r,MYSQLI_ASSOC);
-// instantiate and use the dompdf class
 $dompdf = new Dompdf();
 
 $html = '
@@ -26,18 +25,18 @@ $html = '
   <div class="card">
        <div class="card-body">';
 $html .= '
-            <h4 class="card-title">Chi Tiết Hóa Đơn</h4>
+            <h4 class="card-title">Invoice Details</h4>
             <p class="card-description">
-                Họ & Tên khách hàng : <b>'.$detail['customer_name'].'</b>
+            Customers full name : <b>'.$detail['customer_name'].'</b>
             </p>
             <p class="card-description">
-                Số điện thoại : <b>'.$detail['customer_phone'].'</b>
+            Phone number : <b>'.$detail['customer_phone'].'</b>
             </p>
             <p class="card-description">
-                Địa chỉ Email : <b>'.$detail['customer_email'].'</b>
+            Email address : <b>'.$detail['customer_email'].'</b>
             </p>
             <p class="card-description">
-                Địa chỉ giao hàng : <b>'.$detail['customer_address'].'</b>
+            Delivery address : <b>'.$detail['customer_address'].'</b>
             </p>
 
             <div class="table-responsive">
@@ -49,7 +48,7 @@ $html .= '
                 <table class="table">
                     <thead>
                     <tr>
-                        <th>Sản phẩm</th>
+                        <th>Product</th>
                         <th>AMOUNT</th>
                         <th>INTO MONEY</th>
                     </tr>
@@ -71,7 +70,7 @@ while ($rows = mysqli_fetch_array($r1,MYSQLI_ASSOC)){
 $total +=30000;
 $html .='
                                  <tr>
-                                    <td>Phí giao hàng </td>
+                                    <td>Delivery charges </td>
                                     <td>1</td>
                                     <td>30.000 INR</td>
                                 </tr>
@@ -87,13 +86,8 @@ $html .='
                 </div>';
 $dompdf->loadHtml($html);
 
-// (Optional) Setup the paper size and orientation
 $dompdf->setPaper('A4', 'landscape');
 
-// Render the HTML as PDF
 $dompdf->render();
 
-// Output the generated PDF to Browser
 $dompdf->stream();
-
-?>

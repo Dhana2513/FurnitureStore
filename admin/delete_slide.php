@@ -9,7 +9,6 @@ include "admin_sidebar.php"
 ?>
 <?php
 $sid = validate_id($_GET['sid']);
-//lay du lieu cua danh muc da chon
 
 $q = "SELECT slide_image FROM slides WHERE slide_id ={$sid}";
 $r = mysqli_query($dbc, $q);
@@ -18,7 +17,7 @@ confirm_query($r, $q);
 if (mysqli_num_rows($r) == 1) {
     $slides = mysqli_fetch_array($r, MYSQLI_ASSOC);
 } else {
-    $msg = "Lỗi!Slide này không còn tồn tại";
+    $msg = "Error! This slide no longer exists";
     $suc = 0;
 }
 ?>
@@ -29,7 +28,7 @@ if (mysqli_num_rows($r) == 1) {
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title" style="text-align: center;font-size: 30px;">Xóa slide</h4>
+                        <h4 class="card-title" style="text-align: center;font-size: 30px;">Remove slide</h4>
                         <?php
                             if (isset($slides['slide_image'])){
                                 echo "
@@ -43,17 +42,17 @@ if (mysqli_num_rows($r) == 1) {
                                 <div class="modal-dialog modal-lg">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title">Thông báo</h5>
+                                            <h5 class="modal-title">Notification</h5>
                                             <button type="button" class="close">
                                                 <span aria-hidden="true">×</span>
                                             </button>
                                         </div>
                                         <div class="modal-body">
-                                            <p>Bạn có muốn xóa CATEGORY này không?</p>
+                                            <p>Do you want to delete this CATEGORY?</p>
                                         </div>
                                         <div class="modal-footer">
-                                            <input type="submit" class="btn btn-danger" name="delete" value="Xóa">
-                                            <input type="submit" class="btn btn-light" name="delete" value="Hủy">
+                                            <input type="submit" class="btn btn-danger" name="delete" value="Erase">
+                                            <input type="submit" class="btn btn-light" name="delete" value="Cancel">
                                         </div>
                                     </div>
                                 </div>

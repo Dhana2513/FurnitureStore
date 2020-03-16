@@ -5,14 +5,14 @@ $cid = validate_id($_GET['cid']);
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $errors = array();
     if (empty($_POST['category'])) {
-        $errors[] = 'Bạn hãy điền cho tên CATEGORY';
+        $errors[] = 'Please enter the name CATEGORY';
     } else {
         $cat_name = mysqli_real_escape_string($dbc, strip_tags($_POST['category']));
     }
     if (isset($_POST['position']) && filter_var($_POST['position'], FILTER_VALIDATE_INT, array('min_array' => 1))) {
         $position = $_POST['position'];
     } else {
-        $errors[] = 'Bạn hãy chọn vị trí cho CATEGORY ';
+        $errors[] = 'Please select a location for CATEGORY ';
     }
     //check category_url(url co the co hoac ko)
     $url = mysqli_real_escape_string($dbc,$_POST['url']);
@@ -22,10 +22,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $r = mysqli_query($dbc,$q);
         confirm_query($r,$q);
         if (mysqli_affected_rows($dbc) == 1){
-            $msg = "Sửa CATEGORY thành công";
+            $msg = "Corrected CATEGORY successfully";
             $suc = 1;
         }else{
-            $msg = "Lỗi!CATEGORY không thay đổi";
+            $msg = "Error! CATEGORY has not changed";
             $suc = 0;
         }
     } else {

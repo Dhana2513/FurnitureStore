@@ -20,11 +20,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         $expensions= array("jpeg","jpg","png");
 
         if(in_array($file_ext,$expensions)=== false){
-            $errors[]="Hãy chọn 1 ảnh silde và ảnh chỉ hỗ trợ upload file JPG, JPEG hoặc PNG.";
+            $errors[]="Please select a silde image and the image only supports uploading JPG, JPEG or PNG files.";
         }
 
         if($file_size > 2097152) {
-            $errors[]='Kích thước ảnh không được lớn hơn 2MB';
+            $errors[]='Image size cannot be larger than 2MB';
         }
 
         if(empty($errors)==true) {
@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
     //
     if(empty($_POST['description'])) {
-        $errors[] = "Bạn phải nhập mô tả ảnh silde này";
+        $errors[] = "You must enter a description of this silde image";
     } else {
         $description = mysqli_real_escape_string($dbc,$_POST['description']);
     }
@@ -44,10 +44,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         $r = mysqli_query($dbc,$q);
         confirm_query($r,$q);
         if (mysqli_affected_rows($dbc) == 1){
-            $msg = "Thêm ảnh slide thành công";
+            $msg = "Add successful photo slides";
             $suc = 1;
         }else{
-            $msg = "Thêm ảnh slide không thành công";
+            $msg = "Adding a slide image failed";
             $suc = 0;
         }
     }else{

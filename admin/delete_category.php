@@ -9,7 +9,6 @@ include "admin_sidebar.php"
 ?>
 <?php
     $cid = validate_id($_GET['cid']);
-    //lay du lieu cua danh muc da chon
 
     $q = "SELECT cat_name FROM categories WHERE cat_id ={$cid}";
     $r = mysqli_query($dbc, $q);
@@ -18,7 +17,7 @@ include "admin_sidebar.php"
     if (mysqli_num_rows($r) == 1) {
         list($cat_name) = mysqli_fetch_array($r, MYSQLI_NUM);
     } else {
-        $msg = "Lỗi!CATEGORY không tồn tại";
+        $msg = "Error! CATEGORY does not exist";
         $suc = 0;
     }
 ?>
@@ -29,24 +28,24 @@ include "admin_sidebar.php"
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title" style="text-align: center;font-size: 30px;">Xóa CATEGORY : <?php if (isset($cat_name)) echo $cat_name;?></h4>
+                        <h4 class="card-title" style="text-align: center;font-size: 30px;">Erase CATEGORY : <?php if (isset($cat_name)) echo $cat_name;?></h4>
                         <!-- Dummy Modal Starts -->
                         <form action="action/action_delete_category.php?cid=<?php echo $cid;?>" method="post">
                         <div class="modal demo-modal">
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title">Thông báo</h5>
+                                        <h5 class="modal-title">Notification</h5>
                                         <button type="button" class="close">
                                             <span aria-hidden="true">×</span>
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <p>Bạn có muốn xóa CATEGORY <b><?php if (isset($cat_name)) echo $cat_name;?></b> không?</p>
+                                        <p>Do you want to delete CATEGORY <b><?php if (isset($cat_name)) echo $cat_name;?></b> ?</p>
                                     </div>
                                     <div class="modal-footer">
-                                        <input type="submit" class="btn btn-danger" name="delete" value="Xóa">
-                                        <input type="submit" class="btn btn-light" name="delete" value="Hủy">
+                                        <input type="submit" class="btn btn-danger" name="delete" value="Erase">
+                                        <input type="submit" class="btn btn-light" name="delete" value="Cancel">
                                     </div>
                                 </div>
                             </div>

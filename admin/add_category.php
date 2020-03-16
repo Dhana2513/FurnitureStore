@@ -44,24 +44,23 @@ include "admin_sidebar.php";
                           <p class=\"card-text\" style='text-align: center;'>{$msg}</p>
                         </div>
                     </div>";
-        }//neu có lỗi hoac thanh cong thì thông báo ra màn hình
+        }
         ?>
         <div class="row grid-margin">
             <div class="col-12 grid-margin stretch-card">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title" style="text-align: center;font-size: 30px;">Thêm CATEGORY</h4>
+                        <h4 class="card-title" style="text-align: center;font-size: 30px;">Add CATEGORY</h4>
                         <form class="forms-sample" method="post" action="action/action_add_category.php">
                             <div class="form-group">
-                                <label for="exampleInputName1">Tên CATEGORY <span style="color: red">*</span></label>
+                                <label for="exampleInputName1">CATEGORY Name<span style="color: red">*</span></label>
                                 <input type="text" value="<?php if(isset($_POST['category'])) echo strip_tags($_POST['category']);?>"
                                        name="category" class="form-control" id="exampleInputName1" placeholder="Tên CATEGORY" />
-                                <!-- Hàm strip_tags() sẽ loại bỏ các thẻ HTML và PHP ra khỏi chuỗi. Hàm sẽ trả về chuỗi đã loại bỏ hết các thẻ HTML và PHP.-->
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputPassword4">Chọn vị trí <span style="color: red">*</span></label>
+                                <label for="exampleInputPassword4">Choose a location <span style="color: red">*</span></label>
                                 <select name="position" aria-controls="order-listing" class="form-control">
-                                    <option>Vị trí</option>
+                                    <option>Location</option>
                                     <?php
                                     $q = "SELECT count(cat_id) as count FROM categories";
                                     $r = mysqli_query($dbc,$q);
@@ -69,18 +68,16 @@ include "admin_sidebar.php";
 
                                     if (mysqli_num_rows($r) == 1){
                                         list($num) = mysqli_fetch_array($r,MYSQLI_NUM);
-                                        //giong ham array
                                         for($i=1;$i<=$num+1;$i++){
                                             echo "<option value='{$i}'";
                                             if(isset($_POST['position']) && $_POST['position'] == $i) echo "selected='selected'";
-                                            //selected='selected' dung de nho du lieu ;
                                             echo ">".$i."</option>";
                                         }
                                     }
                                     ?>
                                 </select>
                             </div>
-                            <button type="submit" name="submit" class="btn btn-primary mr-2">Thêm CATEGORY</button>
+                            <button type="submit" name="submit" class="btn btn-primary mr-2">Add CATEGORY</button>
                         </form>
                     </div>
                 </div>

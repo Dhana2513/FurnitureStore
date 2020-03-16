@@ -11,12 +11,12 @@ if ($_SERVER['REQUEST_METHOD']=='POST'){
     if (isset($_POST['account']) && filter_var($_POST['account'],FILTER_VALIDATE_EMAIL)){
         $account = mysqli_real_escape_string($dbc,$_POST['account']);
     }else{
-        $errors[] = 'Vui lòng nhập tài khoản';
+        $errors[] = 'Please enter an account';
     }
     if (isset($_POST['password']) && preg_match('/^[\w\'.-]{6,20}$/',$_POST['password'])){
         $password = mysqli_real_escape_string($dbc,$_POST['password']);
     }else{
-        $errors[] = 'Vui lòng nhập mật khẩu';
+        $errors[] = 'Please enter a password';
     }
     if (empty($errors)){
         $q = " SELECT user_id,user_name,user_account,user_password,role_id FROM users WHERE (user_account = '$account' AND user_password = SHA1('$password'))";
@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST'){
             $_SESSION['role_id'] = $role_id;
             $suc = 1;
         }else{
-            $msg = "Tài khoản hoặc mật khẩu không đúng.";
+            $msg = "The account or password is incorrect.";
             $suc = 0;
         }
     }else{

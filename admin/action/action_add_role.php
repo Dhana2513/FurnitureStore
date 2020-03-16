@@ -7,12 +7,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $errors = array();
 
     if (empty($_POST['role'])){
-        $errors[] = 'Bạn hãy điền tên chức vụ';
+        $errors[] = 'Please enter the title of the job';
     }else {
         $role = mysqli_real_escape_string($dbc,strip_tags($_POST['role']));
     }
 
-    //check permission(permission co the co hoac ko)
     $permission = mysqli_real_escape_string($dbc,$_POST['permission']);
 
 
@@ -21,18 +20,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         $r = mysqli_query($dbc,$q);
 
         if (mysqli_num_rows($r) >= 1){
-            $msg = "Chức vụ này đã tồn tại!";
+            $msg = "This position already exists!";
             $suc = 0;
         }else{
-            //Neu ko co loi nao xay ra thi bat dau insert du lieu
             $q = "INSERT INTO roles (role,permission) VALUE ('{$role}','{$permission}')";
             $r = mysqli_query($dbc,$q);
             confirm_query($r,$q);
             if (mysqli_affected_rows($dbc) == 1){
-                $msg = "Thêm chức vụ thành công";
+                $msg = "More successful positions";
                 $suc = 1;
             }else{
-                $msg = "Lỗi hệ thống";
+                $msg = "System error";
                 $suc = 1;
             }
         }

@@ -19,11 +19,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $expensions = array("jpeg", "jpg", "png");
 
         if (in_array($file_ext, $expensions) === false) {
-            $errors[] = "Hãy chọn 1 ảnh slide và ảnh chỉ hỗ trợ upload file JPG, JPEG hoặc PNG.";
+            $errors[] = "Please select a photo slide and images only support uploading JPG, JPEG or PNG files.";
         }
 
         if ($file_size > 2097152) {
-            $errors[] = 'Kích thước slide không được lớn hơn 2MB';
+            $errors[] = 'Slide size cannot be larger than 2MB';
         }
 
         if (empty($errors) == true) {
@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     if (empty($_POST['description'])) {
-        $errors[] = "Bạn phải nhập mô tả cho slide";
+        $errors[] = "You must enter a description for the slide";
     } else {
         $decription = mysqli_real_escape_string($dbc, $_POST['description']);
     }

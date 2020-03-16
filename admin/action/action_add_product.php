@@ -5,17 +5,15 @@ $msg= '';
 $suc= '';
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $errors = array();
-    //kiem tra danh muc
     if (isset($_POST['cat_id']) && filter_var($_POST['cat_id'],FILTER_VALIDATE_INT,array('min_array' => 1))){
         $cat_id = mysqli_real_escape_string($dbc,strip_tags($_POST['cat_id']));
     }else {
-        $errors[] = 'Bạn phải chọn CATEGORY cho sản phẩm';
+        $errors[] = 'You must choose CATEGORY for the product';
     }
 
 
-    //kiem tra nhap ten san pham
     if (empty($_POST['product'])){
-        $errors[] = 'Bạn phải điền tên cho sản phẩm';
+        $errors[] = 'You must enter a name for the product';
     }else{
         $product = mysqli_real_escape_string($dbc,strip_tags($_POST['product']));
     }
@@ -33,11 +31,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         $expensions= array("jpeg","jpg","png");
 
         if(in_array($file_ext,$expensions)=== false){
-            $errors[]="Hãy chọn 1 ảnh sản phẩm và ảnh chỉ hỗ trợ upload file JPG, JPEG hoặc PNG.";
+            $errors[]="Please select a product photo and the image only supports uploading JPG, JPEG or PNG files.";
         }
 
         if($file_size > 2097152) {
-            $errors[]='Kích thước file không được lớn hơn 2MB';
+            $errors[]='File size cannot be larger than 2MB';
         }
 
         if(empty($errors)==true) {
@@ -46,38 +44,34 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     }
 
 
-    //kiem tra gia san pham
     if (isset($_POST['product_price']) && $_POST['product_price'] !== '' && (float)$_POST['product_price'] >= 0 ){
         $product_price = $_POST['product_price'];
     }elseif (isset($_POST['product_price'])&& $_POST['product_price'] !== ''&& (float)$_POST['product_price'] < 0){
-        $errors[] = 'Giá sản phẩm không thể  có giá trị nhỏ hơn 0';
+        $errors[] = 'Product prices cannot have a value less than 0';
     }elseif(isset($_POST['product_price']) && $_POST['product_price'] == ''){
-        $errors[] = 'Bạn phải nhập giá sản phẩm';
+        $errors[] = 'You must enter a product price';
     }
 
-    //kiem tra text gia ban san pham
     if (isset($_POST['selling_price']) && $_POST['selling_price'] !== '' && (float)$_POST['selling_price'] >= 0   ){
         $selling_price = $_POST['selling_price'];
     }elseif (isset($_POST['selling_price']) && $_POST['selling_price'] !== '' && (float)$_POST['selling_price'] < 0){
-        $errors[] = 'PRICE không thể có giá trị nhỏ hơn 0';
+        $errors[] = 'PRICE cannot be less than 0';
     }elseif(isset($_POST['selling_price']) && $_POST['selling_price'] == ''){
-        $errors[] = 'Bạn phải nhập PRICE của sản phẩm';
+        $errors[] = 'You must enter PRICE of the product';
     }
-    //kiem tra selling _price va product_price
     if (isset($_POST['product_price']) && isset($_POST['selling_price']) && ($_POST['product_price']<$_POST['selling_price'])){
-        $errors[] = 'PRICE sản phẩm không thể nhỏ hơn giá sản phẩm!!! Bạn vui lòng nhập lại.';
+        $errors[] = 'PRICE product cannot be less than product price !!! Please enter again.';
     }
 
-    //kiem tra noi san xuất
     if (empty($_POST['made_in'])){
-        $errors[] = 'Bạn phải nhập nơi sản xuất cho sản phẩm';
+        $errors[] = 'You must enter a manufacturing location for the product';
     }else{
         $made_in = mysqli_real_escape_string($dbc,strip_tags($_POST['made_in']));
     }
 
     //
     if(empty($_POST['introduce'])) {
-        $errors[] = "Bạn phải nhập thông tin của sản phẩm";
+        $errors[] = "You must enter product information";
     } else {
         $introduce = mysqli_real_escape_string($dbc,$_POST['introduce']);
     }
@@ -87,10 +81,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         $r = mysqli_query($dbc,$q);
         confirm_query($r,$q);
         if (mysqli_affected_rows($dbc) == 1){
-            $msg = "Thêm sản phẩm thành công";
+            $msg = "Add product successfully";
             $suc = 1;
         }else{
-            $msg = "Thêm sản phẩm không thành công";
+            $msg = "Add product failed";
             $suc = 0;
         }
     }else{

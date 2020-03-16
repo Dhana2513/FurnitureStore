@@ -113,7 +113,7 @@ $start = ($page - 1) * $limit;
                                             <td class=\"jsgrid-cell jsgrid-control-field jsgrid-align-center\"
                                                 style=\"width: 50px;\">
                                                 <a href='edit_slide.php?sid={$slides['slide_id']}'><input class=\"jsgrid-button jsgrid-edit-button\" type=\"button\" title=\"Sửa\"></a>
-                                                <a href='delete_slide.php?sid={$slides['slide_id']}'><input class=\"jsgrid-button jsgrid-delete-button\" type=\"button\" title=\"Xóa\"></a>
+                                                <a href='delete_slide.php?sid={$slides['slide_id']}'><input class=\"jsgrid-button jsgrid-delete-button\" type=\"button\" title=\"Erase\"></a>
                                             </td>
                                         </tr>
                                         ";

@@ -17,57 +17,57 @@
         <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
                 <i class="mdi mdi-puzzle-outline menu-icon"></i>
-                <span class="menu-title">Quản lý CATEGORY</span>
+                <span class="menu-title">CATEGORY Manager</span>
                 <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="ui-basic">
                 <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"> <a class="nav-link" href="add_category.php">Thêm CATEGORY</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="view_categories.php">Danh sách CATEGORY</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="add_category.php">Add CATEGORY</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="view_categories.php">List of CATEGORY</a></li>
                 </ul>
             </div>
         </li>
         <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#ui-advanced" aria-expanded="false" aria-controls="ui-advanced">
                 <i class="mdi mdi-bullseye-arrow menu-icon"></i>
-                <span class="menu-title">Quản lý sản phẩm</span>
+                <span class="menu-title">Product Management</span>
                 <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="ui-advanced">
                 <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"> <a class="nav-link" href="add_product.php">Thêm sản phẩm</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="view_products.php">Danh sách các sản phẩm</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="add_product.php">More products</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="view_products.php">List of products</a></li>
                 </ul>
             </div>
         </li>
         <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
                 <i class="mdi mdi-file-document-box-outline menu-icon"></i>
-                <span class="menu-title">Quản lý silde</span>
+                <span class="menu-title">Manage slides</span>
                 <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="form-elements">
                 <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"><a class="nav-link" href="add_slide.php">Thêm silde</a></li>
-                    <li class="nav-item"><a class="nav-link" href="view_slides.php">Danh sách silde</a></li>
+                    <li class="nav-item"><a class="nav-link" href="add_slide.php">Add slides</a></li>
+                    <li class="nav-item"><a class="nav-link" href="view_slides.php">List of slides</a></li>
             </div>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="view_transactions.php">
                 <i class="mdi mdi-playlist-check menu-icon"></i>
-                <span class="menu-title">Quản lý giao dịch</span>
+                <span class="menu-title">Transaction management</span>
             </a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="view_users.php">
                 <i class="mdi mdi-comment-account-outline menu-icon"></i>
-                <span class="menu-title">Danh sách tài khoản admin</span>
+                <span class="menu-title">List of admin accounts</span>
             </a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="view_roles.php">
                 <i class="mdi mdi-file-document-box-outline menu-icon"></i>
-                <span class="menu-title">Quản lý chức vụ</span>
+                <span class="menu-title">Position manager</span>
             </a>
         </li>
     </ul>
