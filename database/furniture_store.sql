@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Mar 16, 2020 at 01:31 PM
+-- Generation Time: Mar 16, 2020 at 07:14 PM
 -- Server version: 10.4.11-MariaDB
--- PHP Version: 7.4.1
+-- PHP Version: 7.4.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `cnpm`
+-- Database: `furniture_store`
 --
 
 -- --------------------------------------------------------
@@ -31,9 +31,9 @@ SET time_zone = "+00:00";
 CREATE TABLE `categories` (
   `cat_id` int(11) NOT NULL,
   `cat_name` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
-  `url` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `url` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `position` int(11) NOT NULL,
-  `display` tinyint(4) NOT NULL
+  `display` tinyint(4) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
@@ -44,7 +44,8 @@ INSERT INTO `categories` (`cat_id`, `cat_name`, `url`, `position`, `display`) VA
 (13, 'Lamp', '', 3, 0),
 (12, 'Decorations', '', 2, 0),
 (10, 'Chair', '', 1, 0),
-(14, 'Table', '', 4, 0);
+(14, 'Table', '', 4, 0),
+(16, 'Sofa', NULL, 5, NULL);
 
 -- --------------------------------------------------------
 
@@ -84,7 +85,7 @@ INSERT INTO `products` (`product_id`, `cat_id`, `product_name`, `product_price`,
 (27, 13, 'Decorative lights', '4500000.00', '4300000.00', 'product_26.png', '<p>Good</p>\r\n', 'India', '2019-10-17 23:26:19'),
 (26, 13, 'Nightlight black', '3500000.00', '3400000.00', 'product_24.png', '<p>Good</p>\r\n', 'India', '2019-10-17 23:25:06'),
 (25, 13, 'Lamp', '3400000.00', '3400000.00', 'product_09.png', '<p>Good</p>\r\n', 'India', '2019-10-17 23:23:46'),
-(24, 13, 'Diamond Lights', '5000000.00', '5000000.00', 'product_05.png', '<p>Good</p>\r\n', 'India', '2019-10-17 23:23:04'),
+(24, 13, 'Diamond Lights', '5000000.00', '5000000.00', 'product_05.png', '<p>Good1</p>\r\n', 'India', '2020-03-16 22:04:42'),
 (40, 10, 'Long Sofa', '8000000.00', '8000000.00', 'product_12.png', '<p>Good</p>\r\n', 'India', '2019-10-17 23:41:01'),
 (41, 10, 'Relaxing chair', '5000000.00', '5000000.00', 'product_18.png', '<p>Good</p>\r\n', 'India', '2019-10-17 23:41:46'),
 (42, 10, 'White Relaxing Chair', '4500000.00', '4300000.00', 'product_22.jpeg', '<p>Good</p>\r\n', 'India', '2019-10-17 23:42:27'),
@@ -118,7 +119,8 @@ INSERT INTO `products` (`product_id`, `cat_id`, `product_name`, `product_price`,
 (71, 12, 'Wall mounted decor for living room TS 286', '4000000.00', '3499999.00', 'decor-gan-tuong-trang-tri-phong-khach-ts-286-4.jpg', '<p> * Material: Metal </p>\r\n\r\n<p> * Size: 80cm = &nbsp; <strong> 4,000,000 VND </strong> </p>\r\n\r\n<p> * Size: 110cm = &nbsp; <strong> 5,000,000 VND </strong> </p>', 'India', '2019-10-29 02:06:16'),
 (72, 12, 'Interior decoration flower paintings TS 285', '3400000.00', '3400000.00', 'tranh-decor-hoa-trang-tri-noi-that-ts-285-1.jpg', '<p> * Material: Metal </p>\r\n\r\n<p> * Size: 160cm </p>', 'India', '2019-10-29 02:07:00'),
 (73, 12, 'Unique decorative wall decor TS 280', '4500000.00', '4500000.00', 'decor-trang-tri-treot-tuong-doc-dao-ts-280-1.jpg', '<p> * Material: Metal </p>\r\n\r\n<p> * Size: 80cm = &nbsp; <strong> 3,500,000 VND </strong> </p>\r\n\r\n<p> * Size: 110cm = <strong> &nbsp; 4,500,000 VND </strong> </p>', 'India', '2019-10-29 02:07:48'),
-(74, 12, 'Iron leaf painting interior decoration TS 270', '5500000.00', '5000000.00', 'tranh-sat-la-tia-trang-tri-noi-that-ts-270-1.jpg', '<p> * Material: Metal </p>\r\n\r\n<p> * Size: 130x60cm = &nbsp; <strong> 5,500,000 VND </strong> </p>\r\n\r\n<p> * Size: 160x70cm = &nbsp; <strong> 6,000,000 VND </strong> </p>', 'India', '2019-10-29 02:09:44');
+(74, 12, 'Iron leaf painting interior decoration TS 270', '5500000.00', '5000000.00', 'tranh-sat-la-tia-trang-tri-noi-that-ts-270-1.jpg', '<p> * Material: Metal </p>\r\n\r\n<p> * Size: 130x60cm = &nbsp; <strong> 5,500,000 VND </strong> </p>\r\n\r\n<p> * Size: 160x70cm = &nbsp; <strong> 6,000,000 VND </strong> </p>', 'India', '2019-10-29 02:09:44'),
+(76, 16, 'Sofa 1 ', '120.00', '100.00', 'Screenshot from 2020-02-05 22-23-40.png', '<p>Good</p>\r\n', 'India', '2020-03-16 22:40:47');
 
 -- --------------------------------------------------------
 
@@ -174,7 +176,7 @@ CREATE TABLE `transactions` (
   `transaction_code` int(255) NOT NULL,
   `customer_name` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `customer_email` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
-  `customer_phone` int(11) NOT NULL,
+  `customer_phone` varchar(15) COLLATE utf8_unicode_ci NOT NULL,
   `customer_address` text COLLATE utf8_unicode_ci NOT NULL,
   `product` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `quantity` int(11) NOT NULL,
@@ -187,12 +189,7 @@ CREATE TABLE `transactions` (
 --
 
 INSERT INTO `transactions` (`transaction_id`, `transaction_code`, `customer_name`, `customer_email`, `customer_phone`, `customer_address`, `product`, `quantity`, `subtotal`, `time_order`) VALUES
-(14, 595306, 'Ajit Jadhav', 'tientu99865@gmail.com', 358828585, 'Nam Hưng - Nam Sách', 'Ghế Làm Việc', 1, '2500000.00', '2019-10-27 19:30:26'),
-(12, 595306, 'Ajit Jadhav', 'tientu99865@gmail.com', 358828585, 'Nam Hưng - Nam Sách', 'Đèn Treo Thời Trang', 3, '10500000.00', '2019-10-27 19:30:25'),
-(13, 595306, 'Ajit Jadhav', 'tientu99865@gmail.com', 358828585, 'Nam Hưng - Nam Sách', 'Cây Cảnh Treo', 1, '1200000.00', '2019-10-27 19:30:26'),
-(16, 722596, 'Dhanaji Yadav', 'tinhnt.gha@gmail.com', 123456789, 'Thanh Hóa', 'Đèn ngủ', 1, '3400000.00', '2019-10-27 22:52:53'),
-(17, 722596, 'Dhanaji Yadav', 'tinhnt.gha@gmail.com', 123456789, 'Thanh Hóa', 'Tranh Để Bàn', 1, '1500000.00', '2019-10-27 22:52:53'),
-(18, 722596, 'Dhanaji Yadav', 'tinhnt.gha@gmail.com', 123456789, 'Thanh Hóa', 'Ghế Làm Việc', 2, '5000000.00', '2019-10-27 22:52:53');
+(19, 654372, 'Dhanaji Ashok Yadav', 'dhana2513@gmail.com', '7972577957', 'E-17', 'Eames chair GE-08', 1, '1200000.00', '2020-03-16 23:39:07');
 
 -- --------------------------------------------------------
 
@@ -214,7 +211,7 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`user_id`, `user_name`, `user_account`, `user_password`, `role_id`) VALUES
 (3, 'Admin', 'tinhnt.gha@gmail.com', 'f865b53623b121fd34ee5426c792e5c33af8c227', 2),
-(2, 'Tiến Tú ', 'admin@gmail.com', 'f865b53623b121fd34ee5426c792e5c33af8c227', 1),
+(2, 'Admin', 'admin@gmail.com', 'f865b53623b121fd34ee5426c792e5c33af8c227', 1),
 (10, 'Phuong', 'tientu99865@gmail.com', 'f865b53623b121fd34ee5426c792e5c33af8c227', 8);
 
 --
@@ -267,13 +264,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `cat_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `cat_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `product_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=75;
+  MODIFY `product_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=77;
 
 --
 -- AUTO_INCREMENT for table `roles`
@@ -291,7 +288,7 @@ ALTER TABLE `slides`
 -- AUTO_INCREMENT for table `transactions`
 --
 ALTER TABLE `transactions`
-  MODIFY `transaction_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `transaction_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `users`

@@ -25,8 +25,8 @@
                         <div class="footer-item-content">
                             <div class="footer-infopage">
                                 <p>University of Transport</p>
-                                <p> Phone number : <a href="callto:0358828585">0358828585</a></p>
-                                <p> E-mail: <a href="mailto:tientu99865@gmail.com">tientu99865@gmail.com</a></p>
+                                <p> Phone number : <a href="callto:9823601924">9823601924</a></p>
+                                <p> E-mail: <a href="mailto:lyraefurniture20@gmail.com">lyraefurniture20@gmail.com</a></p>
                             </div>
                             <div class="footer-social m-t-6">
                                 <div class="social-item facebook">

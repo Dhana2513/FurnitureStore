@@ -54,13 +54,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
             $mail->isSMTP();                                            // Send using SMTP
             $mail->Host = 'smtp.gmail.com';                    // mail server gooogle go port gmail google piavietnam
             $mail->SMTPAuth = true;                                   // Enable SMTP authentication
-            $mail->Username = 'tientu99865@gmail.com';                     //mail minh
-            $mail->Password = 'vptwgaaxtchtxyjf';                               //mat khau ung dung
+            $mail->Username = 'lyraefurniture20@gmail.com';                     //mail minh
+            $mail->Password = '9823601924';                               //mat khau ung dung
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
             $mail->Port = 587;                                    // port gmail google piavietnam
             $mail->CharSet = 'UTF-8';
             //Recipients
-            $mail->setFrom('tientu99865@gmail.com', 'LYRAE FURNITURE-STORE'); //gui tu
+            $mail->setFrom('lyraefurniture20@gmail.com', 'LYRAE FURNITURE-STORE'); //gui tu
             $mail->addAddress($email, 'Customer');     // gui den
 
             //lay noi dung mail gui di
@@ -101,7 +101,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                         </tr>';
                 $Tongcong += $Thanhtien;
                 $q1 = "INSERT INTO transactions (transaction_code,customer_name,customer_email,customer_phone,customer_address,product,quantity,subtotal,time_order) ";
-                 $q1 .=" VALUE ($code,'{$name}','{$email}',$phone,'{$address}','{$sendmail['product_name']}','{$_SESSION['cart'][$sendmail['product_id']]['quantity']}',$Thanhtien,NOW())";
+                 $q1 .=" VALUE ($code,'{$name}','{$email}','{$phone}','{$address}','{$sendmail['product_name']}','{$_SESSION['cart'][$sendmail['product_id']]['quantity']}',$Thanhtien,NOW())";
                  $r1 = mysqli_query($dbc,$q1);
 
             }
