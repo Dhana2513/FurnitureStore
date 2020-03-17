@@ -3,28 +3,28 @@ session_start();
 include "includes/mysqli_connect.php";
 include "includes/source.php";
 
-if(isset($_GET['action']) && $_GET['action']=="add"){
+if (isset($_GET['action']) && $_GET['action'] == "add") {
 
-    $id=intval($_GET['id']);
+    $id = intval($_GET['id']);
+    $qty = intval($_GET['qty']);
 
-    if(isset($_SESSION['cart'][$id])){
+
+    if (isset($_SESSION['cart'][$id])) {
 
         $_SESSION['cart'][$id]['quantity']++;
+    } else {
 
-    }else{
-
-        $q ="SELECT * FROM products 
+        $q = "SELECT * FROM products 
                 WHERE product_id ={$id}";
-        $r=mysqli_query($dbc,$q);
-        if(mysqli_num_rows($r)!=0){
-            $rows=mysqli_fetch_array($r);
+        $r = mysqli_query($dbc, $q);
+        if (mysqli_num_rows($r) != 0) {
+            $rows = mysqli_fetch_array($r);
 
-            $_SESSION['cart'][$rows['product_id']]=array(
-                "quantity" => 1,
+            $_SESSION['cart'][$rows['product_id']] = array(
+                "quantity" => $qty==0?1:$qty,
                 "price" => $rows['selling_price']
             );
         }
-
     }
 }
 include "includes/header.php";
@@ -41,44 +41,43 @@ if (isset($_POST['submit'])) {
             $_SESSION['cart'][$key]['quantity'] = $val;
         }
     }
-
 }
 
 
 ?>
 
-    <!-- Page Title -->
-    <section>
-        <div class="pageintro">
-            <div class="pageintro-bg">
-                <img src="style\images\bg-page_02.jpeg" alt="About Us">
-            </div>
-            <div class="pageintro-body">
-                <h1 class="pageintro-title">YOUR CART</h1>
-            </div>
+<!-- Page Title -->
+<section>
+    <div class="pageintro">
+        <div class="pageintro-bg">
+            <img src="style\images\bg-page_02.jpeg" alt="About Us">
         </div>
-    </section>
-    <!-- End Page Title -->
-    <!-- Table -->
-    <section>
-        <div class="container p-t-100 p-b-30 py-tn-30">
-            <div class="row m-t-20">
-                <div class="col-md-12">
-                    <?php
-                    if (!empty($_SESSION['cart'])) {
-                        ?>
-                        <form action="" method="post">
-                            <table class="table-shop">
-                                <thead>
+        <div class="pageintro-body">
+            <h1 class="pageintro-title">YOUR CART</h1>
+        </div>
+    </div>
+</section>
+<!-- End Page Title -->
+<!-- Table -->
+<section>
+    <div class="container p-t-100 p-b-30 py-tn-30">
+        <div class="row m-t-20">
+            <div class="col-md-12">
+                <?php
+                if (!empty($_SESSION['cart'])) {
+                ?>
+                    <form action="" method="post">
+                        <table class="table-shop">
+                            <thead>
                                 <tr>
                                     <th>PRODUCT'S NAME</th>
                                     <th>PRICE</th>
-                                    <th>AMOUNT</th>
-                                    <th>INTO MONEY</th>
+                                    <th>QUANTITY</th>
+                                    <th>TOTAL</th>
                                     <th></th>
                                 </tr>
-                                </thead>
-                                <tbody>
+                            </thead>
+                            <tbody>
                                 <?php
 
                                 $q = "SELECT * FROM products WHERE product_id IN (";
@@ -93,13 +92,12 @@ if (isset($_POST['submit'])) {
                                 while ($rows = mysqli_fetch_array($query)) {
                                     $subtotal = $_SESSION['cart'][$rows['product_id']]['quantity'] * $rows['selling_price'];
                                     $totalprice += $subtotal;
-                                    ?>
+                                ?>
                                     <tr>
                                         <td>
                                             <div class="table-shop-product">
                                                 <div class="image">
-                                                    <img src="admin/uploads/products/<?php echo $rows['image']; ?>"
-                                                         style="width: 102px;height: 105px;">
+                                                    <img src="admin/uploads/products/<?php echo $rows['image']; ?>" style="width: 102px;height: 105px;">
                                                 </div>
                                                 <div class="name"><?php echo $rows['product_name']; ?></div>
                                             </div>
@@ -109,14 +107,13 @@ if (isset($_POST['submit'])) {
                                         </td>
                                         <td>
                                             <div class="quantity">
-                                        <span class="sub">
-                                            <i class="fa fa-angle-down"></i>
-                                        </span>
-                                                <input type="number" name="quantity[<?php echo $rows['product_id'] ?>]"
-                                                       value="<?php echo $_SESSION['cart'][$rows['product_id']]['quantity'] ?>" >
+                                                <span class="sub">
+                                                    <i class="fa fa-angle-down"></i>
+                                                </span>
+                                                <input type="number" name="quantity[<?php echo $rows['product_id'] ?>]" value="<?php echo $_SESSION['cart'][$rows['product_id']]['quantity'] ?>">
                                                 <span class="add">
-                                            <i class="fa fa-angle-up"></i>
-                                        </span>
+                                                    <i class="fa fa-angle-up"></i>
+                                                </span>
                                             </div>
                                         </td>
                                         <td>
@@ -131,7 +128,7 @@ if (isset($_POST['submit'])) {
                                             </a>
                                         </td>
                                     </tr>
-                                    <?php
+                                <?php
 
                                 }
                                 ?>
@@ -143,33 +140,33 @@ if (isset($_POST['submit'])) {
                                         </div>
                                     </td>
                                 </tr>
-                                </tbody>
-                                <tfoot>
+                            </tbody>
+                            <tfoot>
                                 <tr>
                                     <td colspan="5">
                                         <div class="table-button">
                                             <a href="index.php">Continue shopping</a>
                                             <button type="submit" name="submit" style="cursor: pointer">Update basket
-                            
+
                                             </button>
                                             <a href="checkout.php">Corfirm</a>
                                         </div>
                                     </td>
                                 </tr>
-                                </tfoot>
-                            </table>
-                        </form>
-                        <?php
-                    }else{
-                        echo "No products in the cart!<br>";
-                        echo "<a href='index.php'>Return to HOME PAGE</a>";
-                    }
-                        ?>
-                </div>
+                            </tfoot>
+                        </table>
+                    </form>
+                <?php
+                } else {
+                    echo "No products in the cart!<br>";
+                    echo "<a href='index.php'>Return to HOME PAGE</a>";
+                }
+                ?>
             </div>
         </div>
-    </section>
-    <!-- End Table -->
+    </div>
+</section>
+<!-- End Table -->
 <?php
 include "includes/footer.php";
 
