@@ -20,7 +20,7 @@ include "includes/header.php";
             <div class="port-body">
                 <div class="contact-form">
                     <div class="messages" id="status"></div>
-                    <form id="contact-form">
+                    <form id="contact-form" method="post" action="action_contact.php">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group au-form">
@@ -37,7 +37,7 @@ include "includes/header.php";
                             <div class="col-md-6">
                                 <div class="form-group au-form">
                                     <div class="help-block with-errors"></div>
-                                    <input type="text" id="address" name="address" placeholder="Your address" required="" data-error="Address is required">
+                                    <input type="text" id="address" name="address" placeholder="Your address (optional)" required="" data-error="Address is required">
                                 </div>
                             </div>
                             <div class="col-md-6">

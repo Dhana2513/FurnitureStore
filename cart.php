@@ -152,7 +152,7 @@ if (isset($_POST['submit'])) {
                                             <button type="submit" name="submit" style="cursor: pointer">Update basket
                             
                                             </button>
-                                            <a href="checkout.php">Pay</a>
+                                            <a href="checkout.php">Corfirm</a>
                                         </div>
                                     </td>
                                 </tr>

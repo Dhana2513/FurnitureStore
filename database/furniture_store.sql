@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Mar 16, 2020 at 07:14 PM
+-- Generation Time: Mar 17, 2020 at 10:50 AM
 -- Server version: 10.4.11-MariaDB
--- PHP Version: 7.4.2
+-- PHP Version: 7.4.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -50,6 +50,28 @@ INSERT INTO `categories` (`cat_id`, `cat_name`, `url`, `position`, `display`) VA
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `inquiry_master`
+--
+
+CREATE TABLE `inquiry_master` (
+  `inquiry_id` int(11) NOT NULL,
+  `customer_name` varchar(100) NOT NULL,
+  `customer_email` varchar(50) NOT NULL,
+  `customer_phone` varchar(15) NOT NULL,
+  `customer_address` varchar(250) NOT NULL,
+  `content` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `inquiry_master`
+--
+
+INSERT INTO `inquiry_master` (`inquiry_id`, `customer_name`, `customer_email`, `customer_phone`, `customer_address`, `content`) VALUES
+(2, 'AJIT JADHAV', 'ajit.jadhav36@gmail.com', '09767439609', '502,Shree Ganesh apart. Sector 19, Kopar khairane,navi Mumbai', 'ssss');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `products`
 --
 
@@ -90,20 +112,20 @@ INSERT INTO `products` (`product_id`, `cat_id`, `product_name`, `product_price`,
 (41, 10, 'Relaxing chair', '5000000.00', '5000000.00', 'product_18.png', '<p>Good</p>\r\n', 'India', '2019-10-17 23:41:46'),
 (42, 10, 'White Relaxing Chair', '4500000.00', '4300000.00', 'product_22.jpeg', '<p>Good</p>\r\n', 'India', '2019-10-17 23:42:27'),
 (43, 10, 'Diamond chair', '700000.00', '700000.00', '77306_350_200_W.png', '<p> Diamond chairs are made of stainless steel and stainless steel pvc leather. &nbsp; </p>\r\n<p>Ghế Diamond c&oacute; 2 m&agrave;u : đen, đỏ&nbsp;</p>\r\n\r\n<p>K&iacute;ch thước : 85 x 68 x 44 cm&nbsp;</p>\r\n', 'India', '2019-10-29 01:29:37'),
-(44, 10, 'Sofa G002', '4500000.00', '4000000.00', '74134_350_200_W.jpg', '<p> Sofas are made up of stainless steel and stainless steel; pvc leather. &nbsp; </p>\r\n\r\n<p> Sofas c & oacute; 2 m & u: black, red &nbsp; </p>\r\n\r\n<p> Dimensions: 85 x 68 x 44 cm &nbsp; </p>', 'India', '2019-10-29 01:34:45'),
-(45, 10, 'Sofa G003', '7000000.00', '6000000.00', '74132_350_200_W.jpg', '<p> SOFA chairs are made up of stainless steel and stainless steel; pvc leather. &nbsp; </p>\r\n\r\n<p> SOFA chairs &nbsp; c & oacute; 2 m & u: black, red &nbsp; </p>\r\n\r\n<p> Dimensions: 85 x 68 x 44 cm &nbsp; </p>', 'India', '2019-10-29 01:36:15'),
+(44, 10, 'Sofa G002', '4500000.00', '4000000.00', '74134_350_200_W.jpg', '<p> Sofas are made up of stainless steel and stainless steel; pvc leather. &nbsp; </p>\r\n\r\n<p> Sofas c &oacute; 2 m & u: black, red &nbsp; </p>\r\n\r\n<p> Dimensions: 85 x 68 x 44 cm &nbsp; </p>', 'India', '2019-10-29 01:34:45'),
+(45, 10, 'Sofa G003', '7000000.00', '6000000.00', '74132_350_200_W.jpg', '<p> SOFA chairs are made up of stainless steel and stainless steel; pvc leather. &nbsp; </p>\r\n\r\n<p> SOFA chairs &nbsp; c &oacute; 2 m & u: black, red &nbsp; </p>\r\n\r\n<p> Dimensions: 85 x 68 x 44 cm &nbsp; </p>', 'India', '2019-10-29 01:36:15'),
 (46, 10, 'Cafe chairs', '1500000.00', '1500000.00', '77285_350_200_W.png', '<p> The chair is made up of stainless steel and stainless steel; pvc leather. &nbsp; </p>\r\n<p>Ghế c&oacute; 2 m&agrave;u : đen, đỏ&nbsp;</p>\r\n\r\n<p>K&iacute;ch thước : 85 x 68 x 44 cm&nbsp;</p>\r\n', 'India', '2019-10-29 01:37:28'),
-(47, 10, 'Sofa G004', '6500000.00', '5000000.00', '74130_350_200_W.jpg', '<p> SOFA chairs are made up of stainless steel and stainless steel; pvc leather. &nbsp; </p>\r\n\r\n<p> SOFA chairs &nbsp; c & oacute; 2 m & u: black, red &nbsp; </p>\r\n\r\n<p> Dimensions: 85 x 68 x 44 cm &nbsp; </p>', 'India', '2019-10-29 01:38:27'),
+(47, 10, 'Sofa G004', '6500000.00', '5000000.00', '74130_350_200_W.jpg', '<p> SOFA chairs are made up of stainless steel and stainless steel; pvc leather. &nbsp; </p>\r\n\r\n<p> SOFA chairs &nbsp; c &oacute; 2 m & u: black, red &nbsp; </p>\r\n\r\n<p> Dimensions: 85 x 68 x 44 cm &nbsp; </p>', 'India', '2019-10-29 01:38:27'),
 (48, 10, 'Single sofa MH 002', '3400000.00', '3400000.00', '74136_350_200_W.jpg', '<p> SOFA chairs are made up of stainless steel and stainless steel; pvc leather. &nbsp; </p>\r\n<p>Ghế SOFA&nbsp;c&oacute; 2 m&agrave;u : đen, đỏ&nbsp;</p>\r\n\r\n<p>K&iacute;ch thước : 85 x 68 x 44 cm&nbsp;</p>\r\n', 'India', '2019-10-29 01:39:10'),
-(49, 10, 'Sofa G005', '6500000.00', '6500000.00', '74128_350_200_W.jpg', '<p> SOFA chairs are made up of stainless steel and stainless steel; pvc leather. &nbsp; </p>\r\n\r\n<p> SOFA chairs &nbsp; c & oacute; 2 m & u: black, red &nbsp; </p>\r\n\r\n<p> Dimensions: 85 x 68 x 44 cm &nbsp; </p>', 'India', '2019-10-29 01:40:02'),
-(50, 10, 'Tolix GA01 Morechair chair', '500000.00', '400001.00', '77309_350_200_W.png', '<p> SOFA chairs are made up of stainless steel and stainless steel; pvc leather. &nbsp; </p>\r\n\r\n<p> SOFA chairs &nbsp; c & oacute; 2 m & u: black, red &nbsp; </p>\r\n\r\n<p> Dimensions: 85 x 68 x 44 cm &nbsp; </p>', 'India', '2019-10-29 01:40:56'),
-(51, 10, 'Eames chair GE-08', '1200000.00', '1200000.00', '77307_350_200_W.png', '<p> Seats &nbsp; are made of stainless steel and stainless steel; pvc leather. &nbsp; </p>\r\n\r\n<p> Seats c & oacute; 2 m & u: black, red &nbsp; </p>\r\n\r\n<p> Dimensions: 85 x 68 x 44 cm &nbsp; </p>', 'India', '2019-10-29 01:41:40'),
-(52, 10, 'Kennedy Chair DC-08', '2300000.00', '2300000.00', '77234_350_200_W.png', '<p> Cafe chairs &nbsp; are made of stainless steel and stainless steel; pvc leather. &nbsp; </p>\r\n\r\n<p> Cafe chairs &nbsp; c & oacute; 2 m & u: black, red &nbsp; </p>\r\n\r\n<p> Dimensions: 85 x 68 x 44 cm &nbsp; </p>', 'India', '2019-10-29 01:42:52'),
-(53, 13, 'Chandeliers', '6500000.00', '6500000.00', 'đèn-chùm.jpg', '<p> In a space where a & aacute; a & ugrave; are usually installed in a position; center or area of ​​the area for reception. The only technology that brings only a & aute for customers\' space c & ograve; n l & agrave; Highlight collection & everyone. When placing a & a & rsquo; board room, it creates a luxurious, quirky look. must allow interior decoration. </p>\r\n\r\n<p> What to do to see what a & aacute; l & agrave; one of these types of e & agrave; The most beautiful looking beauty is the most beautiful beauty in the world. Special special products In line with the classic design, T&C classic. A suggestive & yacute; ho & agrave; n l & agrave; you c & oacute; can use these designs &nbsp; <a href=\"https://blog.noithat9x.vn/den-page-tri/\" target=\"_blank\"> <strong> site & iacute; </strong> &nbsp; </a> for & aacute; to increase luxury & agrave; Eye catching. </p>', 'India', '2019-10-29 01:47:10'),
-(54, 13, 'LED ceiling lights', '4500000.00', '400000.00', 'Đèn-led-âm-trần.jpg', '<p> Type e & tgrave; n & agrave; y c & oacute; Characteristic l & agrave; covered in ceiling tiles. with & aacute; lighting & agrave; Bring modern & modern space to the world. For many modern products, the model is equipped with a modern equipment. n & agrave; y are used very popular. As soon as you set up space and space, you will feel the simplicity, spaciousness and breadth of space. g & agrave; ng. </p>\r\n\r\n<p> An additional feature that makes it easy to work with an eye ch & iacute; Products for ceiling tiles c & oacute; gi & aacute; th & aggrave; well suited. We have obsolete & outdated technology as well as problems. want to like drop-down, drop-down, </p>\r\n\r\n<p> Complete page & page of page; Non-porous ceiling panel type, no ceiling & ceiling panel. In & quot & aacute; impressive & c & oacute; Be able to manage m & m t & tgrave; drop or egrave; drop. We will work together. a relative combination of h & ograve; a. </p>', 'India', '2019-10-29 01:47:52'),
-(55, 13, 'Drop light', '4000000.00', '4000000.00', 'đèn-thả.jpg', '<p> If you are l & agrave; one of the furniture of the sophisticated and modern style of modern furniture. d & lgrave; Select v & ocirc; c & ugrave; perfect cough. You won\'t have to worry about the type of drop-out that makes the space look ugly. or glitzy. On the contrary, the freshness of this design will take both the owner and the owner. t & iacute; most. </p>\r\n\r\n<p> Contemporary & ecirc; n, with design type & timel; og og og ch ch ch ch y y y og,,,,, og og og og og og og og og og og og og og og og og og og og og og og og og og og og og og og og og og og og og ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph ch ph combine eating & yacute; between the cars v & ocirc; c & ugrave; ng required. For impressive impression, you c & oacute; Simple usable from 1 &ndash; 3 pieces for drop or one set for drop-on set enough. </p>', 'India', '2019-10-29 01:48:35'),
+(49, 10, 'Sofa G005', '6500000.00', '6500000.00', '74128_350_200_W.jpg', '<p> SOFA chairs are made up of stainless steel and stainless steel; pvc leather. &nbsp; </p>\r\n\r\n<p> SOFA chairs &nbsp; c &oacute; 2 m & u: black, red &nbsp; </p>\r\n\r\n<p> Dimensions: 85 x 68 x 44 cm &nbsp; </p>', 'India', '2019-10-29 01:40:02'),
+(50, 10, 'Tolix GA01 Morechair chair', '500000.00', '400001.00', '77309_350_200_W.png', '<p> SOFA chairs are made up of stainless steel and stainless steel; pvc leather. &nbsp; </p>\r\n\r\n<p> SOFA chairs &nbsp; c &oacute; 2 m & u: black, red &nbsp; </p>\r\n\r\n<p> Dimensions: 85 x 68 x 44 cm &nbsp; </p>', 'India', '2019-10-29 01:40:56'),
+(51, 10, 'Eames chair GE-08', '1200000.00', '1200000.00', '77307_350_200_W.png', '<p> Seats &nbsp; are made of stainless steel and stainless steel; pvc leather. &nbsp; </p>\r\n\r\n<p> Seats c &oacute; 2 m & u: black, red &nbsp; </p>\r\n\r\n<p> Dimensions: 85 x 68 x 44 cm &nbsp; </p>', 'India', '2019-10-29 01:41:40'),
+(52, 10, 'Kennedy Chair DC-08', '2300000.00', '2300000.00', '77234_350_200_W.png', '<p> Cafe chairs &nbsp; are made of stainless steel and stainless steel; pvc leather. &nbsp; </p>\r\n\r\n<p> Cafe chairs &nbsp; c &oacute; 2 m & u: black, red &nbsp; </p>\r\n\r\n<p> Dimensions: 85 x 68 x 44 cm &nbsp; </p>', 'India', '2019-10-29 01:42:52'),
+(53, 13, 'Chandeliers', '6500000.00', '6500000.00', 'đèn-chùm.jpg', '<p> In a space where a & aacute; a & ugrave; are usually installed in a position; center or area of ​​the area for reception. The only technology that brings only a & aute for customers\' space c & ograve; n l & agrave; Highlight collection & everyone. When placing a & a & rsquo; board room, it creates a luxurious, quirky look. must allow interior decoration. </p>\r\n\r\n<p> What to do to see what a & aacute; l & agrave; one of these types of e & agrave; The most beautiful looking beauty is the most beautiful beauty in the world. Special special products In line with the classic design, T&C classic. A suggestive & yacute; ho & agrave; n l & agrave; you c &oacute; can use these designs &nbsp; <a href=\"https://blog.noithat9x.vn/den-page-tri/\" target=\"_blank\"> <strong> site & iacute; </strong> &nbsp; </a> for & aacute; to increase luxury & agrave; Eye catching. </p>', 'India', '2019-10-29 01:47:10'),
+(54, 13, 'LED ceiling lights', '4500000.00', '400000.00', 'Đèn-led-âm-trần.jpg', '<p> Type e & tgrave; n & agrave; y c &oacute; Characteristic l & agrave; covered in ceiling tiles. with & aacute; lighting & agrave; Bring modern & modern space to the world. For many modern products, the model is equipped with a modern equipment. n & agrave; y are used very popular. As soon as you set up space and space, you will feel the simplicity, spaciousness and breadth of space. g & agrave; ng. </p>\r\n\r\n<p> An additional feature that makes it easy to work with an eye ch & iacute; Products for ceiling tiles c &oacute; gi & aacute; th & aggrave; well suited. We have obsolete & outdated technology as well as problems. want to like drop-down, drop-down, </p>\r\n\r\n<p> Complete page & page of page; Non-porous ceiling panel type, no ceiling & ceiling panel. In & quot & aacute; impressive & c &oacute; Be able to manage m & m t & tgrave; drop or egrave; drop. We will work together. a relative combination of h & ograve; a. </p>', 'India', '2019-10-29 01:47:52'),
+(55, 13, 'Drop light', '4000000.00', '4000000.00', 'đèn-thả.jpg', '<p> If you are l & agrave; one of the furniture of the sophisticated and modern style of modern furniture. d & lgrave; Select v & ocirc; c & ugrave; perfect cough. You won\'t have to worry about the type of drop-out that makes the space look ugly. or glitzy. On the contrary, the freshness of this design will take both the owner and the owner. t & iacute; most. </p>\r\n\r\n<p> Contemporary & ecirc; n, with design type & timel; og og og ch ch ch ch y y y og,,,,, og og og og og og og og og og og og og og og og og og og og og og og og og og og og og og og og og og og og og ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph ch ph combine eating & yacute; between the cars v & ocirc; c & ugrave; ng required. For impressive impression, you c &oacute; Simple usable from 1 &ndash; 3 pieces for drop or one set for drop-on set enough. </p>', 'India', '2019-10-29 01:48:35'),
 (56, 13, 'Downlight', '2000000.00', '1500000.00', 'Đèn-downlight.jpg', '<p>Đ&acirc;y l&agrave; loại đ&egrave;n trang tr&iacute; ph&ograve;ng kh&aacute;ch tuy &iacute;t được nhắc đến nhưng lại c&oacute; được một chỗ đứng trong thiết kế trang tr&iacute; nội thất. Loại đ&egrave;n n&agrave;y được lắp tr&ecirc;n trần nh&agrave; với hệ thống &acirc;m trần hoặc lắp nổi.</p>\r\n\r\n<p>Điều đặc biệt l&agrave; &aacute;nh s&aacute;ng của đ&egrave;n c&oacute; t&aacute;n quang hoặc định hướng, thứ &aacute;nh s&aacute;ng n&agrave;y tỏa ra nhiều kh&ocirc;ng gian rộng r&atilde;i. Mang đến cho&nbsp;<a href=\"https://vietnamembassy-iran.org/noi-that/\" target=\"_blank\"><strong>nội thất nh&agrave; cửa</strong></a>&nbsp;sự nổi bật v&agrave; ấn tượng nhất. Ch&uacute;ng đặc biệt ph&ugrave; hợp khi gia đ&igrave;nh tổ chức những sự kiện đặc biệt.</p>\r\n', 'India', '2019-10-29 01:49:12'),
-(57, 13, 'Tree lights / table lamp', '3500000.00', '3500000.00', 'Đèn-cây-đèn-bàn.jpg', '<p> A & tgrave; A & aacute; This form is larger than the head per person or a model for both adaption; can bring great effects. T & ugrave & mr & o; you c & oacute; Can design v & agrave; press nh & aacute; Use & uacute; ng. </p>', 'India', '2019-10-29 01:49:50'),
+(57, 13, 'Tree lights / table lamp', '3500000.00', '3500000.00', 'Đèn-cây-đèn-bàn.jpg', '<p> A & tgrave; A & aacute; This form is larger than the head per person or a model for both adaption; can bring great effects. T & ugrave & mr & o; you c &oacute; Can design v & agrave; press nh & aacute; Use & uacute; ng. </p>', 'India', '2019-10-29 01:49:50'),
 (58, 13, 'Lamb', '1000000.00', '1000000.00', 'Đèn-dây.jpg', '<p> Equipped for special occasions, this LED lighting will give you endless inspiration for a beautiful & glamorous room. </ p>', 'India', '2019-10-29 01:50:28'),
 (60, 12, 'GS 046 interior wall mirror', '4500000.00', '4500000.00', 'guong-treo-tuong-trang-tri-noi-that-gs-046-6.jpg', '<p> * Material: Metal </p>\r\n\r\n<p> * Size: 70cm </p>', 'India', '2019-10-29 01:56:10'),
 (61, 12, 'Wall art paintings for interior decoration', '5700000.00', '5000000.00', 'tranh-decor-phong-cach-a-dong-lich-lam-ts-271.jpg', '<p> * Material: Metal </p>\r\n\r\n<p> * Size: 160x90cm </p>', 'India', '2019-10-29 03:24:36'),
@@ -225,6 +247,12 @@ ALTER TABLE `categories`
   ADD PRIMARY KEY (`cat_id`);
 
 --
+-- Indexes for table `inquiry_master`
+--
+ALTER TABLE `inquiry_master`
+  ADD PRIMARY KEY (`inquiry_id`);
+
+--
 -- Indexes for table `products`
 --
 ALTER TABLE `products`
@@ -265,6 +293,12 @@ ALTER TABLE `users`
 --
 ALTER TABLE `categories`
   MODIFY `cat_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+
+--
+-- AUTO_INCREMENT for table `inquiry_master`
+--
+ALTER TABLE `inquiry_master`
+  MODIFY `inquiry_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `products`

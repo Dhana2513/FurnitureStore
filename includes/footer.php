@@ -1,4 +1,3 @@
-
 <!-- Footer -->
 <footer>
     <div class="footer footer-1">
@@ -14,7 +13,7 @@
                             </div>
                         </div>
                         <div class="footer-item-content">
-                            <p class="m-t-10">Thank customers for visiting our shop!
+                            <p class="m-t-10">Thank you for visiting our shop!
                             </p>
                         </div>
                     </div>
@@ -22,19 +21,23 @@
                         <div class="footer-item-heading">
                             <h3>Address</h3>
                         </div>
-                        <div class="footer-item-content">
+                        <div class="footer-item-content" style="width: 500px">
                             <div class="footer-infopage">
-                                <p>University of Transport</p>
+                                <p>LYRAE Furnitures, <br>
+                                    Goodwill Icon Shop no. 4/1, <br>
+                                    near Hotel Radisson, <br>
+                                    Kharadi, Pune, <br>
+                                    Maharashtra 411014.<br></p>
                                 <p> Phone number : <a href="callto:9823601924">9823601924</a></p>
                                 <p> E-mail: <a href="mailto:lyraefurniture20@gmail.com">lyraefurniture20@gmail.com</a></p>
                             </div>
-                            <div class="footer-social m-t-6">
+                            <!-- <div class="footer-social m-t-6">
                                 <div class="social-item facebook">
                                     <a href="https://www.facebook.com/nguyentinh03091998">
                                         <img src="style/images/icon/facebook_white.png" alt="Facebook" title="Facebook">
                                     </a>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="footer-item">

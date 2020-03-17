@@ -17,9 +17,6 @@
                                 <a href="index.php">HOME PAGE</a>
                             </li>
                             <li>
-                                <a href="contact.php">CONTACT</a>
-                            </li>
-                            <li>
                                 <a href="#">Category</a>
                                 <ul class="sub-menu">
                                     <?php
@@ -31,6 +28,13 @@
                                     ?>
                                 </ul>
                             </li>
+                            <li>
+                                <a href="contact.php">CONTACT</a>
+                            </li>
+                            <li>
+                                <a href="about.php">ABOUNT US</a>
+                            </li>
+                         
                         </ul>
                     </nav>
                     <div class="header__button">

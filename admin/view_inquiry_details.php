@@ -18,18 +18,18 @@ if (isset($_GET['msg'])){
 }
 
 ?>
+
 <?php
 
 
 $page = 1;
 $limit = 10;
 $arrs_list = mysqli_query($dbc, "
-                    select slide_id from slides 
+                    select transaction_code from transactions group by transaction_code
                 ");
 $total_record = mysqli_num_rows($arrs_list);
 
 $total_page = ceil($total_record / $limit);
-
 
 if (isset($_GET["page"]))
     $page = $_GET["page"];
@@ -65,8 +65,8 @@ $start = ($page - 1) * $limit;
             <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title" style="text-align: center;font-size: 30px;">List of photo slides</h4>
-                        <p>Total <b><?php echo $total_record;?></b> photo slide</p><br>
+                        <h4 class="card-title" style="text-align: center;font-size: 30px;">List of Inquiry Details</h4>
+                        <p>Total <b><?php echo $total_record;?></b> customer has fiiled contact form</p><br>
                         <div id="js-grid" class="jsgrid" style="position: relative; height: 500px; width: 100%;">
                             <div class="jsgrid-grid-header jsgrid-header-scrollbar">
                                 <table class="jsgrid-table">
@@ -76,19 +76,20 @@ $start = ($page - 1) * $limit;
                                         </th>
                                         <th class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable"
                                             style="width: 120px;">
-                                            Photo slide
+                                            Customer's full name
+                                        </th>
+                                        <th class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable" style="width: 100px;">
+                                        Phone number
+                                        </th>
+                                        <th class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable" style="width: 120px;">
+                                            Email
                                         </th>
                                         <th class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable" style="width: 150px;">
-                                        Describe
+                                        Content
                                         </th>
-                                        <th class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable"
-                                            style="width: 100px;">
-                                            Date Submitted
+                                        <th class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable" style="width: 50px;">
+
                                         </th>
-                                        <th class="jsgrid-header-cell jsgrid-control-field jsgrid-align-center"
-                                            style="width: 50px;"><a href="add_slide.php"><input
-                                                    class="jsgrid-button jsgrid-mode-button jsgrid-insert-mode-button"
-                                                    type="button" title="Thêm slide"></a></th>
                                     </tr>
                                 </table>
                             </div>
@@ -97,25 +98,21 @@ $start = ($page - 1) * $limit;
                                 <table class="jsgrid-table">
                                     <tbody>
                                     <?php
-                                    $q1 = "SELECT * FROM slides ORDER BY slide_id ASC LIMIT $start,$limit ";
-                                    $r1 = mysqli_query($dbc, $q1);
-                                    confirm_query($r1, $q1);
+                                    $q = "SELECT * FROM inquiry_master ORDER BY inquiry_id ASC LIMIT $start,$limit";
+                                    $r = mysqli_query($dbc, $q);
                                     $stt=0;
-                                    while ($slides = mysqli_fetch_array($r1, MYSQLI_ASSOC)) {
+                                    while ($rows = mysqli_fetch_array($r, MYSQLI_ASSOC)) {
                                         $stt+=1;
                                         echo "
                                         <tr class=\"jsgrid-row\">
                                             <td class=\"jsgrid-cell jsgrid-align-center\" style=\"width: 30px;\">".$stt."</td>
-                                            <td class=\"jsgrid-cell jsgrid-align-center\" style=\"width: 120px;\"><a href='uploads/slides/" . $slides['slide_image'] . "'><img src='uploads/slides/" . $slides['slide_image'] . "' 
-                                            style='    width: 50px;height: 50px;border-radius: 0%;' alt=''></a></td>
-                                            <td class=\"jsgrid-cell jsgrid-align-center\" style=\"width: 150px;\">".$slides['description']."</td>
-                                            <td class=\"jsgrid-cell jsgrid-align-center\" style=\"width: 100px;\">".$slides['post_on']."</td>
-                                            <td class=\"jsgrid-cell jsgrid-control-field jsgrid-align-center\"
-                                                style=\"width: 50px;\">
-                                                <a href='edit_slide.php?sid={$slides['slide_id']}'><input class=\"jsgrid-button jsgrid-edit-button\" type=\"button\" title=\"Repair\"></a>
-                                                <a href='delete_slide.php?sid={$slides['slide_id']}'><input class=\"jsgrid-button jsgrid-delete-button\" type=\"button\" title=\"Delete\"></a>
+                                            <td class=\"jsgrid-cell jsgrid-align-center\" style=\"width: 120px;\">".$rows['customer_name']."</td>
+                                            <td class=\"jsgrid-cell jsgrid-align-center\" style=\"width: 100px;\">".$rows['customer_phone']."</td>
+                                            <td class=\"jsgrid-cell jsgrid-align-center\" style=\"width: 120px;\">".$rows['customer_email']."</td>
+                                            <td class=\"jsgrid-cell jsgrid-align-center\" style=\"width: 150px;\">".$rows['content']."</td>
+                                            <td class=\"jsgrid-cell jsgrid-control-field jsgrid-align-center\" style=\"width: 50px;\">
+                                                <a href='delete_enquiry.php?inquiry_id={$rows['inquiry_id']}'><input class=\"jsgrid-button jsgrid-delete-button\" type=\"button\" title=\"Delete\"></a>
                                             </td>
-                                        </tr>
                                         ";
                                     }
                                     ?>
@@ -129,20 +126,20 @@ $start = ($page - 1) * $limit;
                                     $current_page = ($start/$limit) + 1;
                                     if ($page>1){?>
                                         <li class="page-item">
-                                            <a class="page-link" href="view_slides.php?page=<?php echo $current_page -1; ?>">
+                                            <a class="page-link" href="view_transactions.php?page=<?php echo $current_page -1; ?>">
                                                 <i class="mdi mdi-chevron-left"></i>
                                             </a>
                                         </li>
                                     <?php } ?>
                                     <?php for($i=1;$i<=$total_page;$i++){ ?>
                                         <li class="page-item <?php if($page == $i) echo "active"; ?>">
-                                            <a class="page-link" href="view_slides.php?page=<?php echo $i; ?>"><?php echo $i; ?></a>
+                                            <a class="page-link" href="view_transactions.php?page=<?php echo $i; ?>"><?php echo $i; ?></a>
                                         </li>
                                     <?php } ?>
                                     <?php
                                     if ($current_page<$total_page){?>
                                         <li class="page-item">
-                                            <a class="page-link" href="view_slides.php?page=<?php echo $current_page +1; ?>">
+                                            <a class="page-link" href="view_transactions.php?page=<?php echo $current_page +1; ?>">
                                                 <i class="mdi mdi-chevron-right"></i>
                                             </a>
                                         </li>

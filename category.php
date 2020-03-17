@@ -69,7 +69,7 @@ $cat = mysqli_fetch_array($r,MYSQLI_ASSOC);
                     <div class="shop-list">
                         <div class="shop-list-heading">
                             <div class="number-product">
-                            Have everything
+                            Total
                                 <span>
                                     <?php
                                         echo "<b>".$dem."</b>";

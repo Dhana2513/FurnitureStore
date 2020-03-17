@@ -9,7 +9,7 @@ require "PHPMailer/src/PHPMailer.php";
 require "PHPMailer/src/POP3.php";
 require "PHPMailer/src/SMTP.php";
 
-
+use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -44,26 +44,26 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         $errors[] = "Please enter the shipping address for you!";
     }
     $add_notice = $_POST['add_notice'];
-    //gui mail
+
     if (empty($errors)) {
         $mail = new PHPMailer(true);
 
         try {
-            //Server settings gooogle go port gmail google piavietnam them ob_start
 
-            $mail->isSMTP();                                            // Send using SMTP
-            $mail->Host = 'smtp.gmail.com';                    // mail server gooogle go port gmail google piavietnam
-            $mail->SMTPAuth = true;                                   // Enable SMTP authentication
-            $mail->Username = 'lyraefurniture20@gmail.com';                     //mail minh
-            $mail->Password = '9823601924';                               //mat khau ung dung
-            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
-            $mail->Port = 587;                                    // port gmail google piavietnam
+            $mail->isSMTP();                                          
+            $mail->Host = 'smtp.gmail.com';                    
+            $mail->SMTPAuth = true;                                   
+            $mail->Username = 'lyraefurniture20@gmail.com';           
+            $mail->Password = '9823601924';                           
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;       
+            $mail->Port = 587;                                    
             $mail->CharSet = 'UTF-8';
             //Recipients
-            $mail->setFrom('lyraefurniture20@gmail.com', 'LYRAE FURNITURE-STORE'); //gui tu
-            $mail->addAddress($email, 'Customer');     // gui den
+            $mail->setFrom('lyraefurniture20@gmail.com', 'LYRAE FURNITURE-STORE'); 
+            $mail->addAddress($email, 'Customer');     
 
-            //lay noi dung mail gui di
+
+            
             $mailHTML = '';
             $mailHTML .= '
                     <p>
@@ -122,12 +122,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                             Thank you for your trust and purchase! We will try to ship your order as soon as possible.
                             </p>';
             // Content
-            $mail->isHTML(true);                                  // Định dang email thành HTML
+            $mail->isHTML(true);                                  
             $mail->Subject = 'Bill';
             $mail->Body = $mailHTML;
 
             $mail->send();
-            //gui mail xong thi xoa session cart
+            
             unset($_SESSION['cart']);
             header('Location:success.php', true, 302);
         } catch (Exception $e) {
@@ -140,4 +140,3 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         }
     }
 }
-?>

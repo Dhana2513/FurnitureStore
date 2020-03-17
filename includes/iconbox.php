@@ -17,7 +17,7 @@
                         </h3>
                         <div class="icon__text">
                             <p>
-                                Free delivery within Hanoi urban area.
+                                Free delivery within Kharadi, Hadapsar &   Viman Nagar area.
                             </p>
                         </div>
                     </div>
@@ -37,7 +37,7 @@
                         </h3>
                         <div class="icon__text">
                             <p>
-                                Please CONTACT 0358828585 for purchase advice.
+                                Please CONTACT 9823601924 for purchase advice.
                             </p>
                         </div>
                     </div>

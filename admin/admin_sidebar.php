@@ -59,6 +59,12 @@
             </a>
         </li>
         <li class="nav-item">
+            <a class="nav-link" href="view_inquiry_details.php">
+                <i class="mdi mdi-playlist-check menu-icon"></i>
+                <span class="menu-title">Inquiry Details</span>
+            </a>
+        </li>
+        <li class="nav-item">
             <a class="nav-link" href="view_users.php">
                 <i class="mdi mdi-comment-account-outline menu-icon"></i>
                 <span class="menu-title">List of admin accounts</span>

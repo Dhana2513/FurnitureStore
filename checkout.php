@@ -25,7 +25,7 @@ $r = mysqli_query($dbc, $q);
                 <img src="style\images\bg-page_02.jpeg" alt="About Us">
             </div>
             <div class="pageintro-body">
-                <h1 class="pageintro-title">Pay</h1>
+                <h1 class="pageintro-title">Confirm Order</h1>
                 <nav class="pageintro-breadcumb">
                 </nav>
             </div>
