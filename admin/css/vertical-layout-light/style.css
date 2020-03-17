@@ -1,9 +1,10 @@
 /*------------------------------------------------------------------
  [Master Stylesheet]
 
-  Project:	Serein Admin
+  Project:	LYRAE Admin
   Version:	1.1.1
 -------------------------------------------------------------------*/
+
 
 /*-------------------------------------------------------------------
   ===== Table of Contents =====
@@ -113,15 +114,21 @@
     + Horizontal
 -------------------------------------------------------------------*/
 
+
 /*-------------------------------------------------------------------*/
+
 
 /* === Import Bootstrap functions and variables === */
 
+
 /*-------------------------------------------------------------------*/
+
 
 /* === Import template variables === */
 
+
 /*-------------------------------------------------------------------*/
+
 
 /* === SCSS Compass Functions === */
 
@@ -5742,7 +5749,7 @@
         -ms-transform: perspective(400px) rotateX(90deg);
         -o-transform: perspective(400px) rotateX(90deg);
         transform: perspective(400px) rotateX(90deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
     }
     40% {
@@ -5765,7 +5772,7 @@
         -ms-transform: perspective(400px) rotateX(0deg);
         -o-transform: perspective(400px) rotateX(0deg);
         transform: perspective(400px) rotateX(0deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
 }
@@ -5777,7 +5784,7 @@
         -ms-transform: perspective(400px) rotateX(90deg);
         -o-transform: perspective(400px) rotateX(90deg);
         transform: perspective(400px) rotateX(90deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
     }
     40% {
@@ -5800,7 +5807,7 @@
         -ms-transform: perspective(400px) rotateX(0deg);
         -o-transform: perspective(400px) rotateX(0deg);
         transform: perspective(400px) rotateX(0deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
 }
@@ -5812,7 +5819,7 @@
         -ms-transform: perspective(400px) rotateX(90deg);
         -o-transform: perspective(400px) rotateX(90deg);
         transform: perspective(400px) rotateX(90deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
     }
     40% {
@@ -5835,7 +5842,7 @@
         -ms-transform: perspective(400px) rotateX(0deg);
         -o-transform: perspective(400px) rotateX(0deg);
         transform: perspective(400px) rotateX(0deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
 }
@@ -5847,7 +5854,7 @@
         -ms-transform: perspective(400px) rotateX(90deg);
         -o-transform: perspective(400px) rotateX(90deg);
         transform: perspective(400px) rotateX(90deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
     }
     40% {
@@ -5870,7 +5877,7 @@
         -ms-transform: perspective(400px) rotateX(0deg);
         -o-transform: perspective(400px) rotateX(0deg);
         transform: perspective(400px) rotateX(0deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
 }
@@ -5882,7 +5889,7 @@
         -ms-transform: perspective(400px) rotateX(90deg);
         -o-transform: perspective(400px) rotateX(90deg);
         transform: perspective(400px) rotateX(90deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
     }
     40% {
@@ -5905,7 +5912,7 @@
         -ms-transform: perspective(400px) rotateX(0deg);
         -o-transform: perspective(400px) rotateX(0deg);
         transform: perspective(400px) rotateX(0deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
 }
@@ -5917,7 +5924,7 @@
         -ms-transform: perspective(400px) rotateX(0deg);
         -o-transform: perspective(400px) rotateX(0deg);
         transform: perspective(400px) rotateX(0deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
     100% {
@@ -5926,7 +5933,7 @@
         -ms-transform: perspective(400px) rotateX(90deg);
         -o-transform: perspective(400px) rotateX(90deg);
         transform: perspective(400px) rotateX(90deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
     }
 }
@@ -5938,7 +5945,7 @@
         -ms-transform: perspective(400px) rotateX(0deg);
         -o-transform: perspective(400px) rotateX(0deg);
         transform: perspective(400px) rotateX(0deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
     100% {
@@ -5947,7 +5954,7 @@
         -ms-transform: perspective(400px) rotateX(90deg);
         -o-transform: perspective(400px) rotateX(90deg);
         transform: perspective(400px) rotateX(90deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
     }
 }
@@ -5959,7 +5966,7 @@
         -ms-transform: perspective(400px) rotateX(0deg);
         -o-transform: perspective(400px) rotateX(0deg);
         transform: perspective(400px) rotateX(0deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
     100% {
@@ -5968,7 +5975,7 @@
         -ms-transform: perspective(400px) rotateX(90deg);
         -o-transform: perspective(400px) rotateX(90deg);
         transform: perspective(400px) rotateX(90deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
     }
 }
@@ -5980,7 +5987,7 @@
         -ms-transform: perspective(400px) rotateX(0deg);
         -o-transform: perspective(400px) rotateX(0deg);
         transform: perspective(400px) rotateX(0deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
     100% {
@@ -5989,7 +5996,7 @@
         -ms-transform: perspective(400px) rotateX(90deg);
         -o-transform: perspective(400px) rotateX(90deg);
         transform: perspective(400px) rotateX(90deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
     }
 }
@@ -6001,7 +6008,7 @@
         -ms-transform: perspective(400px) rotateX(0deg);
         -o-transform: perspective(400px) rotateX(0deg);
         transform: perspective(400px) rotateX(0deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
     100% {
@@ -6010,7 +6017,7 @@
         -ms-transform: perspective(400px) rotateX(90deg);
         -o-transform: perspective(400px) rotateX(90deg);
         transform: perspective(400px) rotateX(90deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
     }
 }
@@ -6022,7 +6029,7 @@
         -ms-transform: perspective(400px) rotateY(90deg);
         -o-transform: perspective(400px) rotateY(90deg);
         transform: perspective(400px) rotateY(90deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
     }
     40% {
@@ -6045,7 +6052,7 @@
         -ms-transform: perspective(400px) rotateY(0deg);
         -o-transform: perspective(400px) rotateY(0deg);
         transform: perspective(400px) rotateY(0deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
 }
@@ -6057,7 +6064,7 @@
         -ms-transform: perspective(400px) rotateY(90deg);
         -o-transform: perspective(400px) rotateY(90deg);
         transform: perspective(400px) rotateY(90deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
     }
     40% {
@@ -6080,7 +6087,7 @@
         -ms-transform: perspective(400px) rotateY(0deg);
         -o-transform: perspective(400px) rotateY(0deg);
         transform: perspective(400px) rotateY(0deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
 }
@@ -6092,7 +6099,7 @@
         -ms-transform: perspective(400px) rotateY(90deg);
         -o-transform: perspective(400px) rotateY(90deg);
         transform: perspective(400px) rotateY(90deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
     }
     40% {
@@ -6115,7 +6122,7 @@
         -ms-transform: perspective(400px) rotateY(0deg);
         -o-transform: perspective(400px) rotateY(0deg);
         transform: perspective(400px) rotateY(0deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
 }
@@ -6127,7 +6134,7 @@
         -ms-transform: perspective(400px) rotateY(90deg);
         -o-transform: perspective(400px) rotateY(90deg);
         transform: perspective(400px) rotateY(90deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
     }
     40% {
@@ -6150,7 +6157,7 @@
         -ms-transform: perspective(400px) rotateY(0deg);
         -o-transform: perspective(400px) rotateY(0deg);
         transform: perspective(400px) rotateY(0deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
 }
@@ -6162,7 +6169,7 @@
         -ms-transform: perspective(400px) rotateY(90deg);
         -o-transform: perspective(400px) rotateY(90deg);
         transform: perspective(400px) rotateY(90deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
     }
     40% {
@@ -6185,7 +6192,7 @@
         -ms-transform: perspective(400px) rotateY(0deg);
         -o-transform: perspective(400px) rotateY(0deg);
         transform: perspective(400px) rotateY(0deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
 }
@@ -6197,7 +6204,7 @@
         -ms-transform: perspective(400px) rotateY(0deg);
         -o-transform: perspective(400px) rotateY(0deg);
         transform: perspective(400px) rotateY(0deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
     100% {
@@ -6206,7 +6213,7 @@
         -ms-transform: perspective(400px) rotateY(90deg);
         -o-transform: perspective(400px) rotateY(90deg);
         transform: perspective(400px) rotateY(90deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
     }
 }
@@ -6218,7 +6225,7 @@
         -ms-transform: perspective(400px) rotateY(0deg);
         -o-transform: perspective(400px) rotateY(0deg);
         transform: perspective(400px) rotateY(0deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
     100% {
@@ -6227,7 +6234,7 @@
         -ms-transform: perspective(400px) rotateY(90deg);
         -o-transform: perspective(400px) rotateY(90deg);
         transform: perspective(400px) rotateY(90deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
     }
 }
@@ -6239,7 +6246,7 @@
         -ms-transform: perspective(400px) rotateY(0deg);
         -o-transform: perspective(400px) rotateY(0deg);
         transform: perspective(400px) rotateY(0deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
     100% {
@@ -6248,7 +6255,7 @@
         -ms-transform: perspective(400px) rotateY(90deg);
         -o-transform: perspective(400px) rotateY(90deg);
         transform: perspective(400px) rotateY(90deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
     }
 }
@@ -6260,7 +6267,7 @@
         -ms-transform: perspective(400px) rotateY(0deg);
         -o-transform: perspective(400px) rotateY(0deg);
         transform: perspective(400px) rotateY(0deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
     100% {
@@ -6269,7 +6276,7 @@
         -ms-transform: perspective(400px) rotateY(90deg);
         -o-transform: perspective(400px) rotateY(90deg);
         transform: perspective(400px) rotateY(90deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
     }
 }
@@ -6281,7 +6288,7 @@
         -ms-transform: perspective(400px) rotateY(0deg);
         -o-transform: perspective(400px) rotateY(0deg);
         transform: perspective(400px) rotateY(0deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
     100% {
@@ -6290,7 +6297,7 @@
         -ms-transform: perspective(400px) rotateY(90deg);
         -o-transform: perspective(400px) rotateY(90deg);
         transform: perspective(400px) rotateY(90deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
     }
 }
@@ -6302,7 +6309,7 @@
         -ms-transform: translateX(100%) skewX(-30deg);
         -o-transform: translateX(100%) skewX(-30deg);
         transform: translateX(100%) skewX(-30deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
     }
     60% {
@@ -6311,7 +6318,7 @@
         -ms-transform: translateX(-20%) skewX(30deg);
         -o-transform: translateX(-20%) skewX(30deg);
         transform: translateX(-20%) skewX(30deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
     80% {
@@ -6320,7 +6327,7 @@
         -ms-transform: translateX(0%) skewX(-15deg);
         -o-transform: translateX(0%) skewX(-15deg);
         transform: translateX(0%) skewX(-15deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
     100% {
@@ -6329,7 +6336,7 @@
         -ms-transform: translateX(0%) skewX(0deg);
         -o-transform: translateX(0%) skewX(0deg);
         transform: translateX(0%) skewX(0deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
 }
@@ -6341,7 +6348,7 @@
         -ms-transform: translateX(100%) skewX(-30deg);
         -o-transform: translateX(100%) skewX(-30deg);
         transform: translateX(100%) skewX(-30deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
     }
     60% {
@@ -6350,7 +6357,7 @@
         -ms-transform: translateX(-20%) skewX(30deg);
         -o-transform: translateX(-20%) skewX(30deg);
         transform: translateX(-20%) skewX(30deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
     80% {
@@ -6359,7 +6366,7 @@
         -ms-transform: translateX(0%) skewX(-15deg);
         -o-transform: translateX(0%) skewX(-15deg);
         transform: translateX(0%) skewX(-15deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
     100% {
@@ -6368,7 +6375,7 @@
         -ms-transform: translateX(0%) skewX(0deg);
         -o-transform: translateX(0%) skewX(0deg);
         transform: translateX(0%) skewX(0deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
 }
@@ -6380,7 +6387,7 @@
         -ms-transform: translateX(100%) skewX(-30deg);
         -o-transform: translateX(100%) skewX(-30deg);
         transform: translateX(100%) skewX(-30deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
     }
     60% {
@@ -6389,7 +6396,7 @@
         -ms-transform: translateX(-20%) skewX(30deg);
         -o-transform: translateX(-20%) skewX(30deg);
         transform: translateX(-20%) skewX(30deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
     80% {
@@ -6398,7 +6405,7 @@
         -ms-transform: translateX(0%) skewX(-15deg);
         -o-transform: translateX(0%) skewX(-15deg);
         transform: translateX(0%) skewX(-15deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
     100% {
@@ -6407,7 +6414,7 @@
         -ms-transform: translateX(0%) skewX(0deg);
         -o-transform: translateX(0%) skewX(0deg);
         transform: translateX(0%) skewX(0deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
 }
@@ -6419,7 +6426,7 @@
         -ms-transform: translateX(100%) skewX(-30deg);
         -o-transform: translateX(100%) skewX(-30deg);
         transform: translateX(100%) skewX(-30deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
     }
     60% {
@@ -6428,7 +6435,7 @@
         -ms-transform: translateX(-20%) skewX(30deg);
         -o-transform: translateX(-20%) skewX(30deg);
         transform: translateX(-20%) skewX(30deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
     80% {
@@ -6437,7 +6444,7 @@
         -ms-transform: translateX(0%) skewX(-15deg);
         -o-transform: translateX(0%) skewX(-15deg);
         transform: translateX(0%) skewX(-15deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
     100% {
@@ -6446,7 +6453,7 @@
         -ms-transform: translateX(0%) skewX(0deg);
         -o-transform: translateX(0%) skewX(0deg);
         transform: translateX(0%) skewX(0deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
 }
@@ -6458,7 +6465,7 @@
         -ms-transform: translateX(100%) skewX(-30deg);
         -o-transform: translateX(100%) skewX(-30deg);
         transform: translateX(100%) skewX(-30deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
     }
     60% {
@@ -6467,7 +6474,7 @@
         -ms-transform: translateX(-20%) skewX(30deg);
         -o-transform: translateX(-20%) skewX(30deg);
         transform: translateX(-20%) skewX(30deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
     80% {
@@ -6476,7 +6483,7 @@
         -ms-transform: translateX(0%) skewX(-15deg);
         -o-transform: translateX(0%) skewX(-15deg);
         transform: translateX(0%) skewX(-15deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
     100% {
@@ -6485,7 +6492,7 @@
         -ms-transform: translateX(0%) skewX(0deg);
         -o-transform: translateX(0%) skewX(0deg);
         transform: translateX(0%) skewX(0deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
 }
@@ -6497,7 +6504,7 @@
         -ms-transform: translateX(0%) skewX(0deg);
         -o-transform: translateX(0%) skewX(0deg);
         transform: translateX(0%) skewX(0deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
     100% {
@@ -6506,7 +6513,7 @@
         -ms-transform: translateX(100%) skewX(-30deg);
         -o-transform: translateX(100%) skewX(-30deg);
         transform: translateX(100%) skewX(-30deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
     }
 }
@@ -6518,7 +6525,7 @@
         -ms-transform: translateX(0%) skewX(0deg);
         -o-transform: translateX(0%) skewX(0deg);
         transform: translateX(0%) skewX(0deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
     100% {
@@ -6527,7 +6534,7 @@
         -ms-transform: translateX(100%) skewX(-30deg);
         -o-transform: translateX(100%) skewX(-30deg);
         transform: translateX(100%) skewX(-30deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
     }
 }
@@ -6539,7 +6546,7 @@
         -ms-transform: translateX(0%) skewX(0deg);
         -o-transform: translateX(0%) skewX(0deg);
         transform: translateX(0%) skewX(0deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
     100% {
@@ -6548,7 +6555,7 @@
         -ms-transform: translateX(100%) skewX(-30deg);
         -o-transform: translateX(100%) skewX(-30deg);
         transform: translateX(100%) skewX(-30deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
     }
 }
@@ -6560,7 +6567,7 @@
         -ms-transform: translateX(0%) skewX(0deg);
         -o-transform: translateX(0%) skewX(0deg);
         transform: translateX(0%) skewX(0deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
     100% {
@@ -6569,7 +6576,7 @@
         -ms-transform: translateX(100%) skewX(-30deg);
         -o-transform: translateX(100%) skewX(-30deg);
         transform: translateX(100%) skewX(-30deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
     }
 }
@@ -6581,7 +6588,7 @@
         -ms-transform: translateX(0%) skewX(0deg);
         -o-transform: translateX(0%) skewX(0deg);
         transform: translateX(0%) skewX(0deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
     100% {
@@ -6590,7 +6597,7 @@
         -ms-transform: translateX(100%) skewX(-30deg);
         -o-transform: translateX(100%) skewX(-30deg);
         transform: translateX(100%) skewX(-30deg);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
     }
 }
@@ -8104,7 +8111,7 @@
         -ms-transform: rotate(60deg) translateY(0);
         -o-transform: rotate(60deg) translateY(0);
         transform: rotate(60deg) translateY(0);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
         -webkit-transform-origin: top left 50%;
         -moz-transform-origin: top left 50%;
@@ -8123,7 +8130,7 @@
         -ms-transform: translateY(700px);
         -o-transform: translateY(700px);
         transform: translateY(700px);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
     }
 }
@@ -8187,7 +8194,7 @@
         -ms-transform: rotate(60deg) translateY(0);
         -o-transform: rotate(60deg) translateY(0);
         transform: rotate(60deg) translateY(0);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
         -webkit-transform-origin: top left 50%;
         -moz-transform-origin: top left 50%;
@@ -8206,7 +8213,7 @@
         -ms-transform: translateY(700px);
         -o-transform: translateY(700px);
         transform: translateY(700px);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
     }
 }
@@ -8270,7 +8277,7 @@
         -ms-transform: rotate(60deg) translateY(0);
         -o-transform: rotate(60deg) translateY(0);
         transform: rotate(60deg) translateY(0);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
         -webkit-transform-origin: top left 50%;
         -moz-transform-origin: top left 50%;
@@ -8289,7 +8296,7 @@
         -ms-transform: translateY(700px);
         -o-transform: translateY(700px);
         transform: translateY(700px);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
     }
 }
@@ -8353,7 +8360,7 @@
         -ms-transform: rotate(60deg) translateY(0);
         -o-transform: rotate(60deg) translateY(0);
         transform: rotate(60deg) translateY(0);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
         -webkit-transform-origin: top left 50%;
         -moz-transform-origin: top left 50%;
@@ -8372,7 +8379,7 @@
         -ms-transform: translateY(700px);
         -o-transform: translateY(700px);
         transform: translateY(700px);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
     }
 }
@@ -8436,7 +8443,7 @@
         -ms-transform: rotate(60deg) translateY(0);
         -o-transform: rotate(60deg) translateY(0);
         transform: rotate(60deg) translateY(0);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
         -webkit-transform-origin: top left 50%;
         -moz-transform-origin: top left 50%;
@@ -8455,14 +8462,14 @@
         -ms-transform: translateY(700px);
         -o-transform: translateY(700px);
         transform: translateY(700px);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
     }
 }
 
 @-moz-keyframes rollIn {
     0% {
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
         -webkit-transform: translateX(-100%) rotate(-120deg);
         -moz-transform: translateX(-100%) rotate(-120deg);
@@ -8471,7 +8478,7 @@
         transform: translateX(-100%) rotate(-120deg);
     }
     100% {
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
         -webkit-transform: translateX(0px) rotate(0deg);
         -moz-transform: translateX(0px) rotate(0deg);
@@ -8483,7 +8490,7 @@
 
 @-webkit-keyframes rollIn {
     0% {
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
         -webkit-transform: translateX(-100%) rotate(-120deg);
         -moz-transform: translateX(-100%) rotate(-120deg);
@@ -8492,7 +8499,7 @@
         transform: translateX(-100%) rotate(-120deg);
     }
     100% {
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
         -webkit-transform: translateX(0px) rotate(0deg);
         -moz-transform: translateX(0px) rotate(0deg);
@@ -8504,7 +8511,7 @@
 
 @-o-keyframes rollIn {
     0% {
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
         -webkit-transform: translateX(-100%) rotate(-120deg);
         -moz-transform: translateX(-100%) rotate(-120deg);
@@ -8513,7 +8520,7 @@
         transform: translateX(-100%) rotate(-120deg);
     }
     100% {
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
         -webkit-transform: translateX(0px) rotate(0deg);
         -moz-transform: translateX(0px) rotate(0deg);
@@ -8525,7 +8532,7 @@
 
 @-ms-keyframes rollIn {
     0% {
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
         -webkit-transform: translateX(-100%) rotate(-120deg);
         -moz-transform: translateX(-100%) rotate(-120deg);
@@ -8534,7 +8541,7 @@
         transform: translateX(-100%) rotate(-120deg);
     }
     100% {
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
         -webkit-transform: translateX(0px) rotate(0deg);
         -moz-transform: translateX(0px) rotate(0deg);
@@ -8546,7 +8553,7 @@
 
 @keyframes rollIn {
     0% {
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
         -webkit-transform: translateX(-100%) rotate(-120deg);
         -moz-transform: translateX(-100%) rotate(-120deg);
@@ -8555,7 +8562,7 @@
         transform: translateX(-100%) rotate(-120deg);
     }
     100% {
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
         -webkit-transform: translateX(0px) rotate(0deg);
         -moz-transform: translateX(0px) rotate(0deg);
@@ -8567,7 +8574,7 @@
 
 @-moz-keyframes rollOut {
     0% {
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
         -webkit-transform: translateX(0px) rotate(0deg);
         -moz-transform: translateX(0px) rotate(0deg);
@@ -8576,7 +8583,7 @@
         transform: translateX(0px) rotate(0deg);
     }
     100% {
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
         -webkit-transform: translateX(-100%) rotate(-120deg);
         -moz-transform: translateX(-100%) rotate(-120deg);
@@ -8588,7 +8595,7 @@
 
 @-webkit-keyframes rollOut {
     0% {
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
         -webkit-transform: translateX(0px) rotate(0deg);
         -moz-transform: translateX(0px) rotate(0deg);
@@ -8597,7 +8604,7 @@
         transform: translateX(0px) rotate(0deg);
     }
     100% {
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
         -webkit-transform: translateX(-100%) rotate(-120deg);
         -moz-transform: translateX(-100%) rotate(-120deg);
@@ -8609,7 +8616,7 @@
 
 @-o-keyframes rollOut {
     0% {
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
         -webkit-transform: translateX(0px) rotate(0deg);
         -moz-transform: translateX(0px) rotate(0deg);
@@ -8618,7 +8625,7 @@
         transform: translateX(0px) rotate(0deg);
     }
     100% {
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
         -webkit-transform: translateX(-100%) rotate(-120deg);
         -moz-transform: translateX(-100%) rotate(-120deg);
@@ -8630,7 +8637,7 @@
 
 @-ms-keyframes rollOut {
     0% {
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
         -webkit-transform: translateX(0px) rotate(0deg);
         -moz-transform: translateX(0px) rotate(0deg);
@@ -8639,7 +8646,7 @@
         transform: translateX(0px) rotate(0deg);
     }
     100% {
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
         -webkit-transform: translateX(-100%) rotate(-120deg);
         -moz-transform: translateX(-100%) rotate(-120deg);
@@ -8651,7 +8658,7 @@
 
 @keyframes rollOut {
     0% {
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
         -webkit-transform: translateX(0px) rotate(0deg);
         -moz-transform: translateX(0px) rotate(0deg);
@@ -8660,7 +8667,7 @@
         transform: translateX(0px) rotate(0deg);
     }
     100% {
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0;
         -webkit-transform: translateX(-100%) rotate(-120deg);
         -moz-transform: translateX(-100%) rotate(-120deg);
@@ -8670,9 +8677,12 @@
     }
 }
 
+
 /*-------------------------------------------------------------------*/
 
+
 /* === Boostrap Main SCSS === */
+
 
 /*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)
@@ -19621,9 +19631,12 @@ a.text-dark:focus {
     }
 }
 
+
 /*-------------------------------------------------------------------*/
 
+
 /* === Template mixins === */
+
 
 /* Miscellaneous Mixins */
 
@@ -19652,6 +19665,7 @@ a.text-dark:focus {
     max-width: 100%;
     white-space: nowrap;
 }
+
 
 /* Animation Mixins */
 
@@ -19728,9 +19742,12 @@ a.text-dark:focus {
     animation-name: fadeInUp;
 }
 
+
 /*-------------------------------------------------------------------*/
 
+
 /* === Core Styles === */
+
 
 /* Reset Styles */
 
@@ -20078,6 +20095,7 @@ input:focus {
     background: linear-gradient(to right, #7d7979 0%, #000000 100%);
 }
 
+
 /* Typography */
 
 body {
@@ -20312,6 +20330,7 @@ address p {
     color: #ff4500;
 }
 
+
 /* Miscellanoeous */
 
 body,
@@ -20345,6 +20364,7 @@ code {
     border-radius: 4px;
 }
 
+
 /* Footer */
 
 .footer {
@@ -20371,6 +20391,7 @@ code {
         width: 100%;
     }
 }
+
 
 /* Utilities */
 
@@ -20489,6 +20510,7 @@ code {
 .flex-grow {
     flex-grow: 1;
 }
+
 
 /* Demo Styles */
 
@@ -20739,9 +20761,12 @@ code {
     height: 500px;
 }
 
+
 /*-------------------------------------------------------------------*/
 
+
 /* === Components === */
+
 
 /* Accordions */
 
@@ -21006,6 +21031,7 @@ code {
     content: "\F140";
 }
 
+
 /* Badges */
 
 .badge {
@@ -21017,6 +21043,7 @@ code {
 .badge.badge-pill {
     border-radius: 10rem;
 }
+
 
 /*Badge outlined variations*/
 
@@ -21059,6 +21086,7 @@ code {
     color: #282f3a;
     border: 1px solid #282f3a;
 }
+
 
 /* Bootstrap Alerts */
 
@@ -21297,6 +21325,7 @@ code {
     color: #e6e6e6;
 }
 
+
 /* Bootstrap Progress */
 
 .progress {
@@ -21323,6 +21352,7 @@ code {
 .progress.progress-xl {
     height: 18px;
 }
+
 
 /* Buttons */
 
@@ -21584,6 +21614,7 @@ code {
 .wizard>.actions .fc .fc-button-group a+a {
     border-left: 0;
 }
+
 
 /*social buttons*/
 
@@ -21917,6 +21948,7 @@ code {
     color: #ffffff;
 }
 
+
 /* inverse buttons */
 
 .btn-inverse-primary {
@@ -22243,6 +22275,7 @@ code {
     box-shadow: 0 2px 2px 0 rgba(40, 47, 58, 0.14), 0 3px 1px -2px rgba(40, 47, 58, 0.2), 0 1px 5px 0 rgba(40, 47, 58, 0.12);
 }
 
+
 /* Breadcrumbs */
 
 .breadcrumb {
@@ -22401,6 +22434,7 @@ code {
 .settings-panel .color-tiles .breadcrumb.tiles.info .breadcrumb-item span {
     color: inherit;
 }
+
 
 /* inverse breadcrumb */
 
@@ -22740,6 +22774,7 @@ code {
     background: transparent;
 }
 
+
 /* Cards */
 
 .card {
@@ -22881,6 +22916,7 @@ code {
     border: 1px solid #252b35;
     color: #1e242c;
 }
+
 
 /* Checkboxes and Radios */
 
@@ -23159,6 +23195,7 @@ code {
     background: #282f3a;
 }
 
+
 /* Dropdowns */
 
 .dropdown .dropdown-toggle:after {
@@ -23191,6 +23228,7 @@ code {
 .dropdown .dropdown-menu .dropdown-item:active {
     background: initial;
 }
+
 
 /* Forms */
 
@@ -23553,6 +23591,7 @@ select.border-dark.tt-hint:focus {
     display: none;
 }
 
+
 /* Icons */
 
 .icons-list {
@@ -23604,6 +23643,7 @@ select.border-dark.tt-hint:focus {
 .icon-sm {
     font-size: 1rem;
 }
+
 
 /* Loaders */
 
@@ -23909,6 +23949,7 @@ select.border-dark.tt-hint:focus {
     }
 }
 
+
 /* Pixel loader */
 
 .pixel-loader {
@@ -23936,6 +23977,7 @@ select.border-dark.tt-hint:focus {
         -webkit-filter: hue-rotate(360deg);
     }
 }
+
 
 /* Square box loader */
 
@@ -24016,6 +24058,7 @@ select.border-dark.tt-hint:focus {
     right: -4px;
 }
 
+
 /* Circle loader */
 
 .circle-loader {
@@ -24062,6 +24105,7 @@ select.border-dark.tt-hint:focus {
         transform: rotate(360deg);
     }
 }
+
 
 /* Jumping dots loader */
 
@@ -24111,6 +24155,7 @@ select.border-dark.tt-hint:focus {
     }
 }
 
+
 /* Bar loader */
 
 .bar-loader {
@@ -24159,6 +24204,7 @@ select.border-dark.tt-hint:focus {
         transform: scaleY(1.8);
     }
 }
+
 
 /* Square path loader */
 
@@ -24215,6 +24261,7 @@ select.border-dark.tt-hint:focus {
     }
 }
 
+
 /* Dot opacity loader */
 
 .dot-opacity-loader {
@@ -24257,6 +24304,7 @@ select.border-dark.tt-hint:focus {
     }
 }
 
+
 /* Flip square */
 
 .flip-square-loader {
@@ -24294,6 +24342,7 @@ select.border-dark.tt-hint:focus {
     }
 }
 
+
 /* Moving square loader */
 
 .moving-square-loader {
@@ -24329,6 +24378,7 @@ select.border-dark.tt-hint:focus {
         transform: scale(2) translateX(45px);
     }
 }
+
 
 /* Lists */
 
@@ -24480,6 +24530,7 @@ dl li {
     right: 7px;
 }
 
+
 /* Modals */
 
 .modal .modal-dialog {
@@ -24503,6 +24554,7 @@ dl li {
 .modal .modal-dialog .modal-content .modal-footer {
     padding: 15px 31px;
 }
+
 
 /* Pagination */
 
@@ -24896,6 +24948,7 @@ dl li {
     border-radius: 2px;
 }
 
+
 /* pagination variations */
 
 .pagination-primary .page-item.active .page-link,
@@ -25161,6 +25214,7 @@ dl li {
     border-color: #282f3a;
     color: #ffffff;
 }
+
 
 /* Popovers */
 
@@ -25570,6 +25624,7 @@ dl li {
     border-left-color: #282f3a;
 }
 
+
 /* Portfolio */
 
 .portfolio-grid figure {
@@ -25665,6 +25720,7 @@ dl li {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
+
 
 /* Preview */
 
@@ -25798,6 +25854,7 @@ dl li {
 .preview-list.bordered .preview-item:last-child {
     border-bottom: 0;
 }
+
 
 /* Tables */
 
@@ -25969,6 +26026,7 @@ dl li {
     color: #ffffff;
 }
 
+
 /* Pills color variations */
 
 .nav-pills-primary .nav-link {
@@ -26055,6 +26113,7 @@ dl li {
     border: 0;
     padding-left: 0;
 }
+
 
 /* Timeline */
 
@@ -26266,6 +26325,7 @@ dl li {
     background: #282f3a;
 }
 
+
 /* Tabs */
 
 .add-items {
@@ -26351,6 +26411,7 @@ dl li {
     text-decoration: line-through;
     text-decoration-color: #4d7cff;
 }
+
 
 /* Tooltips */
 
@@ -26598,6 +26659,7 @@ dl li {
     border-bottom: 1px solid #f3f3f3;
 }
 
+
 /* Pricing table */
 
 .pricing-table .pricing-card .pricing-card-body {
@@ -26616,9 +26678,12 @@ dl li {
     font-size: 0.875rem;
 }
 
+
 /*-------------------------------------------------------------------*/
 
+
 /* === Email === */
+
 
 /* Mail Sidebar */
 
@@ -26806,6 +26871,7 @@ dl li {
     left: 0;
 }
 
+
 /* Mail List Container */
 
 .email-wrapper .mail-list-container {
@@ -26885,6 +26951,7 @@ dl li {
     color: #000000;
 }
 
+
 /* Message Content */
 
 .email-wrapper .message-body .sender-details {
@@ -26963,9 +27030,12 @@ dl li {
     margin-right: 0;
 }
 
+
 /*-------------------------------------------------------------------*/
 
+
 /* === Plugin overrides === */
+
 
 /* Ace Editor */
 
@@ -26978,6 +27048,7 @@ dl li {
 .ace_editor .ace_content {
     font-size: 0.875rem;
 }
+
 
 /* Avgrund Popup */
 
@@ -27077,6 +27148,7 @@ body.avgrund-active {
     transform: scale(1.1);
 }
 
+
 /* Optional close button styles */
 
 .avgrund-close {
@@ -27100,6 +27172,7 @@ body.avgrund-active {
     color: #fff;
     text-decoration: none;
 }
+
 
 /* Chartist */
 
@@ -27231,6 +27304,7 @@ body.avgrund-active {
     stroke-linecap: squre;
 }
 
+
 /* CodeMirror */
 
 .CodeMirror {
@@ -27243,6 +27317,7 @@ body.avgrund-active {
 .CodeMirror-scroll {
     min-height: auto;
 }
+
 
 /* Colcade */
 
@@ -27270,6 +27345,7 @@ body.avgrund-active {
 .grid-col--4 {
     margin-right: 0;
 }
+
 
 /* hide two middle */
 
@@ -27314,6 +27390,7 @@ body.avgrund-active {
     height: 300px;
 }
 
+
 /* Colorpicker */
 
 .asColorPicker-dropdown {
@@ -27329,6 +27406,7 @@ body.avgrund-active {
     border-radius: 2px;
     width: 35px;
 }
+
 
 /* Context Menu */
 
@@ -27379,6 +27457,7 @@ body.avgrund-active {
 .context-menu-list .context-menu-item.context-menu-hover span {
     color: #ffffff;
 }
+
 
 /* Data Tables */
 
@@ -27457,6 +27536,7 @@ body.avgrund-active {
 .dataTables_wrapper .dataTables_info {
     font-size: 0.875rem;
 }
+
 
 /* Datepicker */
 
@@ -27932,6 +28012,7 @@ body.avgrund-active {
     font-size: 1.5rem;
 }
 
+
 /* Dropify */
 
 .dropify-wrapper {
@@ -27990,6 +28071,7 @@ body.avgrund-active {
     color: #434a54;
 }
 
+
 /* Dropzone */
 
 .dropzone {
@@ -28006,6 +28088,7 @@ body.avgrund-active {
     font-size: .8125rem;
     color: #222222;
 }
+
 
 /* Flot chart */
 
@@ -28029,6 +28112,7 @@ body.avgrund-active {
     top: 0;
     bottom: 0;
 }
+
 
 /* Full Calendar */
 
@@ -28182,6 +28266,7 @@ body.avgrund-active {
     border-color: #f29d56;
 }
 
+
 /* Google Charts */
 
 .google-chart-container .google-charts {
@@ -28190,6 +28275,7 @@ body.avgrund-active {
     min-height: 280px;
     min-width: 100%;
 }
+
 
 /* Icheck */
 
@@ -28209,6 +28295,7 @@ body.avgrund-active {
     margin-left: 5px;
     margin-bottom: 0;
 }
+
 
 /* Jquery File Upload */
 
@@ -28237,6 +28324,7 @@ body.avgrund-active {
 .ajax-file-upload-container .ajax-file-upload-statusbar {
     max-width: 100%;
 }
+
 
 /* Js-grid */
 
@@ -28281,11 +28369,13 @@ body.avgrund-active {
     line-height: 1.25;
 }
 
+
 /* Jvectormap */
 
 .jvectormap-container {
     background: #ffffff;
 }
+
 
 /* Light Gallery */
 
@@ -28320,6 +28410,7 @@ body.avgrund-active {
     width: 100%;
 }
 
+
 /* Listify */
 
 .listify-list input {
@@ -28347,6 +28438,7 @@ body.avgrund-active {
     color: #aab2bd;
     margin: 0;
 }
+
 
 /* No-ui-slider */
 
@@ -28452,6 +28544,7 @@ body.avgrund-active {
     font-size: 0.94rem;
     font-weight: 600;
 }
+
 
 /* Slider Color variations */
 
@@ -28591,6 +28684,7 @@ body.avgrund-active {
     color: #ffffff;
 }
 
+
 /* Owl-carousel */
 
 .owl-carousel img {
@@ -28638,6 +28732,7 @@ body.avgrund-active {
     height: 200px;
 }
 
+
 /* Progressbar-js */
 
 .progress-bar-js-line {
@@ -28648,6 +28743,7 @@ body.avgrund-active {
     width: 100%;
     position: relative;
 }
+
 
 /* Pws-tabs */
 
@@ -28765,6 +28861,7 @@ body.avgrund-active {
     margin-left: 0;
 }
 
+
 /* Quill Editor */
 
 .quill-container {
@@ -28775,6 +28872,7 @@ body.avgrund-active {
 .quill-container.ql-snow {
     border-color: #f3f3f3;
 }
+
 
 /* Rating */
 
@@ -28848,6 +28946,7 @@ body.avgrund-active {
     line-height: 2.5;
 }
 
+
 /* Select2 */
 
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
@@ -28916,6 +29015,7 @@ body.avgrund-active {
     background: #f29d56;
 }
 
+
 /* Summernote Editor */
 
 .note-editor.note-frame {
@@ -28925,6 +29025,7 @@ body.avgrund-active {
 .note-popover {
     border: 1px solid #f3f3f3;
 }
+
 
 /* SweetAlert */
 
@@ -28996,6 +29097,7 @@ body.avgrund-active {
     left: -30px;
 }
 
+
 /* Switchery */
 
 .switchery {
@@ -29030,6 +29132,7 @@ body.avgrund-active {
     height: 27px;
 }
 
+
 /* Tags */
 
 div.tagsinput {
@@ -29051,12 +29154,14 @@ div.tagsinput span.tag a {
     color: #ffffff;
 }
 
+
 /* TinyMCE Editor */
 
 .mce-tinymce.mce-panel,
 .mce-tinymce .mce-panel {
     border-color: #f3f3f3;
 }
+
 
 /* Toast */
 
@@ -29075,6 +29180,7 @@ div.tagsinput span.tag a {
 .jq-toast-wrap .jq-icon-error {
     background-color: #ff5e5e;
 }
+
 
 /* Typeahead */
 
@@ -29138,6 +29244,7 @@ div.tagsinput span.tag a {
 .tt-suggestion p {
     margin: 0;
 }
+
 
 /* Wysi Editor */
 
@@ -29288,6 +29395,7 @@ div.tagsinput span.tag a {
     margin-bottom: 1em;
 }
 
+
 /* X-editable */
 
 .editable-form .editable {
@@ -29348,6 +29456,7 @@ div.tagsinput span.tag a {
         margin-top: 10px;
     }
 }
+
 
 /* Wizard */
 
@@ -29747,9 +29856,12 @@ div.tagsinput span.tag a {
     display: list-item;
 }
 
+
 /*-------------------------------------------------------------------*/
 
+
 /* === Landing screens === */
+
 
 /* Auth */
 
@@ -30131,6 +30243,7 @@ div.tagsinput span.tag a {
     flex-grow: 1;
 }
 
+
 /* Sidebar */
 
 .sidebar {
@@ -30388,6 +30501,7 @@ div.tagsinput span.tag a {
     background: transparent;
 }
 
+
 /* style for off-canvas menu*/
 
 @media screen and (max-width: 991px) {
@@ -30406,6 +30520,7 @@ div.tagsinput span.tag a {
         right: 0;
     }
 }
+
 
 /* Navbar */
 
@@ -30934,6 +31049,7 @@ div.tagsinput span.tag a {
     }
 }
 
+
 /* Layouts */
 
 @media (min-width: 992px) {
@@ -31252,6 +31368,7 @@ div.tagsinput span.tag a {
     background-color: darkgrey;
     outline: 1px solid slategrey;
 }
+
 
 /* Settings Panel */
 
@@ -31624,5 +31741,6 @@ div.tagsinput span.tag a {
         display: none;
     }
 }
+
 
 /*# sourceMappingURL=../maps/vertical-layout-light/style.css.map */

@@ -1,10 +1,9 @@
 /*------------------------------------------------------------------
  [Master Stylesheet]
 
-  Project:	Serein Admin
+  Project:	LYRAE Admin
   Version:	1.1.1
 -------------------------------------------------------------------*/
-
 
 
 /*-------------------------------------------------------------------
@@ -117,25 +116,40 @@
 
 
 /*-------------------------------------------------------------------*/
+
+
 /* === Import Bootstrap functions and variables === */
+
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "../../../node_modules/bootstrap/scss/variables";
 
 /*-------------------------------------------------------------------*/
+
+
 /* === Import template variables === */
+
 @import "variables";
 
 /*-------------------------------------------------------------------*/
+
+
 /* === SCSS Compass Functions === */
+
 @import "../../../node_modules/compass-mixins/lib/compass";
 @import "../../../node_modules/compass-mixins/lib/animate";
 
 /*-------------------------------------------------------------------*/
+
+
 /* === Boostrap Main SCSS === */
+
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
 /*-------------------------------------------------------------------*/
+
+
 /* === Template mixins === */
+
 @import "mixins/misc";
 @import "mixins/animation";
 @import "mixins/background";
@@ -150,7 +164,10 @@
 @import "mixins/tooltips";
 
 /*-------------------------------------------------------------------*/
+
+
 /* === Core Styles === */
+
 @import "reset";
 @import "fonts";
 @import "functions";
@@ -162,7 +179,10 @@
 @import "demo";
 
 /*-------------------------------------------------------------------*/
+
+
 /* === Components === */
+
 @import "components/accordions";
 @import "components/badges";
 @import "components/bootstrap-alerts";
@@ -191,13 +211,19 @@
 @import "components/pricing-table";
 
 /*-------------------------------------------------------------------*/
+
+
 /* === Email === */
+
 @import "components/mail-components/mail-sidebar";
 @import "components/mail-components/mail-list-container";
 @import "components/mail-components/messagecontent";
 
 /*-------------------------------------------------------------------*/
+
+
 /* === Plugin overrides === */
+
 @import "components/plugin-overrides/ace";
 @import "components/plugin-overrides/avgrund";
 @import "components/plugin-overrides/chartist";
@@ -237,5 +263,8 @@
 @import "components/plugin-overrides/wizard";
 
 /*-------------------------------------------------------------------*/
+
+
 /* === Landing screens === */
+
 @import "landing-screens/auth";

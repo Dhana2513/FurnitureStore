@@ -13,7 +13,8 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <h1 style="text-align: center">Welcome to the Admin PAGE</h1>
+                                
+                                <h1 style="text-align: center">Welcome to the Admin Page</h1>
                             </div>
                         </div>
                     </div>

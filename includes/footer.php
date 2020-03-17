@@ -7,7 +7,7 @@
                     <div class="footer-item">
                         <div class="footer-item-heading">
                             <div class="logo">
-                                <a href="style/#">
+                                <a href="index.php">
                                     <img src="style/images/icon/logo_03.png" alt="Lyrae" title="Lyrae">
                                 </a>
                             </div>

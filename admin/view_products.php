@@ -98,10 +98,10 @@ $start = ($page - 1) * $limit;
                                             style="width: 100px;">
                                             Where production
                                         </th>
-                                        <th class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable"
+                                        <!-- <th class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable"
                                             style="width: 100px;">
                                             Product information
-                                        </th>
+                                        </th> -->
                                         <th class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable"
                                             style="width: 100px;">
                                            Date Submitted
@@ -142,7 +142,7 @@ $start = ($page - 1) * $limit;
                                             <td class=\"jsgrid-cell jsgrid-align-center\" style=\"width: 100px;\">" . number_format($products['product_price'], 0, ',', '.') . "</td>
                                             <td class=\"jsgrid-cell jsgrid-align-center\" style=\"width: 100px;\">" . number_format($products['selling_price'], 0, ',', '.') . "</td>
                                             <td class=\"jsgrid-cell jsgrid-align-center\" style=\"width: 100px;\">" . $products['made_in'] . "</td>
-                                            <td class=\"jsgrid-cell jsgrid-align-center\" style=\"width: 100px;\">" . $products['introduce'] . "</td>
+                                            <!-- <td class=\"jsgrid-cell jsgrid-align-center\" style=\"width: 100px;\">" . $products['introduce'] . "</td> -->
                                             <td class=\"jsgrid-cell jsgrid-align-center\" style=\"width: 100px;\">" . $products['post_on'] . "</td>
                                             <td class=\"jsgrid-cell jsgrid-control-field jsgrid-align-center\"
                                                 style=\"width: 50px;\">

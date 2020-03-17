@@ -1,5 +1,5 @@
 <?
 ob_start();
-header('Location: ' ."/furniturestore/admin/login.php");
+header('Location: ' ."admin_index.php");
 ob_end_flush();
 die();
