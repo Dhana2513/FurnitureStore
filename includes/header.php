@@ -14,25 +14,25 @@
                     <nav class="header__navbar" style="margin-left: 500px">
                         <ul class="navbar-menu">
                             <li class="active">
-                                <a href="index.php" style="font-size: 13px">HOME PAGE</a>
+                                <a href="index.php" style="font-size: 14px">HOME PAGE</a>
                             </li>
                             <li>
-                                <a href="#" style="font-size: 13px" >Category</a>
+                                <a href="#" style="font-size: 14px" >Category</a>
                                 <ul class="sub-menu">
                                     <?php
                                     $q = "SELECT * FROM categories ORDER BY position ASC ";
                                     $r = mysqli_query($dbc,$q);
                                     while ($rows = mysqli_fetch_array($r,MYSQLI_ASSOC)){
-                                        echo "<li><a href='category.php?cid={$rows['cat_id']}' style='font-size: 13px'>{$rows['cat_name']}</a></li>";
+                                        echo "<li><a href='category.php?cid={$rows['cat_id']}' style='font-size: 15px'>{$rows['cat_name']}</a></li>";
                                     }
                                     ?>
                                 </ul>
                             </li>
                             <li>
-                                <a href="contact.php" style="font-size: 13px" >CONTACT</a>
+                                <a href="contact.php" style="font-size: 14px" >CONTACT</a>
                             </li>
                             <li>
-                                <a href="about.php" style="font-size: 13px" >ABOUNT US</a>
+                                <a href="about.php" style="font-size: 14px" >ABOUNT US</a>
                             </li>
                          
                         </ul>
