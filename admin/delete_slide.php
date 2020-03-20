@@ -48,7 +48,7 @@ if (mysqli_num_rows($r) == 1) {
                                             </button>
                                         </div>
                                         <div class="modal-body">
-                                            <p>Do you want to delete this Category?</p>
+                                            <p>Do you want to delete this Slide?</p>
                                         </div>
                                         <div class="modal-footer">
                                             <input type="submit" class="btn btn-danger" name="delete" value="Delete">

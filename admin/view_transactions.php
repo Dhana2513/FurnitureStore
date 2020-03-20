@@ -65,7 +65,7 @@ $start = ($page - 1) * $limit;
             <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title" style="text-align: center;font-size: 30px;">List of transactions</h4>
+                        <h4 class="card-title" style="text-align: center;font-size: 30px;">List of Orders</h4>
                         <p>Total <b><?php echo $total_record;?></b> customer has ordered</p><br>
                         <div id="js-grid" class="jsgrid" style="position: relative; height: 500px; width: 100%;">
                             <div class="jsgrid-grid-header jsgrid-header-scrollbar">

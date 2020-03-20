@@ -75,8 +75,13 @@ $detail = mysqli_fetch_array($r,MYSQLI_ASSOC);
                             </table>
                         </div>
                     </div>
+                    <script>
+                        function myFunction(){
+                            window.location = "action/print.php?code=<?php echo $code;?>";
+                        }
+                    </script>
                     <div class="card-body">
-                    <button type="button" class="btn btn-info btn-icon-text">
+                    <button type="button"  onclick="myFunction()" class="btn btn-info btn-icon-text">
                         <a href="action/print.php?code=<?php echo $code;?>" style="color:white;">Print Invoice</a>
                         <i class="mdi mdi-printer btn-icon-append"></i>
                     </button>

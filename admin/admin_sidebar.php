@@ -55,7 +55,7 @@
         <li class="nav-item">
             <a class="nav-link" href="view_transactions.php">
                 <i class="mdi mdi-playlist-check menu-icon"></i>
-                <span class="menu-title">Transaction management</span>
+                <span class="menu-title">Order management</span>
             </a>
         </li>
         <li class="nav-item">
