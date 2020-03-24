@@ -11,7 +11,7 @@
                             <img src="style/images/icon/logo_01.png" alt="Lyrae">
                         </a>
                     </div>
-                    <nav class="header__navbar" style="margin-left: 500px">
+                    <nav class="header__navbar" style="margin-left: 200px">
                         <ul class="navbar-menu">
                             <li class="active">
                                 <a href="index.php" style="font-size: 14px">HOME PAGE</a>
@@ -30,6 +30,9 @@
                             </li>
                             <li>
                                 <a href="contact.php" style="font-size: 14px" >CONTACT</a>
+                            </li>
+                            <li>
+                                <a href="login.php" style="font-size: 14px" >LOGIN</a>
                             </li>
                             <li>
                                 <a href="about.php" style="font-size: 14px" >ABOUNT US</a>
