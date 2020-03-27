@@ -1,9 +1,18 @@
 <?php
+session_start();
+
 if (isset($_GET['msg'])) {
     $msg = $_GET['msg'];
 } else {
     $msg = '';
 }
+$cust_id = $_SESSION['cust_id'];
+$name= $_SESSION['cust_name'];
+$mobile = $_SESSION['cust_mobile'];
+$email=$_SESSION['cust_email'];
+$password = $_SESSION['cust_password'];
+$address = $_SESSION['cust_address'];
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +24,7 @@ if (isset($_GET['msg'])) {
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>LYRAE Register</title>
+    <title>LYRAE Account</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="admin/vendors/iconfonts/mdi/font/css/materialdesignicons.min.css" />
     <link rel="stylesheet" href="admin/vendors/css/vendor.bundle.base.css" />
@@ -49,8 +58,8 @@ if (isset($_GET['msg'])) {
                             <!-- <div class="brand-logo">
                                 <img src="style/images/icon/logo_01.png" alt="logo" />
                             </div> -->
-                            <h4>Register an account</h4>
-                            <form class="pt-3" action="action_register.php" method="post">
+                            <h4>Account Details</h4>
+                            <form class="pt-3" action="action_update.php?id=<?php echo $cust_id;?>" method="post">
                                 <div class="form-group">
                                     <label>Full Name</label>
                                     <div class="input-group">
@@ -59,7 +68,7 @@ if (isset($_GET['msg'])) {
                                                 <i class="mdi mdi-account-outline text-primary"></i>
                                             </span>
                                         </div>
-                                        <input type="text" name="name" class="form-control form-control-lg border-left-0" placeholder="Full Name" />
+                                        <input type="text" name="name" value="<?php echo $name;?>" class="form-control form-control-lg border-left-0" placeholder="Full Name" />
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -70,7 +79,7 @@ if (isset($_GET['msg'])) {
                                                 <i class="mdi mdi-cellphone-android text-primary"></i>
                                             </span>
                                         </div>
-                                        <input type="text" name="mobile" class="form-control form-control-lg border-left-0" placeholder="Mobile Number" />
+                                        <input type="text" name="mobile" value="<?php echo $mobile;?>" class="form-control form-control-lg border-left-0" placeholder="Mobile Number" />
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -81,7 +90,7 @@ if (isset($_GET['msg'])) {
                                                 <i class="mdi mdi-email-outline text-primary"></i>
                                             </span>
                                         </div>
-                                        <input type="email" name="account" class="form-control form-control-lg border-left-0" placeholder="Email" />
+                                        <input type="email" name="account" value="<?php echo $email;?>" class="form-control form-control-lg border-left-0" placeholder="Email" />
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -92,7 +101,7 @@ if (isset($_GET['msg'])) {
                                                 <i class="mdi mdi-lock-outline text-primary"></i>
                                             </span>
                                         </div>
-                                        <input type="password" name="password" class="form-control form-control-lg border-left-0" id="exampleInputPassword" placeholder="Password" />
+                                        <input type="password" name="password" value="<?php echo $password;?>" class="form-control form-control-lg border-left-0" id="exampleInputPassword" placeholder="Password" />
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -103,14 +112,14 @@ if (isset($_GET['msg'])) {
                                                 <i class="mdi mdi-map-marker text-primary"></i>
                                             </span>
                                         </div>
-                                        <input type="text" name="address" class="form-control form-control-lg border-left-0" placeholder="Address" />
+                                        <input type="text" name="address" value="<?php echo $address;?>" class="form-control form-control-lg border-left-0" placeholder="Address" />
                                     </div>
                                 </div>
                                 <div class="mt-3">
-                                    <input type="submit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" value="Registration">
+                                    <input type="submit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" value="Update">
                                 </div>
-                                <div class="text-center mt-4 font-weight-light">
-                                    Do you already have an account? <a href="login.php" class="text-primary">Log in</a>
+                                <div class="mt-3">
+                                    <a href = "logout.php" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn">Logout</a>
                                 </div>
                             </form>
                         </div>

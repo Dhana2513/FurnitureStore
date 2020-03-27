@@ -11,6 +11,13 @@ if (isset($_GET['msg'])){
     $msg= '';
 }
 
+$cust_id = $_SESSION['cust_id'];
+$name= $_SESSION['cust_name'];
+$mobile= $_SESSION['cust_mobile'];
+$email=$_SESSION['cust_email'];
+$password = $_SESSION['cust_password'];
+$address = $_SESSION['cust_address'];
+
 $arrKey = array_keys($_SESSION['cart']);
 $strKey = implode(",",$arrKey);
 $q = "SELECT * from products where product_id in($strKey)";
@@ -52,25 +59,25 @@ $r = mysqli_query($dbc, $q);
                                 <div class="col-sm-12">
                                     <div class="form-group au-form require">
                                         <label>Customer's full name</label>
-                                        <input type="text" name="name">
+                                        <input type="text" name="name" value="<?php echo $name;?>">
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
                                     <div class="form-group au-form require">
                                         <label>Phone number</label>
-                                        <input type="number" name="phone">
+                                        <input type="number" name="phone"  value="<?php echo $mobile;?>">
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
                                     <div class="form-group au-form">
                                         <label>Email address</label>
-                                        <input type="text" name="email">
+                                        <input type="text" name="email" value="<?php echo $email;?>">
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
                                     <div class="form-group au-form require">
                                         <label>Delivery address</label>
-                                        <input type="text" name="address">
+                                        <input type="text" name="address" value="<?php echo $address;?>">
                                     </div>
                                 </div>
                             </div>

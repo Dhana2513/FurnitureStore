@@ -64,6 +64,13 @@
                 <span class="menu-title">Inquiry Details</span>
             </a>
         </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="view_customers.php">
+                <i class="mdi mdi-comment-account-outline menu-icon"></i>
+                <span class="menu-title">Customer Accounts</span>
+            </a>
+        </li>
         <!-- <li class="nav-item">
             <a class="nav-link" href="view_users.php">
                 <i class="mdi mdi-comment-account-outline menu-icon"></i>

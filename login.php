@@ -52,7 +52,7 @@ if (isset($_GET['msg'])){
                             <a href="login.php"><img src="style/images/icon/logo_01.png" alt="logo" /></a>
                         </div>
                         <h4>Login </h4>
-                        <form class="pt-3" method="post" action="action/action_login.php">
+                        <form class="pt-3" method="post" action="action_login.php">
                             <div class="form-group">
                                 <label>Email</label>
                                 <div class="input-group">

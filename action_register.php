@@ -10,6 +10,11 @@ if ($_SERVER['REQUEST_METHOD']=='POST'){
     }else{
         $errors[] = 'Please enter your full name';
     }
+    if (!empty($_POST['mobile'])){
+        $mobile = mysqli_real_escape_string($dbc,$_POST['mobile']);
+    }else{
+        $errors[] = 'Please enter your mobile number';
+    }
     if (isset($_POST['account']) && filter_var($_POST['account'],FILTER_VALIDATE_EMAIL)){
         $account = mysqli_real_escape_string($dbc,$_POST['account']);
     }else{
@@ -20,26 +25,28 @@ if ($_SERVER['REQUEST_METHOD']=='POST'){
     }else{
         $errors[] = 'Please enter the password with 6-20 characters';
     }
-    if (isset($_POST['address']) && filter_var($_POST['address'],FILTER_VALIDATE_EMAIL)){
+    if (!empty($_POST['name'])){
         $address = mysqli_real_escape_string($dbc,$_POST['address']);
     }else{
         $errors[] = 'Please enter your address';
     }
 
     if (empty($errors)){
-        $q = "SELECT user_account FROM users WHERE user_account = '{$account}'";
+        $q = "SELECT email FROM customer WHERE email = '{$account}'";
+        
         $r = mysqli_query($dbc,$q);
         if (mysqli_num_rows($r) >= 1){
             $msg = "Email account already exists !! Please register another account!";
             $suc = 0;
             header('Location: register.php?msg='.$msg);
         }else{
-            $q = "INSERT INTO users (user_name,user_account,user_password,role_id) VALUE ('$name','$account',SHA1('$password'),'8')";
+            $q = "INSERT INTO customer (name,email,mobile,password,address) VALUE ('$name','$account','$mobile',SHA1('$password'), '$address')";
+         
             $r = mysqli_query($dbc,$q);
             confirm_query($r,$q);
 
             if (mysqli_affected_rows($dbc) == 1){
-                header('Location: waiting.php');
+                header('Location: index.php');
             }else{
                 $msg = "System error";
                 $suc = 0;
